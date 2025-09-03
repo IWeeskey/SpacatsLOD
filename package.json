@@ -1,0 +1,24 @@
+{
+  "name": "com.spacats.lod",
+  "version": "0.0.1",
+  "displayName": "Spacats LOD",
+  "description": "Spacats LOD ",
+  "unity": "2019.1",
+  "dependencies": {
+ },
+ "keywords": [
+    "Spacats"
+  ],
+  "author": {
+    "name": "Ivan Weeskey (Ivan Kurdakov S.)",
+    "email": "ivan.kurdakov.develop@gmail.com",
+    "url": ""
+  },
+  "samples": [
+    {
+	"displayName": "Spacats LOD Examples",
+	"description": "Examples",
+	"path": "Examples~/Spacats LOD Examples"
+	}
+  ]
+}
