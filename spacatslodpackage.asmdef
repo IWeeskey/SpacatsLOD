@@ -1,7 +1,9 @@
 {
-    "name": "spacatsutils",
+    "name": "spacatslod",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:9fd19a828c82d3548a3f0dd8a771a57e"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
