@@ -2,7 +2,10 @@
     "name": "spacatslod",
     "rootNamespace": "",
     "references": [
-        "GUID:9fd19a828c82d3548a3f0dd8a771a57e"
+        "GUID:9fd19a828c82d3548a3f0dd8a771a57e",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:e0cd26848372d4e5c891c569017e11f1"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
