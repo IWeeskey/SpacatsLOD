@@ -61,39 +61,19 @@ namespace Spacats.LOD
         private void DrawLODFields()
         {
             DynamicLODController targetScript = (DynamicLODController)target;
-            
-            GUILayout.TextArea("Requests: " + targetScript.RequestsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
-            GUILayout.TextArea("Units: " + targetScript.LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
-            GUILayout.TextArea("Transforms: " + targetScript.TransformCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
-            GUILayout.TextArea("Position: " + targetScript.TargetPosition.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
 
-            if (targetScript.PerformMeasurements)
+            if (targetScript.LodSettings.PerformMeasurements)
             {
+                GUILayout.TextArea("Requests: " + targetScript.RequestsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
+                GUILayout.TextArea("Units: " + targetScript.LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
+                GUILayout.TextArea("Transforms: " + targetScript.TransformCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
+                GUILayout.TextArea("Position: " + targetScript.TargetPosition.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
+                GUILayout.TextArea("Changed: " + targetScript.ChangedLodsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
                 GUILayout.TextArea(targetScript.MeasurementsResult.Item2);
             }
 
-            SerializedProperty performMeasurements = serializedObject.FindProperty("PerformMeasurements");
-            EditorGUILayout.PropertyField(performMeasurements);
-
-            SerializedProperty performLogic = serializedObject.FindProperty("PerformLogic");
-            EditorGUILayout.PropertyField(performLogic);
-
-            SerializedProperty useEditorCamera = serializedObject.FindProperty("UseEditorCamera");
-            EditorGUILayout.PropertyField(useEditorCamera);
-
-            SerializedProperty asyncLogic = serializedObject.FindProperty("AsyncLogic");
-            EditorGUILayout.PropertyField(asyncLogic);
-
-            SerializedProperty maxUnitCount = serializedObject.FindProperty("MaxUnitCount");
-            EditorGUILayout.PropertyField(maxUnitCount);
-
-            SerializedProperty updateRateMS = serializedObject.FindProperty("UpdateRateMS");
-            EditorGUILayout.PropertyField(updateRateMS);
-
-            SerializedProperty targetTransform = serializedObject.FindProperty("Target");
-            EditorGUILayout.PropertyField(targetTransform);
-
-
+            SerializedProperty lodSettings = serializedObject.FindProperty("LodSettings");
+            EditorGUILayout.PropertyField(lodSettings);
         }
 
         private void DrawLODButtons()
@@ -105,14 +85,9 @@ namespace Spacats.LOD
                 targetScript.Clear();
             }
 
-            if (GUILayout.Button("Process"))
+            if (GUILayout.Button("Process Instant"))
             {
-                targetScript.ProcessLODs();
-            }
-
-            if (GUILayout.Button("Process Time"))
-            {
-                targetScript.ProcessLODs(true);
+                targetScript.ProcessInstant();
             }
         }
     }
