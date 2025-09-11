@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4673484504589451375}
   - component: {fileID: 8419731066115054661}
   m_Layer: 0
-  m_Name: SpriteLOD
+  m_Name: DSpriteLOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,4 +161,4 @@ MonoBehaviour:
   - {r: 1, g: 0.070933886, b: 0, a: 1}
   - {r: 1, g: 0, b: 0.7267132, a: 1}
   MaxLODLevel: 5
-  DisableOnMaxLOD: 1
+  DisableOnMaxLOD: 0

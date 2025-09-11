@@ -7,11 +7,11 @@ using UnityEngine;
 
 namespace Spacats.LOD
 {
-    [CustomEditor(typeof(DynamicLODController), true)]
-    public class DynamicLODControllerEditor : Editor
+    [CustomEditor(typeof(StaticLODController), true)]
+    public class StaticLODControllerEditor : Editor
     {
         private int _tabIndex = 0;
-        private readonly string[] _tabHeaders = { "Dynamic LOD", "Controller info"};
+        private readonly string[] _tabHeaders = { "Static LOD", "Controller info" };
         public override void OnInspectorGUI()
         {
             SetDefaultParameters();
@@ -40,7 +40,7 @@ namespace Spacats.LOD
 
         private void DrawControllerTab()
         {
-            DynamicLODController targetScript = (DynamicLODController)target;
+            StaticLODController targetScript = (StaticLODController)target;
             GUILayout.TextArea("Is Controller Registered: " + targetScript.IsControllerRegistered);
 
             SerializedProperty showLogs = serializedObject.FindProperty("ShowLogs");
@@ -52,7 +52,7 @@ namespace Spacats.LOD
 
         private void SetDefaultParameters()
         {
-            DynamicLODController targetScript = (DynamicLODController)target;
+            StaticLODController targetScript = (StaticLODController)target;
             targetScript.ExecuteInEditor = true;
             targetScript.UniqueTag = "";
             targetScript.PersistsAtScenes.Clear();
@@ -60,17 +60,16 @@ namespace Spacats.LOD
 
         private void DrawLODFields()
         {
-            DynamicLODController targetScript = (DynamicLODController)target;
+            StaticLODController targetScript = (StaticLODController)target;
 
             if (targetScript.LodSettings.PerformMeasurements)
             {
                 GUILayout.TextArea("Requests: " + targetScript.RequestsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
                 GUILayout.TextArea("Units: " + targetScript.LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
-                GUILayout.TextArea("Transforms: " + targetScript.TransformCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
                 GUILayout.TextArea("Position: " + targetScript.TargetPosition.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
                 GUILayout.TextArea("Changed: " + targetScript.ChangedLodsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
-                GUILayout.TextArea(targetScript.TotalTimeResult.Item2);
                 GUILayout.TextArea(targetScript.JobTimeResult.Item2);
+                GUILayout.TextArea(targetScript.TotalTimeResult.Item2);
             }
 
             SerializedProperty lodSettings = serializedObject.FindProperty("LodSettings");
@@ -79,7 +78,7 @@ namespace Spacats.LOD
 
         private void DrawLODButtons()
         {
-            DynamicLODController targetScript = (DynamicLODController)target;
+            StaticLODController targetScript = (StaticLODController)target;
 
             if (GUILayout.Button("Clear"))
             {

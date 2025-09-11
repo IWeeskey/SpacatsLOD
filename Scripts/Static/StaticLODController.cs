@@ -11,21 +11,20 @@ namespace Spacats.LOD
 {
     [ExecuteInEditMode]
     [DefaultExecutionOrder(-10)]
-    public class DynamicLODController : Controller
+    public class StaticLODController : Controller
     {
-        private static DynamicLODController _instance;
+        private static StaticLODController _instance;
 
-        private DLodRuntimeData _runtimeData = new DLodRuntimeData();
-        private DLodDisposeData _disposeData = new DLodDisposeData();
+        private SLodRuntimeData _runtimeData = new SLodRuntimeData();
+        private SLodDisposeData _disposeData = new SLodDisposeData();
 
         public static bool HasInstance => _instance == null ? false : true;
-        public static DynamicLODController Instance { get { if (_instance == null) Debug.LogError("DynamicLODController is not registered yet!"); return _instance; } }
-        public DLodSettings LodSettings = new DLodSettings();
+        public static StaticLODController Instance { get { if (_instance == null) Debug.LogError("StaticLODController is not registered yet!"); return _instance; } }
+        public SLodSettings LodSettings = new SLodSettings();
 
         public bool IsControllerRegistered => _registered;
         public int RequestsCount => (_disposeData.RequestsDict == null) ? 0 : _disposeData.RequestsDict.Count;
         public int LodUnitsCount => (_disposeData.Units == null) ? 0 : _disposeData.Units.Count;
-        public int TransformCount => (_disposeData.UnitsTransform.isCreated) ? _disposeData.UnitsTransform.length : 0;
         public Vector3 TargetPosition => _runtimeData.TargetPosition;
         public (double, string) TotalTimeResult => _runtimeData.TotalResult;
         public (double, string) JobTimeResult => _runtimeData.JobTimeResult;
@@ -88,7 +87,7 @@ namespace Spacats.LOD
             if (LodSettings.PerformMeasurements)
             {
                 _runtimeData.TotalResult = TimeTracker.Finish(LodSettings.TotalMeasureID, false);
-                if (GUIPermanentMessage.Instance != null) GUIPermanentMessage.Instance.Message = 
+                if (GUIPermanentMessage.Instance != null) GUIPermanentMessage.Instance.Message =
                         "Total " + LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " ") + "; " +
                         _runtimeData.TotalResult.Item1.ToString() + "ms; changed " + ChangedLodsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " ");
             }
@@ -102,7 +101,7 @@ namespace Spacats.LOD
             {
                 _disposeData.Units[kv.x]?.ChangeLOD(kv.y);
             }
-               
+
             _runtimeData.ChangedLodsCount = _disposeData.ChangedLods.Length;
             _disposeData.ChangedLods.Clear();
         }
@@ -126,7 +125,7 @@ namespace Spacats.LOD
             _disposeData.RequestsDict.Clear();
         }
 
-        public void AddRequest(DLodUnit unit, RequestTypes request)
+        public void AddRequest(SLodUnit unit, RequestTypes request)
         {
             if (LodSettings.AsyncLogic)
             {
@@ -151,19 +150,18 @@ namespace Spacats.LOD
         }
 
 
-        private void ProcessAddRequest(DLodUnit unit)
+        private void ProcessAddRequest(SLodUnit unit)
         {
             if (_disposeData.Units.Count >= LodSettings.MaxUnitCount) return;
             if (unit.LODData.UnitIndex < _disposeData.Units.Count && _disposeData.Units[unit.LODData.UnitIndex] == unit) return;
 
             unit.LODData.UnitIndex = _disposeData.Units.Count;
             _disposeData.Units.Add(unit);
-            _disposeData.UnitsTransform.Add(unit.transform);
             _disposeData.UnitsData[unit.LODData.UnitIndex] = unit.LODData;
         }
 
 
-        private void ProcessRemoveRequest(DLodUnit unit)
+        private void ProcessRemoveRequest(SLodUnit unit)
         {
             int index = unit.LODData.UnitIndex;
             int last = _disposeData.Units.Count - 1;
@@ -172,20 +170,18 @@ namespace Spacats.LOD
 
             if (index != last)
             {
-                DLodUnit lastUnit = _disposeData.Units[last];
+                SLodUnit lastUnit = _disposeData.Units[last];
                 _disposeData.Units[index] = lastUnit;
                 lastUnit.LODData.UnitIndex = index;
                 _disposeData.UnitsData[index] = lastUnit.LODData;
             }
 
             _disposeData.Units.RemoveAt(last);
-            _disposeData.UnitsTransform.RemoveAtSwapBack(index);
-
         }
 
-        private void ProcessSingleUnit(DLodUnit unit)
+        private void ProcessSingleUnit(SLodUnit unit)
         {
-            float distance = math.distance(_runtimeData.TargetPosition, unit.transform.position);
+            float distance = math.distance(_runtimeData.TargetPosition, unit.LODData.Position);
 
             int lodLevel = LodUtils.LevelForDistance(distance, in unit.LODData.Data, transform.localScale.x);
             unit.ChangeLOD(lodLevel);
@@ -254,6 +250,7 @@ namespace Spacats.LOD
                 _runtimeData.JobTimeResult = TimeTracker.Finish(LodSettings.JobMeasureID, false);
                 if (GUIPermanentMessage.Instance != null) GUIPermanentMessage.Instance.Message = "Job time: " + _runtimeData.JobTimeResult.Item1.ToString() + "ms";
             }
+
 
             HandleJobResult();
 

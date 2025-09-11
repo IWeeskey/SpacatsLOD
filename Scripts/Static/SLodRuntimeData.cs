@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Spacats.LOD
 {
     [Serializable]
-    public class DLodRuntimeData
+    public class SLodRuntimeData
     {
         public bool JobScheduled = false;
 

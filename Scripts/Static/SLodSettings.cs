@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Spacats.LOD
 {
     [Serializable]
-    public class DLodSettings
+    public class SLodSettings
     {
         public Transform Target;
 
@@ -18,7 +18,7 @@ namespace Spacats.LOD
 
         [SerializeField]
         private int _maxUnitCount = 1_000_000;
-        public int MaxUnitCount =>_maxUnitCount;
+        public int MaxUnitCount => _maxUnitCount;
         public readonly string JobMeasureID = "DLOD JOB";
         public readonly string TotalMeasureID = "DLOD TOTAL";
     }
