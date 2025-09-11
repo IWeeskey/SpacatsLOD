@@ -8,14 +8,12 @@ namespace Spacats.LOD
     [ExecuteInEditMode, DisallowMultipleComponent]
     public class SLodUnit : MonoBehaviour
     {
-        public bool AddOnEnable = false;
+        public bool RegisterOnEnable = false;
         private bool _isQuitting = false;
-        [SerializeField]
-        private List<LodUnitReciever> _receivers = new();
+
         [SerializeField]
         private LodUnitReciever _receiver;
 
-        public int RecieversCount => _receivers.Count;
         public Action<int> OnLodChanged;
         public SLodUnitData LODData;
 
@@ -29,7 +27,7 @@ namespace Spacats.LOD
         {
             if (_receiver == null && gameObject.GetComponent<LodUnitReciever>() != null) _receiver = gameObject.GetComponent<LodUnitReciever>();
 
-            if (AddOnEnable) RequestAddLOD();
+            if (RegisterOnEnable) RequestAddLOD();
         }
 
         private void OnDisable()
@@ -93,25 +91,14 @@ namespace Spacats.LOD
         //    gizColor.a = sphereAlpha;
         //    Gizmos.color = gizColor;
         //    Gizmos.DrawSphere(center, LODData.Data.Lod4 * scale);
-
-
         //}
 
         public void ChangeLOD(int value)
         {
-
             OnLodChanged?.Invoke(value);
 
             LODData.CurrentLod = value;
-
-            //if (_receivers.Count == 0) return;
             _receiver?.OnLodChanged(LODData.CurrentLod);
-
-            //int lodLevel = LODData.CurrentLod;
-            //for (int i = 0; i < _receivers.Count; i++)
-            //{
-            //    _receivers[i].OnLodChanged(lodLevel);
-            //}
         }
     }
 }

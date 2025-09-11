@@ -93,10 +93,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6658036961099516376}
-  - component: {fileID: 2010200078913055357}
-  - component: {fileID: 8419731066115054661}
+  - component: {fileID: 4673484504589451375}
+  - component: {fileID: -1852852492418323744}
   m_Layer: 0
-  m_Name: SSpriteLOD
+  m_Name: DSpriteLODSmooth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +118,7 @@ Transform:
   - {fileID: 3031277976717751302}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2010200078913055357
+--- !u!114 &4673484504589451375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,23 +127,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1831546045444336154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
+  m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receiver: {fileID: 0}
+  _receivers:
+  - {fileID: -1852852492418323744}
   LODData:
+    UnitIndex: 100
     CurrentLod: 0
-    UnitIndex: 0
-    Position: {x: 0, y: 0, z: 0}
-    Scale: 0
     Data:
       Lod0: 5
       Lod1: 10
       Lod2: 15
       Lod3: 20
-      Lod4: 25
---- !u!114 &8419731066115054661
+      Lod4: 30
+--- !u!114 &-1852852492418323744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,15 +150,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1831546045444336154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 712e044a20b363b4ba33446167a786e1, type: 3}
+  m_Script: {fileID: 11500000, guid: fa77fdc51a52c1b47bf5874443ea95be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TargetRenderer: {fileID: 5485898119981099528}
   LODColors:
-  - {r: 0.39488173, g: 1, b: 0, a: 1}
-  - {r: 0.99178314, g: 1, b: 0, a: 1}
-  - {r: 1, g: 0.59076196, b: 0, a: 1}
-  - {r: 1, g: 0.070933886, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0.7267132, a: 1}
+  - {r: 0.39607847, g: 1, b: 0, a: 1}
+  - {r: 0.9921569, g: 1, b: 0, a: 1}
+  - {r: 1, g: 0.5921569, b: 0, a: 1}
+  - {r: 1, g: 0.07058824, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0.7254902, a: 1}
   MaxLODLevel: 5
-  DisableOnMaxLOD: 0
+  DisableOnMaxLOD: 1
+  SmoothTime: 0.5

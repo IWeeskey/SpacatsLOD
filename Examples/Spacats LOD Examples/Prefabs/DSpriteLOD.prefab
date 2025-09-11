@@ -161,4 +161,4 @@ MonoBehaviour:
   - {r: 1, g: 0.070933886, b: 0, a: 1}
   - {r: 1, g: 0, b: 0.7267132, a: 1}
   MaxLODLevel: 5
-  DisableOnMaxLOD: 0
+  DisableOnMaxLOD: 1
