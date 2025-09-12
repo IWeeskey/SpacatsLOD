@@ -10,6 +10,7 @@ namespace Spacats.LOD
     {
         public bool RegisterOnEnable = false;
         private bool _isQuitting = false;
+        private bool _isRegistered = false;
 
         [SerializeField]
         private LodUnitReciever _receiver;
@@ -25,6 +26,7 @@ namespace Spacats.LOD
 
         private void OnEnable()
         {
+            MarkAsUnRegistered();
             if (_receiver == null && gameObject.GetComponent<LodUnitReciever>() != null) _receiver = gameObject.GetComponent<LodUnitReciever>();
 
             if (RegisterOnEnable) RequestAddLOD();
@@ -49,6 +51,8 @@ namespace Spacats.LOD
 
         public void RequestAddLOD()
         {
+            if (_isRegistered) return;
+
             ResetValues();
             RefreshSelfData();
             if (StaticLODController.HasInstance) StaticLODController.Instance.AddRequest(this, RequestTypes.Add);
@@ -57,7 +61,19 @@ namespace Spacats.LOD
         public void RequestRemoveLOD()
         {
             if (_isQuitting) return;
+            if (!_isRegistered) return;
+
             if (StaticLODController.HasInstance) StaticLODController.Instance.AddRequest(this, RequestTypes.Remove);
+        }
+
+
+        public void MarkAsRegistered()
+        {
+            _isRegistered = true;
+        }
+        public void MarkAsUnRegistered()
+        {
+            _isRegistered = false;
         }
 
         //private void OnDrawGizmosSelected()

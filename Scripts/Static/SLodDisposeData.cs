@@ -2,12 +2,15 @@ using System.Collections.Generic;
 using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
+using UnityEngine;
 using UnityEngine.Jobs;
 
 namespace Spacats.LOD
 {
     public class SLodDisposeData
     {
+        private bool _isCreated = false;
+
         public Dictionary<SLodUnit, RequestTypes> RequestsDict;
         public List<SLodUnit> Units;
 
@@ -23,9 +26,10 @@ namespace Spacats.LOD
             if (Units == null) Units = new List<SLodUnit>();
             if (RequestsDict == null) RequestsDict = new Dictionary<SLodUnit, RequestTypes>();
 
-            //UnitsTransform = new TransformAccessArray(lodSettings.MaxUnitCount, -1);
             UnitsData = new NativeArray<SLodUnitData>(lodSettings.MaxUnitCount, Allocator.Persistent);
             ChangedLods = new NativeList<int2>(lodSettings.MaxUnitCount, Allocator.Persistent);
+
+            _isCreated = true;
         }
 
         public void Dispose()
@@ -34,10 +38,14 @@ namespace Spacats.LOD
             RequestsDict?.Clear();
             if (UnitsData.IsCreated) UnitsData.Dispose();
             if (ChangedLods.IsCreated) ChangedLods.Dispose();
+
+            _isCreated = false;
         }
 
         public void ScheduleJob(SLodRuntimeData runtimeData)
         {
+            if (!_isCreated) return;
+
             CreateJob(runtimeData);
 
             runtimeData.JobScheduled = true;
@@ -45,6 +53,8 @@ namespace Spacats.LOD
         }
         public void InstantJob(SLodRuntimeData runtimeData)
         {
+            if (!_isCreated) return;
+
             CreateJob(runtimeData);
 
             LodJobHandle = LodJob.Schedule(Units.Count, 64);
@@ -60,5 +70,6 @@ namespace Spacats.LOD
             LodJob.UnitsData = UnitsData;
             LodJob.ChangedLodsWriter = changedLodsWriter;
         }
+
     }
 }

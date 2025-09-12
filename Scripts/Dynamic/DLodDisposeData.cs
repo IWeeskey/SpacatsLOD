@@ -8,6 +8,8 @@ namespace Spacats.LOD
 {
     public class DLodDisposeData
     {
+        private bool _isCreated = false;
+
         public Dictionary<DLodUnit, RequestTypes> RequestsDict;
         public List<DLodUnit> Units;
 
@@ -26,6 +28,8 @@ namespace Spacats.LOD
             UnitsTransform = new TransformAccessArray(lodSettings.MaxUnitCount, -1);
             UnitsData = new NativeArray<DLodUnitData>(lodSettings.MaxUnitCount, Allocator.Persistent);
             ChangedLods = new NativeList<int2>(lodSettings.MaxUnitCount, Allocator.Persistent);
+
+            _isCreated = true;
         }
 
         public void Dispose()
@@ -35,10 +39,14 @@ namespace Spacats.LOD
             if (UnitsTransform.isCreated) UnitsTransform.Dispose();
             if (UnitsData.IsCreated) UnitsData.Dispose();
             if (ChangedLods.IsCreated) ChangedLods.Dispose();
+
+            _isCreated = false;
         }
 
         public void ScheduleJob(DLodRuntimeData runtimeData)
         {
+            if (!_isCreated) return;
+
             CreateJob(runtimeData);
 
             runtimeData.JobScheduled = true;
@@ -46,6 +54,8 @@ namespace Spacats.LOD
         }
         public void InstantJob(DLodRuntimeData runtimeData)
         {
+            if (!_isCreated) return;
+
             CreateJob(runtimeData);
 
             LodJobHandle = LodJob.ScheduleReadOnlyByRef(UnitsTransform, 64);

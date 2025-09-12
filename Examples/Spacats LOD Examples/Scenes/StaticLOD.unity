@@ -168,9 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 9627963}
+  RegisterOnEnable: 0
   _receiver: {fileID: 9627963}
   LODData:
     CurrentLod: 3
@@ -250,9 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 18204715}
+  RegisterOnEnable: 0
   _receiver: {fileID: 18204715}
   LODData:
     CurrentLod: 3
@@ -420,10 +416,10 @@ MonoBehaviour:
   PersistsAtScenes: []
   LodSettings:
     Target: {fileID: 1388757880}
-    PerformLogic: 0
+    PerformLogic: 1
     UseEditorCamera: 1
     AsyncLogic: 0
-    PerformMeasurements: 0
+    PerformMeasurements: 1
     UpdateRateMS: 0
     _maxUnitCount: 1000000
 --- !u!1 &39363671
@@ -556,9 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 60268274}
+  RegisterOnEnable: 0
   _receiver: {fileID: 60268274}
   LODData:
     CurrentLod: 3
@@ -806,9 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 78378256}
+  RegisterOnEnable: 0
   _receiver: {fileID: 78378256}
   LODData:
     CurrentLod: 2
@@ -888,9 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 89843881}
+  RegisterOnEnable: 0
   _receiver: {fileID: 89843881}
   LODData:
     CurrentLod: 4
@@ -970,9 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 99683075}
+  RegisterOnEnable: 0
   _receiver: {fileID: 99683075}
   LODData:
     CurrentLod: 2
@@ -1052,9 +1040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 122623765}
+  RegisterOnEnable: 0
   _receiver: {fileID: 122623765}
   LODData:
     CurrentLod: 3
@@ -1218,9 +1204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 134123784}
+  RegisterOnEnable: 0
   _receiver: {fileID: 134123784}
   LODData:
     CurrentLod: 3
@@ -1468,9 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 177778282}
+  RegisterOnEnable: 0
   _receiver: {fileID: 177778282}
   LODData:
     CurrentLod: 3
@@ -1550,9 +1532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 190558687}
+  RegisterOnEnable: 0
   _receiver: {fileID: 190558687}
   LODData:
     CurrentLod: 3
@@ -1632,9 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 205838519}
+  RegisterOnEnable: 0
   _receiver: {fileID: 205838519}
   LODData:
     CurrentLod: 2
@@ -1714,9 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 208530769}
+  RegisterOnEnable: 0
   _receiver: {fileID: 208530769}
   LODData:
     CurrentLod: 3
@@ -1880,9 +1856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 219099569}
+  RegisterOnEnable: 0
   _receiver: {fileID: 219099569}
   LODData:
     CurrentLod: 3
@@ -2130,9 +2104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 256355909}
+  RegisterOnEnable: 0
   _receiver: {fileID: 256355909}
   LODData:
     CurrentLod: 3
@@ -2296,9 +2268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 258132545}
+  RegisterOnEnable: 0
   _receiver: {fileID: 258132545}
   LODData:
     CurrentLod: 2
@@ -2546,9 +2516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 274001689}
+  RegisterOnEnable: 0
   _receiver: {fileID: 274001689}
   LODData:
     CurrentLod: 3
@@ -2712,9 +2680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 279927983}
+  RegisterOnEnable: 0
   _receiver: {fileID: 279927983}
   LODData:
     CurrentLod: 2
@@ -2794,9 +2760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 288392679}
+  RegisterOnEnable: 0
   _receiver: {fileID: 288392679}
   LODData:
     CurrentLod: 3
@@ -2960,9 +2924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 308379297}
+  RegisterOnEnable: 0
   _receiver: {fileID: 308379297}
   LODData:
     CurrentLod: 3
@@ -3042,9 +3004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 311430377}
+  RegisterOnEnable: 0
   _receiver: {fileID: 311430377}
   LODData:
     CurrentLod: 3
@@ -3124,9 +3084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 335497784}
+  RegisterOnEnable: 0
   _receiver: {fileID: 335497784}
   LODData:
     CurrentLod: 2
@@ -3290,9 +3248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 353489288}
+  RegisterOnEnable: 0
   _receiver: {fileID: 353489288}
   LODData:
     CurrentLod: 3
@@ -3372,9 +3328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 359651961}
+  RegisterOnEnable: 0
   _receiver: {fileID: 359651961}
   LODData:
     CurrentLod: 2
@@ -3538,9 +3492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 368972682}
+  RegisterOnEnable: 0
   _receiver: {fileID: 368972682}
   LODData:
     CurrentLod: 3
@@ -3788,9 +3740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 389199154}
+  RegisterOnEnable: 0
   _receiver: {fileID: 389199154}
   LODData:
     CurrentLod: 3
@@ -3870,9 +3820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 390076604}
+  RegisterOnEnable: 0
   _receiver: {fileID: 390076604}
   LODData:
     CurrentLod: 4
@@ -3952,9 +3900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 400202649}
+  RegisterOnEnable: 0
   _receiver: {fileID: 400202649}
   LODData:
     CurrentLod: 3
@@ -4118,9 +4064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 413374927}
+  RegisterOnEnable: 0
   _receiver: {fileID: 413374927}
   LODData:
     CurrentLod: 3
@@ -4704,9 +4648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 483708486}
+  RegisterOnEnable: 0
   _receiver: {fileID: 483708486}
   LODData:
     CurrentLod: 3
@@ -4740,6 +4682,59 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.7267132, a: 1}
   MaxLODLevel: 5
   DisableOnMaxLOD: 1
+--- !u!1 &495384410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495384412}
+  - component: {fileID: 495384411}
+  m_Layer: 0
+  m_Name: GUISceneSwitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &495384411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495384410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4389d6be14c4554982f18720d9ebbdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PerformLogic: 1
+  _buttonCount: 1
+  _buttonHeightPercent: 0.08
+  _buttonSpacing: 5
+  _fontScale: 0.4
+  SceneToLoad: DynamicLOD
+  LodTarget: {fileID: 1388757880}
+  SetDynamicLODTarget: 0
+  SetStaticLODTarget: 1
+--- !u!4 &495384412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495384410}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &529205743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,9 +4949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 542415898}
+  RegisterOnEnable: 0
   _receiver: {fileID: 542415898}
   LODData:
     CurrentLod: 3
@@ -5288,9 +5281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 574704574}
+  RegisterOnEnable: 0
   _receiver: {fileID: 574704574}
   LODData:
     CurrentLod: 2
@@ -5454,9 +5445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 601566657}
+  RegisterOnEnable: 0
   _receiver: {fileID: 601566657}
   LODData:
     CurrentLod: 2
@@ -5536,9 +5525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 607331969}
+  RegisterOnEnable: 0
   _receiver: {fileID: 607331969}
   LODData:
     CurrentLod: 2
@@ -5618,9 +5605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 609541461}
+  RegisterOnEnable: 0
   _receiver: {fileID: 609541461}
   LODData:
     CurrentLod: 3
@@ -6036,9 +6021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 659343682}
+  RegisterOnEnable: 0
   _receiver: {fileID: 659343682}
   LODData:
     CurrentLod: 3
@@ -6118,9 +6101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 689544900}
+  RegisterOnEnable: 0
   _receiver: {fileID: 689544900}
   LODData:
     CurrentLod: 2
@@ -6200,9 +6181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 693998105}
+  RegisterOnEnable: 0
   _receiver: {fileID: 693998105}
   LODData:
     CurrentLod: 3
@@ -6282,9 +6261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 715572522}
+  RegisterOnEnable: 0
   _receiver: {fileID: 715572522}
   LODData:
     CurrentLod: 3
@@ -6364,9 +6341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 716783250}
+  RegisterOnEnable: 0
   _receiver: {fileID: 716783250}
   LODData:
     CurrentLod: 2
@@ -6614,9 +6589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 738121181}
+  RegisterOnEnable: 0
   _receiver: {fileID: 738121181}
   LODData:
     CurrentLod: 2
@@ -6696,9 +6669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 747599218}
+  RegisterOnEnable: 0
   _receiver: {fileID: 747599218}
   LODData:
     CurrentLod: 2
@@ -6778,9 +6749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 753810810}
+  RegisterOnEnable: 0
   _receiver: {fileID: 753810810}
   LODData:
     CurrentLod: 3
@@ -6860,9 +6829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 755211706}
+  RegisterOnEnable: 0
   _receiver: {fileID: 755211706}
   LODData:
     CurrentLod: 2
@@ -7026,9 +6993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 799729645}
+  RegisterOnEnable: 0
   _receiver: {fileID: 799729645}
   LODData:
     CurrentLod: 2
@@ -7108,9 +7073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 809997130}
+  RegisterOnEnable: 0
   _receiver: {fileID: 809997130}
   LODData:
     CurrentLod: 2
@@ -7190,9 +7153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 851870098}
+  RegisterOnEnable: 0
   _receiver: {fileID: 851870098}
   LODData:
     CurrentLod: 3
@@ -7356,9 +7317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 858573233}
+  RegisterOnEnable: 0
   _receiver: {fileID: 858573233}
   LODData:
     CurrentLod: 2
@@ -7522,9 +7481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 883588929}
+  RegisterOnEnable: 0
   _receiver: {fileID: 883588929}
   LODData:
     CurrentLod: 3
@@ -7604,9 +7561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 890919803}
+  RegisterOnEnable: 0
   _receiver: {fileID: 890919803}
   LODData:
     CurrentLod: 4
@@ -7686,9 +7641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 891144883}
+  RegisterOnEnable: 0
   _receiver: {fileID: 891144883}
   LODData:
     CurrentLod: 2
@@ -7852,9 +7805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 895993081}
+  RegisterOnEnable: 0
   _receiver: {fileID: 895993081}
   LODData:
     CurrentLod: 3
@@ -8270,9 +8221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 938059735}
+  RegisterOnEnable: 0
   _receiver: {fileID: 938059735}
   LODData:
     CurrentLod: 3
@@ -8352,9 +8301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 940249435}
+  RegisterOnEnable: 0
   _receiver: {fileID: 940249435}
   LODData:
     CurrentLod: 2
@@ -8686,9 +8633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 979135424}
+  RegisterOnEnable: 0
   _receiver: {fileID: 979135424}
   LODData:
     CurrentLod: 3
@@ -8852,9 +8797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 999200625}
+  RegisterOnEnable: 0
   _receiver: {fileID: 999200625}
   LODData:
     CurrentLod: 3
@@ -8934,9 +8877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1025893584}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1025893584}
   LODData:
     CurrentLod: 3
@@ -9420,9 +9361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1056576971}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1056576971}
   LODData:
     CurrentLod: 3
@@ -9502,9 +9441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1081928641}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1081928641}
   LODData:
     CurrentLod: 3
@@ -9584,9 +9521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1083356963}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1083356963}
   LODData:
     CurrentLod: 3
@@ -9750,9 +9685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1116725344}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1116725344}
   LODData:
     CurrentLod: 3
@@ -9832,9 +9765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1120577041}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1120577041}
   LODData:
     CurrentLod: 2
@@ -10006,9 +9937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1174149488}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1174149488}
   LODData:
     CurrentLod: 4
@@ -10172,9 +10101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1216031093}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1216031093}
   LODData:
     CurrentLod: 3
@@ -10338,9 +10265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1262085391}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1262085391}
   LODData:
     CurrentLod: 3
@@ -10504,9 +10429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1281898022}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1281898022}
   LODData:
     CurrentLod: 2
@@ -10586,9 +10509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1284541311}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1284541311}
   LODData:
     CurrentLod: 3
@@ -10668,9 +10589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1287974844}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1287974844}
   LODData:
     CurrentLod: 3
@@ -10750,9 +10669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1299302086}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1299302086}
   LODData:
     CurrentLod: 2
@@ -10916,9 +10833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1309575294}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1309575294}
   LODData:
     CurrentLod: 2
@@ -10991,9 +10906,9 @@ MonoBehaviour:
   FontSize: 0.0236
   FontColor: {r: 0, g: 0, b: 0, a: 1}
   LogicEnabled: 1
-  Message: 'Job time: 0,0047ms
+  Message: 'Job time: 0,0031ms
 
-    Total 0; 0,0265ms; changed 0'
+    Total 0; 0,0095ms; changed 0'
 --- !u!4 &1317126925
 Transform:
   m_ObjectHideFlags: 0
@@ -11354,9 +11269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1409320150}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1409320150}
   LODData:
     CurrentLod: 3
@@ -11436,9 +11349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1409386597}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1409386597}
   LODData:
     CurrentLod: 2
@@ -11686,9 +11597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1451203804}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1451203804}
   LODData:
     CurrentLod: 3
@@ -11930,7 +11839,7 @@ MonoBehaviour:
     UseEditorCamera: 1
     AsyncLogic: 0
     PerformMeasurements: 1
-    UpdateRateMS: 1000
+    UpdateRateMS: 1
     _maxUnitCount: 1000000
 --- !u!4 &1476254217
 Transform:
@@ -12077,9 +11986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1488137610}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1488137610}
   LODData:
     CurrentLod: 3
@@ -12411,9 +12318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1513364439}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1513364439}
   LODData:
     CurrentLod: 3
@@ -12661,9 +12566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1519503572}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1519503572}
   LODData:
     CurrentLod: 3
@@ -12882,9 +12785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1566788354}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1566788354}
   LODData:
     CurrentLod: 3
@@ -12964,9 +12865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1595482706}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1595482706}
   LODData:
     CurrentLod: 3
@@ -13130,9 +13029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1603759786}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1603759786}
   LODData:
     CurrentLod: 2
@@ -13604,9 +13501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1680244086}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1680244086}
   LODData:
     CurrentLod: 3
@@ -13854,9 +13749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1704956824}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1704956824}
   LODData:
     CurrentLod: 3
@@ -13936,9 +13829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1709856690}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1709856690}
   LODData:
     CurrentLod: 4
@@ -14102,9 +13993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1742341016}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1742341016}
   LODData:
     CurrentLod: 2
@@ -14184,9 +14073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1761465790}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1761465790}
   LODData:
     CurrentLod: 3
@@ -14350,9 +14237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1785387095}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1785387095}
   LODData:
     CurrentLod: 3
@@ -14432,9 +14317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1787931297}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1787931297}
   LODData:
     CurrentLod: 3
@@ -14598,9 +14481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1809196055}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1809196055}
   LODData:
     CurrentLod: 3
@@ -15016,9 +14897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1864424182}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1864424182}
   LODData:
     CurrentLod: 2
@@ -15098,9 +14977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1897443429}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1897443429}
   LODData:
     CurrentLod: 2
@@ -15600,9 +15477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1922225537}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1922225537}
   LODData:
     CurrentLod: 3
@@ -15850,9 +15725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1939658098}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1939658098}
   LODData:
     CurrentLod: 2
@@ -16016,9 +15889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1984233916}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1984233916}
   LODData:
     CurrentLod: 3
@@ -16182,9 +16053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 1999224303}
+  RegisterOnEnable: 0
   _receiver: {fileID: 1999224303}
   LODData:
     CurrentLod: 2
@@ -16348,9 +16217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 2020361991}
+  RegisterOnEnable: 0
   _receiver: {fileID: 2020361991}
   LODData:
     CurrentLod: 3
@@ -16430,9 +16297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 2020701933}
+  RegisterOnEnable: 0
   _receiver: {fileID: 2020701933}
   LODData:
     CurrentLod: 2
@@ -16512,9 +16377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 2025718288}
+  RegisterOnEnable: 0
   _receiver: {fileID: 2025718288}
   LODData:
     CurrentLod: 3
@@ -16594,9 +16457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 2033436747}
+  RegisterOnEnable: 0
   _receiver: {fileID: 2033436747}
   LODData:
     CurrentLod: 3
@@ -16676,9 +16537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 2042722384}
+  RegisterOnEnable: 0
   _receiver: {fileID: 2042722384}
   LODData:
     CurrentLod: 3
@@ -16842,9 +16701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 2078935189}
+  RegisterOnEnable: 0
   _receiver: {fileID: 2078935189}
   LODData:
     CurrentLod: 4
@@ -17092,9 +16949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 2092168713}
+  RegisterOnEnable: 0
   _receiver: {fileID: 2092168713}
   LODData:
     CurrentLod: 3
@@ -17342,9 +17197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
-  _receivers:
-  - {fileID: 2121263193}
+  RegisterOnEnable: 0
   _receiver: {fileID: 2121263193}
   LODData:
     CurrentLod: 2
@@ -17386,3 +17239,4 @@ SceneRoots:
   - {fileID: 1130370411}
   - {fileID: 1051836214}
   - {fileID: 1388757880}
+  - {fileID: 495384412}

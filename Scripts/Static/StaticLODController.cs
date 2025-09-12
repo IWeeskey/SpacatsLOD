@@ -2,6 +2,7 @@ using UnityEngine;
 using Spacats.Utils;
 using Unity.Mathematics;
 using System.Globalization;
+using UnityEngine.SceneManagement;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -15,6 +16,7 @@ namespace Spacats.LOD
     {
         private static StaticLODController _instance;
 
+        private bool _isCreated = false;
         private SLodRuntimeData _runtimeData = new SLodRuntimeData();
         private SLodDisposeData _disposeData = new SLodDisposeData();
 
@@ -34,15 +36,16 @@ namespace Spacats.LOD
         {
             base.COnRegister();
             _instance = this;
-        }
-
-        protected override void COnEnable()
-        {
-            base.COnEnable();
             Clear();
         }
 
-        protected override void COnDisable()
+        protected override void COnRegisteredEnable()
+        {
+            base.COnEnable();
+            if (!_isCreated) Clear();
+        }
+
+        protected override void COnRegisteredDisable()
         {
             base.COnDisable();
             Dispose();
@@ -61,15 +64,21 @@ namespace Spacats.LOD
 
         private void Dispose()
         {
+            if (!_isCreated) return;
+
             TryCompleteJob();
             _disposeData.Dispose();
             _runtimeData.JobScheduled = false;
             _runtimeData.ChangedLodsCount = 0;
+            _isCreated = false;
         }
 
         private void Create()
         {
+            if (_isCreated) return;
+
             _disposeData.Create(LodSettings);
+            _isCreated = true;
         }
 
         private void TryCompleteJob()
@@ -156,6 +165,7 @@ namespace Spacats.LOD
             if (unit.LODData.UnitIndex < _disposeData.Units.Count && _disposeData.Units[unit.LODData.UnitIndex] == unit) return;
 
             unit.LODData.UnitIndex = _disposeData.Units.Count;
+            unit.MarkAsRegistered();
             _disposeData.Units.Add(unit);
             _disposeData.UnitsData[unit.LODData.UnitIndex] = unit.LODData;
         }
@@ -177,6 +187,8 @@ namespace Spacats.LOD
             }
 
             _disposeData.Units.RemoveAt(last);
+
+            unit.MarkAsUnRegistered();
         }
 
         private void ProcessSingleUnit(SLodUnit unit)
@@ -192,6 +204,7 @@ namespace Spacats.LOD
             base.CSharedUpdate();
 
             if (!LodSettings.PerformLogic) return;
+            if (!_isCreated) return;
 
             TryCompleteJob();
 

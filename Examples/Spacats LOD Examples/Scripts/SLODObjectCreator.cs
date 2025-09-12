@@ -11,7 +11,6 @@ namespace Spacats.LOD
 
             SLodUnit lodUnit = gObject.GetComponent<SLodUnit>();
             lodUnit.RequestAddLOD();
-
         }
     }
 }

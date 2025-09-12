@@ -416,7 +416,7 @@ MonoBehaviour:
     UseEditorCamera: 1
     AsyncLogic: 0
     PerformMeasurements: 1
-    UpdateRateMS: 1000
+    UpdateRateMS: 1
     _maxUnitCount: 1000000
 --- !u!1 &38094169
 GameObject:
@@ -7835,7 +7835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImmediateSize: 10
-  PlaymodeSize: 200
+  PlaymodeSize: 10
   Gap: 1
   MinEulers: {x: 0, y: 0, z: 0}
   MaxEulers: {x: 0, y: 0, z: 0}
@@ -9378,6 +9378,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1200020234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1200020236}
+  - component: {fileID: 1200020235}
+  m_Layer: 0
+  m_Name: '[SpaCats] StaticLODController '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1200020235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200020234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a5353d9eb96b84ab441a8033e9b751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UniqueTag: 
+  ExecuteInEditor: 1
+  ShowLogs: 0
+  ShowCLogs: 0
+  PersistsAtScenes: []
+  LodSettings:
+    Target: {fileID: 0}
+    PerformLogic: 1
+    UseEditorCamera: 0
+    AsyncLogic: 0
+    PerformMeasurements: 0
+    UpdateRateMS: 16
+    _maxUnitCount: 1000000
+--- !u!4 &1200020236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200020234}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1608919498}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1201128650
 GameObject:
   m_ObjectHideFlags: 0
@@ -10377,9 +10434,9 @@ MonoBehaviour:
   FontSize: 0.0206
   FontColor: {r: 0, g: 0, b: 0, a: 1}
   LogicEnabled: 1
-  Message: 'Job time: 0,0807ms
+  Message: 'Job time: 0,0678ms
 
-    Total 100; 0,1123ms; changed 0'
+    Total 100; 0,1017ms; changed 0'
 --- !u!4 &1317126925
 Transform:
   m_ObjectHideFlags: 0
@@ -12519,6 +12576,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1587576104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587576106}
+  - component: {fileID: 1587576105}
+  m_Layer: 0
+  m_Name: GUISceneSwitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1587576105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587576104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4389d6be14c4554982f18720d9ebbdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PerformLogic: 1
+  _buttonCount: 1
+  _buttonHeightPercent: 0.08
+  _buttonSpacing: 5
+  _fontScale: 0.4
+  SceneToLoad: StaticLOD
+  LodTarget: {fileID: 1388757880}
+  SetDynamicLODTarget: 1
+  SetStaticLODTarget: 0
+--- !u!4 &1587576106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587576104}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1596846025
 GameObject:
   m_ObjectHideFlags: 0
@@ -12639,6 +12749,7 @@ MonoBehaviour:
   - {fileID: 30304766}
   - {fileID: 1317126924}
   - {fileID: 1547872388}
+  - {fileID: 1200020235}
 --- !u!4 &1608919498
 Transform:
   m_ObjectHideFlags: 0
@@ -12655,6 +12766,7 @@ Transform:
   - {fileID: 30304765}
   - {fileID: 1547872389}
   - {fileID: 1317126925}
+  - {fileID: 1200020236}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625004136
@@ -16949,3 +17061,4 @@ SceneRoots:
   - {fileID: 1130370411}
   - {fileID: 1051836214}
   - {fileID: 1388757880}
+  - {fileID: 1587576106}

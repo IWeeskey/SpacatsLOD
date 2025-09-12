@@ -11,6 +11,7 @@ namespace Spacats.LOD
         [SerializeField]
         private List<LodUnitReciever> _receivers = new();
         private bool _isQuitting = false;
+        private bool _isRegistered = false;
 
         public int RecieversCount => _receivers.Count;
         public Action<int> OnLodChanged;
@@ -24,6 +25,7 @@ namespace Spacats.LOD
 
         private void OnEnable()
         {
+            MarkAsUnRegistered();
             ResetValues();
             RequestAdd();
         }
@@ -41,13 +43,25 @@ namespace Spacats.LOD
 
         public void RequestAdd()
         {
+            if (_isRegistered) return;
             if (DynamicLODController.HasInstance) DynamicLODController.Instance.AddRequest(this, RequestTypes.Add);
         }
 
         public void RequestRemove()
         {
             if (_isQuitting) return;
+            if (!_isRegistered) return;
+
             if (DynamicLODController.HasInstance) DynamicLODController.Instance.AddRequest(this, RequestTypes.Remove);
+        }
+
+        public void MarkAsRegistered()
+        {
+            _isRegistered = true;
+        }
+        public void MarkAsUnRegistered()
+        {
+            _isRegistered = false;
         }
 
         //private void OnDrawGizmosSelected()
