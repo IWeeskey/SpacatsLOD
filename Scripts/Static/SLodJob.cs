@@ -18,7 +18,7 @@ namespace Spacats.LOD
 
             float distance = math.distance(TargetPosition, unit.Position);
 
-            int lod = LodUtils.LevelForDistance(distance, in unit.Data, 1f);
+            int lod = LodUtils.LevelForDistance(distance, in unit.Distances, 1f);
 
             if (lod != unit.CurrentLod)
             {

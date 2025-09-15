@@ -10,6 +10,7 @@ namespace Spacats.LOD
             base.OnObjectInstantiated(gObject, x, z);
 
             SLodUnit lodUnit = gObject.GetComponent<SLodUnit>();
+            lodUnit.RequestRemoveLOD();
             lodUnit.RequestAddLOD();
         }
     }

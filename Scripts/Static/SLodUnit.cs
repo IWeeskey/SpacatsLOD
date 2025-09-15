@@ -8,6 +8,7 @@ namespace Spacats.LOD
     [ExecuteInEditMode, DisallowMultipleComponent]
     public class SLodUnit : MonoBehaviour
     {
+        public List<bool> DrawGizmo = new List<bool>();
         public bool RegisterOnEnable = false;
         private bool _isQuitting = false;
         private bool _isRegistered = false;
@@ -22,6 +23,16 @@ namespace Spacats.LOD
         private void OnApplicationQuit()
         {
             _isQuitting = true;
+        }
+
+        private void OnValidate()
+        {
+            if (DrawGizmo == null) DrawGizmo = new List<bool>();
+            if (DrawGizmo.Count < 5)
+            {
+                while (DrawGizmo.Count < 5)
+                    DrawGizmo.Add(false);
+            }
         }
 
         private void OnEnable()
@@ -75,6 +86,19 @@ namespace Spacats.LOD
         {
             _isRegistered = false;
         }
+
+        //public void FillDrawGizmoList()
+        //{
+        //    //Debug.Log("FillDrawGizmoList 0 ");
+        //    if (DrawGizmo.Count == 0)
+        //    {
+        //        //Debug.Log("FillDrawGizmoList 1 ");
+        //        for (int i = 0; i < 5; i++)
+        //        {
+        //            DrawGizmo.Add(false);
+        //        }
+        //    }
+        //}
 
         //private void OnDrawGizmosSelected()
         //{

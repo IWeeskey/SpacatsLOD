@@ -130,19 +130,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddOnEnable: 0
+  RegisterOnEnable: 1
   _receiver: {fileID: 0}
   LODData:
     CurrentLod: 0
+    CuboidCalculations: 0
     UnitIndex: 0
     Position: {x: 0, y: 0, z: 0}
     Scale: 0
-    Data:
+    Distances:
       Lod0: 5
       Lod1: 10
       Lod2: 15
       Lod3: 20
       Lod4: 25
+    CuboidData:
+      Size:
+        x: 0
+        y: 0
+        z: 0
 --- !u!114 &8419731066115054661
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -335,8 +335,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UniqueTag: 
   ExecuteInEditor: 1
-  ShowLogs: 1
-  ShowCLogs: 1
+  ShowLogs: 0
+  ShowCLogs: 0
   PersistsAtScenes: []
   LodSettings:
     Target: {fileID: 1388757880}
@@ -11172,9 +11172,9 @@ MonoBehaviour:
   FontSize: 0.0206
   FontColor: {r: 0, g: 0, b: 0, a: 1}
   LogicEnabled: 1
-  Message: 'Job time: 0,0736ms
+  Message: 'Job time: 0,1039ms
 
-    Total 100; 0,1048ms; changed 0'
+    Total 100; 0,1472ms; changed 0'
 --- !u!4 &1317126925
 Transform:
   m_ObjectHideFlags: 0

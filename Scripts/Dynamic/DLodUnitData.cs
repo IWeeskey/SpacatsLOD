@@ -7,6 +7,6 @@ namespace Spacats.LOD
     {
         public int UnitIndex;
         public int CurrentLod;
-        public LodData Data;
+        public LodDistances Distances;
     }
 }

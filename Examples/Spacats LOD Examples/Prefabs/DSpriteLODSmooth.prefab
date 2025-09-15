@@ -135,12 +135,12 @@ MonoBehaviour:
   LODData:
     UnitIndex: 100
     CurrentLod: 0
-    Data:
+    Distances:
       Lod0: 5
       Lod1: 10
       Lod2: 15
       Lod3: 20
-      Lod4: 30
+      Lod4: 25
 --- !u!114 &-1852852492418323744
 MonoBehaviour:
   m_ObjectHideFlags: 0

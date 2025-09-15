@@ -204,7 +204,7 @@ namespace Spacats.LOD
         {
             float distance = math.distance(_runtimeData.TargetPosition, unit.transform.position);
 
-            int lodLevel = LodUtils.LevelForDistance(distance, in unit.LODData.Data, transform.localScale.x);
+            int lodLevel = LodUtils.LevelForDistance(distance, in unit.LODData.Distances, transform.localScale.x);
             unit.ChangeLOD(lodLevel);
         }
 

@@ -52,16 +52,6 @@ namespace Spacats.LOD
 
 
             _smoothTween.Start();
-
-            //if (newLevel >= MaxLODLevel)
-            //{
-            //    TargetRenderer.color = LODColors[LODColors.Count-1];
-            //    if (DisableOnMaxLOD) TargetRenderer.enabled = false;
-            //    return;
-            //}
-
-            //TargetRenderer.enabled = true;
-            //TargetRenderer.color = LODColors[newLevel];
         }
 
         private void LerpColor(float progress)
