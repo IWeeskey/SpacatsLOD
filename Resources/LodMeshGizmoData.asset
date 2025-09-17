@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c2c8a5cf3d450419024ee7dae775f1, type: 3}
+  m_Name: LodMeshGizmoData
+  m_EditorClassIdentifier: 
+  CuboidLodMesh: {fileID: -7999391593729473262, guid: 60e9c9c38c9543a4da3c018eb458275a, type: 3}
+  CuboidLodMaterial: {fileID: 2100000, guid: bf38fc6c09ed7964ba1d95bf483f8c91, type: 2}

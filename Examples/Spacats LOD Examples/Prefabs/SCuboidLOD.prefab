@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 700965249893565360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.073674, y: -0.05045034, z: -0.04488456}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalScale: {x: 50, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6658036961099516376}
@@ -40,7 +40,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700965249893565360}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &6881792800227317524
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -129,14 +129,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DrawGizmo: 0000000000
   RegisterOnEnable: 1
   _receiver: {fileID: 8215179923394242485}
   LODData:
     CurrentLod: 0
-    CuboidCalculations: 0
-    UnitIndex: 0
+    CuboidCalculations: 1
+    UnitIndex: 4
     Position: {x: 0, y: 0, z: 0}
-    Scale: 0
+    Scale: 1
     Distances:
       Lod0: 5
       Lod1: 10
@@ -145,9 +146,9 @@ MonoBehaviour:
       Lod4: 25
     CuboidData:
       Size:
-        x: 0
-        y: 0
-        z: 0
+        x: 50
+        y: 5
+        z: 5
 --- !u!114 &8215179923394242485
 MonoBehaviour:
   m_ObjectHideFlags: 0

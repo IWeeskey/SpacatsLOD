@@ -18,6 +18,7 @@ namespace Spacats.LOD
 
         public Action<int> OnLodChanged;
         public SLodUnitData LODData;
+        public bool IsRegistered => _isRegistered;
 
 
         private void OnApplicationQuit()
@@ -57,7 +58,14 @@ namespace Spacats.LOD
         private void RefreshSelfData()
         {
             LODData.Position = gameObject.transform.position;
+            LODData.Rotation = gameObject.transform.rotation;
             LODData.Scale = gameObject.transform.lossyScale.x;
+        }
+
+        public void Refresh()
+        {
+            RequestRemoveLOD();
+            RequestAddLOD();
         }
 
         public void RequestAddLOD()
@@ -77,61 +85,15 @@ namespace Spacats.LOD
             if (StaticLODController.HasInstance) StaticLODController.Instance.AddRequest(this, RequestTypes.Remove);
         }
 
-
         public void MarkAsRegistered()
         {
             _isRegistered = true;
         }
+
         public void MarkAsUnRegistered()
         {
             _isRegistered = false;
         }
-
-        //public void FillDrawGizmoList()
-        //{
-        //    //Debug.Log("FillDrawGizmoList 0 ");
-        //    if (DrawGizmo.Count == 0)
-        //    {
-        //        //Debug.Log("FillDrawGizmoList 1 ");
-        //        for (int i = 0; i < 5; i++)
-        //        {
-        //            DrawGizmo.Add(false);
-        //        }
-        //    }
-        //}
-
-        //private void OnDrawGizmosSelected()
-        //{
-        //    if (!ShowGizmos) return;
-        //    Vector3 center = gameObject.transform.position;
-        //    float scale = gameObject.transform.localScale.x;
-
-        //    float sphereAlpha = 0.1f;
-        //    Color gizColor = Color.green;
-        //    gizColor.a = sphereAlpha;
-        //    Gizmos.color = gizColor;
-        //    Gizmos.DrawSphere(center, LODData.Data.Lod0 * scale);
-
-        //    gizColor = Color.yellow;
-        //    gizColor.a = sphereAlpha;
-        //    Gizmos.color = gizColor;
-        //    Gizmos.DrawSphere(center, LODData.Data.Lod1 * scale);
-
-        //    gizColor = Color.blue;
-        //    gizColor.a = sphereAlpha;
-        //    Gizmos.color = gizColor;
-        //    Gizmos.DrawSphere(center, LODData.Data.Lod2 * scale);
-
-        //    gizColor = Color.red;
-        //    gizColor.a = sphereAlpha;
-        //    Gizmos.color = gizColor;
-        //    Gizmos.DrawSphere(center, LODData.Data.Lod3 * scale);
-
-        //    gizColor = Color.black;
-        //    gizColor.a = sphereAlpha;
-        //    Gizmos.color = gizColor;
-        //    Gizmos.DrawSphere(center, LODData.Data.Lod4 * scale);
-        //}
 
         public void ChangeLOD(int value)
         {

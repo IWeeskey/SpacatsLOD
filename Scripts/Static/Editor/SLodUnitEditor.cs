@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace Spacats.LOD
 {
@@ -20,6 +21,7 @@ namespace Spacats.LOD
             DrawLodSettings();
             DrawLodDistances();
             DrawCuboidSettings();
+            DrawButtons();
 
             serializedObject.ApplyModifiedProperties();
         }
@@ -32,7 +34,9 @@ namespace Spacats.LOD
         private void DrawLodSettings()
         {
             SLodUnit targetScript = (SLodUnit)target;
+
             GUILayout.TextArea("Current LOD: " + targetScript.LODData.CurrentLod);
+            GUILayout.TextArea("Registered: " + targetScript.IsRegistered);
 
             SerializedProperty registerOnEnable = serializedObject.FindProperty("RegisterOnEnable");
             EditorGUILayout.PropertyField(registerOnEnable, new GUIContent("Register On Enable"));
@@ -96,20 +100,20 @@ namespace Spacats.LOD
         private void DrawGizmo()
         {
             SLodUnit targetScript = (SLodUnit)target;
+            if (targetScript.DrawGizmo.Count == 0) return;
 
             for (int i = 0; i < 5; i++)
             {
                 if (!targetScript.DrawGizmo[i]) continue;
 
-                PaintSphere(i);
+                if (!targetScript.LODData.CuboidCalculations) PaintSphere(i);
+                else PaintChamferedCuboid(i);
             }
         }
 
         private void PaintSphere(int index)
         {
             SLodUnit targetScript = (SLodUnit)target;
-            if (targetScript.DrawGizmo.Count==0) return;
-            if (!targetScript.DrawGizmo[index]) return;
 
             Color sphereColor= _lodColors[index];
             sphereColor.a = 0.15f;
@@ -122,6 +126,48 @@ namespace Spacats.LOD
                 targetScript.LODData.Distances.GetByIndex(index) * 2f,
                 EventType.Repaint
             );
+        }
+
+        private void PaintChamferedCuboid(int index)
+        {
+            SLodUnit targetScript = (SLodUnit)target;
+            float distance = targetScript.LODData.Distances.GetByIndex(index);
+            Vector3 size = targetScript.LODData.CuboidData.Size + distance*2f;
+
+            Color color = _lodColors[index];
+            color.a = 0.01f;
+
+            Transform t = targetScript.transform.transform;
+
+            Matrix4x4 matrix = Matrix4x4.TRS(t.position, t.rotation, size);
+            Camera cam = SceneView.currentDrawingSceneView != null
+                ? SceneView.currentDrawingSceneView.camera
+                : Camera.current;
+
+            if (cam == null) return;
+            if (LodMeshGizmoData.Instance == null) return;
+
+            Material drawMat = LodMeshGizmoData.Instance.CuboidLodMaterial;
+
+            if (drawMat.HasProperty("_TintColor")) drawMat.SetColor("_TintColor", color);
+            if (drawMat.HasProperty("_Color")) drawMat.SetColor("_Color", color);
+
+            var prevZTest = Handles.zTest;
+            Handles.zTest = CompareFunction.LessEqual;
+           
+            Graphics.DrawMesh(LodMeshGizmoData.Instance.CuboidLodMesh, matrix, LodMeshGizmoData.Instance.CuboidLodMaterial, 0, cam, 0, null, ShadowCastingMode.Off, false, null);
+
+            Handles.zTest = prevZTest;
+        }
+
+        private void DrawButtons()
+        {
+            SLodUnit targetScript = (SLodUnit)target;
+
+            if (GUILayout.Button("REFRESH"))
+            {
+                targetScript.Refresh();
+            }
         }
 
     }
