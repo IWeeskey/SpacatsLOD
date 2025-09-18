@@ -1,7 +1,7 @@
 ![Screenshot](Arts/SpaCats%20LogoSmall.png)
 
 Spacats LOD.
-Spacats LOD is a custom Level of Detail system designed to determine LOD levels based on the distance to a target Camera. Unlike Unity’s built-in LODGroup, it gives you direct access to the current LOD index, optimized with Jobs + Burst, and supports both static and dynamic use cases.
+Spacats LOD is a custom Level of Detail system designed to determine LOD levels based on the distance to a specified Transform. Unlike Unity’s built-in LODGroup, it gives you direct access to the current LOD index, optimized with Jobs + Burst, and supports both static and dynamic use cases.
 
 ✨ FEATURES
 * Works in the Editor – no need to hit Play just to test setups.
@@ -11,7 +11,7 @@ Spacats LOD is a custom Level of Detail system designed to determine LOD levels 
 * Custom update interval – configure check frequency in milliseconds (every frame, or every few seconds).
 * Two controller modules:
 * DynamicLOD – for moving transforms (NPCs, birds, vehicles, etc.). Example scene: DynamicLOD.
-* StaticLOD – for static props like trees, rocks, or buildings. Slightly faster since transform data doesn’t need to be rebuilt every frame. Example scene: StaticLOD.
+* StaticLOD – for static props like trees, rocks, or buildings. Slightly faster since transform data doesn’t need to be rebuilt every check. Example scene: StaticLOD.
 * LOD change events – easily subscribe to LOD index changes on any LOD unit.
 * Cuboid distance checks for static objects – instead of checking distance only to object center, you can use a custom cuboid. Perfect for elongated meshes (e.g. fences, bridges). Example scene: StaticLOD Cuboid.
 * Smooth transitions – sample scenes show how to fade objects in/out using the lightweight Spacats.MonoTween. Examples: DynamicLOD Smooth and StaticLOD Smooth.

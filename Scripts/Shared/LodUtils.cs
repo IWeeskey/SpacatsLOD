@@ -18,7 +18,6 @@ namespace Spacats.LOD
             return length(delta);
         }
 
-
         public static int LevelForDistance(float distance, in LodDistances distances, float mult)
         {
             if (distance <= distances.Lod0 * mult) return 0;

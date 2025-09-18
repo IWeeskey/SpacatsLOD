@@ -260,7 +260,7 @@ MonoBehaviour:
     UseEditorCamera: 1
     AsyncLogic: 0
     PerformMeasurements: 1
-    UpdateRateMS: 2000
+    UpdateRateMS: 1
     _maxUnitCount: 1000000
 --- !u!1 &43330856
 GameObject:
@@ -581,8 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 49765691}
+  _receiver: {fileID: 49765691}
   LODData:
     UnitIndex: 0
     CurrentLod: 0
@@ -592,6 +591,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &86151370
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,8 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 86151372}
+  _receiver: {fileID: 86151372}
   LODData:
     UnitIndex: 1
     CurrentLod: 0
@@ -670,6 +669,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &86442817
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,8 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 127013654}
+  _receiver: {fileID: 127013654}
   LODData:
     UnitIndex: 2
     CurrentLod: 0
@@ -832,6 +831,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &128172507
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,8 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 128172509}
+  _receiver: {fileID: 128172509}
   LODData:
     UnitIndex: 3
     CurrentLod: 1
@@ -910,6 +909,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &128715514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,8 +1229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 141062381}
+  _receiver: {fileID: 141062381}
   LODData:
     UnitIndex: 4
     CurrentLod: 0
@@ -1240,6 +1239,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &141667331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,8 +1307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 141667333}
+  _receiver: {fileID: 141667333}
   LODData:
     UnitIndex: 5
     CurrentLod: 1
@@ -1318,6 +1317,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &159342488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,8 +1385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 159342490}
+  _receiver: {fileID: 159342490}
   LODData:
     UnitIndex: 6
     CurrentLod: 1
@@ -1396,6 +1395,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &166015585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,8 +1463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 166015587}
+  _receiver: {fileID: 166015587}
   LODData:
     UnitIndex: 7
     CurrentLod: 0
@@ -1474,6 +1473,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &168742699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,8 +1625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 191390759}
+  _receiver: {fileID: 191390759}
   LODData:
     UnitIndex: 8
     CurrentLod: 0
@@ -1636,6 +1635,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &219002992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,8 +1703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 219002994}
+  _receiver: {fileID: 219002994}
   LODData:
     UnitIndex: 9
     CurrentLod: 0
@@ -1714,6 +1713,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &233607819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,8 +2033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 256013077}
+  _receiver: {fileID: 256013077}
   LODData:
     UnitIndex: 10
     CurrentLod: 0
@@ -2044,6 +2043,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &259448765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,8 +2111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 259448767}
+  _receiver: {fileID: 259448767}
   LODData:
     UnitIndex: 11
     CurrentLod: 0
@@ -2122,6 +2121,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &259670838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,8 +2189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 259670840}
+  _receiver: {fileID: 259670840}
   LODData:
     UnitIndex: 12
     CurrentLod: 0
@@ -2200,6 +2199,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &260755910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,8 +2435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 283970148}
+  _receiver: {fileID: 283970148}
   LODData:
     UnitIndex: 13
     CurrentLod: 1
@@ -2446,6 +2445,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &313785715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,8 +2681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 326271148}
+  _receiver: {fileID: 326271148}
   LODData:
     UnitIndex: 14
     CurrentLod: 0
@@ -2692,6 +2691,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &327452115
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,8 +2759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 327452117}
+  _receiver: {fileID: 327452117}
   LODData:
     UnitIndex: 15
     CurrentLod: 0
@@ -2770,6 +2769,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &327945460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,8 +2837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 327945462}
+  _receiver: {fileID: 327945462}
   LODData:
     UnitIndex: 16
     CurrentLod: 0
@@ -2848,6 +2847,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &335149647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2915,8 +2915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 335149649}
+  _receiver: {fileID: 335149649}
   LODData:
     UnitIndex: 17
     CurrentLod: 0
@@ -2926,6 +2925,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &340604607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2993,8 +2993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 340604609}
+  _receiver: {fileID: 340604609}
   LODData:
     UnitIndex: 18
     CurrentLod: 0
@@ -3004,6 +3003,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &347676197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3155,8 +3155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 352883935}
+  _receiver: {fileID: 352883935}
   LODData:
     UnitIndex: 19
     CurrentLod: 0
@@ -3166,6 +3165,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &395540252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3233,8 +3233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 395540254}
+  _receiver: {fileID: 395540254}
   LODData:
     UnitIndex: 20
     CurrentLod: 1
@@ -3244,6 +3243,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &399932185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,8 +3647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 440214321}
+  _receiver: {fileID: 440214321}
   LODData:
     UnitIndex: 21
     CurrentLod: 1
@@ -3658,6 +3657,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &446674417
 GameObject:
   m_ObjectHideFlags: 0
@@ -4061,8 +4061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 523510660}
+  _receiver: {fileID: 523510660}
   LODData:
     UnitIndex: 22
     CurrentLod: 0
@@ -4072,6 +4071,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &527426455
 GameObject:
   m_ObjectHideFlags: 0
@@ -4139,8 +4139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 527426457}
+  _receiver: {fileID: 527426457}
   LODData:
     UnitIndex: 23
     CurrentLod: 0
@@ -4150,6 +4149,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &555295733
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,8 +4217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 555295735}
+  _receiver: {fileID: 555295735}
   LODData:
     UnitIndex: 24
     CurrentLod: 0
@@ -4228,6 +4227,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &572378144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4295,8 +4295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 572378146}
+  _receiver: {fileID: 572378146}
   LODData:
     UnitIndex: 25
     CurrentLod: 1
@@ -4306,6 +4305,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &592551016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4373,8 +4373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 592551018}
+  _receiver: {fileID: 592551018}
   LODData:
     UnitIndex: 26
     CurrentLod: 0
@@ -4384,6 +4383,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &611762971
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,8 +4535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 620591773}
+  _receiver: {fileID: 620591773}
   LODData:
     UnitIndex: 27
     CurrentLod: 0
@@ -4546,6 +4545,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &627933175
 GameObject:
   m_ObjectHideFlags: 0
@@ -4697,8 +4697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 631414832}
+  _receiver: {fileID: 631414832}
   LODData:
     UnitIndex: 28
     CurrentLod: 0
@@ -4708,6 +4707,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &636149068
 GameObject:
   m_ObjectHideFlags: 0
@@ -4943,8 +4943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 649628248}
+  _receiver: {fileID: 649628248}
   LODData:
     UnitIndex: 29
     CurrentLod: 0
@@ -4954,6 +4953,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &650042031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5105,8 +5105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 657998976}
+  _receiver: {fileID: 657998976}
   LODData:
     UnitIndex: 30
     CurrentLod: 1
@@ -5116,6 +5115,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &681219336
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,8 +5267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 699455194}
+  _receiver: {fileID: 699455194}
   LODData:
     UnitIndex: 31
     CurrentLod: 0
@@ -5278,6 +5277,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &712599086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,8 +5345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 712599088}
+  _receiver: {fileID: 712599088}
   LODData:
     UnitIndex: 32
     CurrentLod: 0
@@ -5356,6 +5355,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &721369723
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,8 +5507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 731952599}
+  _receiver: {fileID: 731952599}
   LODData:
     UnitIndex: 33
     CurrentLod: 0
@@ -5518,6 +5517,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &746717356
 GameObject:
   m_ObjectHideFlags: 0
@@ -5669,8 +5669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 761871805}
+  _receiver: {fileID: 761871805}
   LODData:
     UnitIndex: 34
     CurrentLod: 0
@@ -5680,6 +5679,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &763898552
 GameObject:
   m_ObjectHideFlags: 0
@@ -5831,8 +5831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 764819739}
+  _receiver: {fileID: 764819739}
   LODData:
     UnitIndex: 35
     CurrentLod: 0
@@ -5842,6 +5841,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &770847524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5993,8 +5993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 787803220}
+  _receiver: {fileID: 787803220}
   LODData:
     UnitIndex: 36
     CurrentLod: 0
@@ -6004,6 +6003,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &804852593
 GameObject:
   m_ObjectHideFlags: 0
@@ -6155,8 +6155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 809533245}
+  _receiver: {fileID: 809533245}
   LODData:
     UnitIndex: 37
     CurrentLod: 0
@@ -6166,6 +6165,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &825570838
 GameObject:
   m_ObjectHideFlags: 0
@@ -6317,8 +6317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 828144954}
+  _receiver: {fileID: 828144954}
   LODData:
     UnitIndex: 38
     CurrentLod: 0
@@ -6328,6 +6327,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &839632265
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,8 +6563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 879964430}
+  _receiver: {fileID: 879964430}
   LODData:
     UnitIndex: 39
     CurrentLod: 0
@@ -6574,6 +6573,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &882431451
 GameObject:
   m_ObjectHideFlags: 0
@@ -6641,8 +6641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 882431453}
+  _receiver: {fileID: 882431453}
   LODData:
     UnitIndex: 40
     CurrentLod: 0
@@ -6652,6 +6651,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &888148771
 GameObject:
   m_ObjectHideFlags: 0
@@ -6719,8 +6719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 888148773}
+  _receiver: {fileID: 888148773}
   LODData:
     UnitIndex: 41
     CurrentLod: 0
@@ -6730,6 +6729,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &903187694
 GameObject:
   m_ObjectHideFlags: 0
@@ -6881,8 +6881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 905620732}
+  _receiver: {fileID: 905620732}
   LODData:
     UnitIndex: 42
     CurrentLod: 1
@@ -6892,6 +6891,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &922208626
 GameObject:
   m_ObjectHideFlags: 0
@@ -7127,8 +7127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 967175416}
+  _receiver: {fileID: 967175416}
   LODData:
     UnitIndex: 43
     CurrentLod: 1
@@ -7138,6 +7137,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &977069543
 GameObject:
   m_ObjectHideFlags: 0
@@ -7205,8 +7205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 977069545}
+  _receiver: {fileID: 977069545}
   LODData:
     UnitIndex: 44
     CurrentLod: 0
@@ -7216,6 +7215,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &989451131
 GameObject:
   m_ObjectHideFlags: 0
@@ -7367,8 +7367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1002665228}
+  _receiver: {fileID: 1002665228}
   LODData:
     UnitIndex: 45
     CurrentLod: 0
@@ -7378,6 +7377,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1008054961
 GameObject:
   m_ObjectHideFlags: 0
@@ -7697,8 +7697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1037193702}
+  _receiver: {fileID: 1037193702}
   LODData:
     UnitIndex: 46
     CurrentLod: 0
@@ -7708,6 +7707,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1037433504
 GameObject:
   m_ObjectHideFlags: 0
@@ -7859,8 +7859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1042644398}
+  _receiver: {fileID: 1042644398}
   LODData:
     UnitIndex: 47
     CurrentLod: 0
@@ -7870,6 +7869,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1043288234
 GameObject:
   m_ObjectHideFlags: 0
@@ -8021,8 +8021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1045193350}
+  _receiver: {fileID: 1045193350}
   LODData:
     UnitIndex: 48
     CurrentLod: 0
@@ -8032,6 +8031,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1051836212
 GameObject:
   m_ObjectHideFlags: 0
@@ -8357,8 +8357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1066287575}
+  _receiver: {fileID: 1066287575}
   LODData:
     UnitIndex: 49
     CurrentLod: 0
@@ -8368,6 +8367,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1075363926
 GameObject:
   m_ObjectHideFlags: 0
@@ -8519,8 +8519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1087577022}
+  _receiver: {fileID: 1087577022}
   LODData:
     UnitIndex: 50
     CurrentLod: 0
@@ -8530,6 +8529,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1089825914
 GameObject:
   m_ObjectHideFlags: 0
@@ -8681,8 +8681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1097550440}
+  _receiver: {fileID: 1097550440}
   LODData:
     UnitIndex: 51
     CurrentLod: 0
@@ -8692,6 +8691,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1100560366
 GameObject:
   m_ObjectHideFlags: 0
@@ -8843,8 +8843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1104586215}
+  _receiver: {fileID: 1104586215}
   LODData:
     UnitIndex: 52
     CurrentLod: 0
@@ -8854,6 +8853,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1114510929
 GameObject:
   m_ObjectHideFlags: 0
@@ -9181,8 +9181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1161253977}
+  _receiver: {fileID: 1161253977}
   LODData:
     UnitIndex: 53
     CurrentLod: 0
@@ -9192,6 +9191,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1185544181
 GameObject:
   m_ObjectHideFlags: 0
@@ -9360,63 +9360,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1200020234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1200020236}
-  - component: {fileID: 1200020235}
-  m_Layer: 0
-  m_Name: '[SpaCats] StaticLODController '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1200020235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200020234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4a5353d9eb96b84ab441a8033e9b751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UniqueTag: 
-  ExecuteInEditor: 1
-  ShowLogs: 0
-  ShowCLogs: 0
-  PersistsAtScenes: []
-  LodSettings:
-    Target: {fileID: 0}
-    PerformLogic: 1
-    UseEditorCamera: 0
-    AsyncLogic: 0
-    PerformMeasurements: 0
-    UpdateRateMS: 16
-    _maxUnitCount: 1000000
---- !u!4 &1200020236
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200020234}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1608919498}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1215282688
 GameObject:
   m_ObjectHideFlags: 0
@@ -9484,8 +9427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1215282690}
+  _receiver: {fileID: 1215282690}
   LODData:
     UnitIndex: 54
     CurrentLod: 0
@@ -9495,6 +9437,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1215874878
 GameObject:
   m_ObjectHideFlags: 0
@@ -9646,8 +9589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1217582498}
+  _receiver: {fileID: 1217582498}
   LODData:
     UnitIndex: 55
     CurrentLod: 0
@@ -9657,6 +9599,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1222982477
 GameObject:
   m_ObjectHideFlags: 0
@@ -9724,8 +9667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1222982479}
+  _receiver: {fileID: 1222982479}
   LODData:
     UnitIndex: 56
     CurrentLod: 0
@@ -9735,6 +9677,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1225938884
 GameObject:
   m_ObjectHideFlags: 0
@@ -9802,8 +9745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1225938886}
+  _receiver: {fileID: 1225938886}
   LODData:
     UnitIndex: 57
     CurrentLod: 0
@@ -9813,6 +9755,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1236332902
 GameObject:
   m_ObjectHideFlags: 0
@@ -9880,8 +9823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1236332904}
+  _receiver: {fileID: 1236332904}
   LODData:
     UnitIndex: 58
     CurrentLod: 0
@@ -9891,6 +9833,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1248045958
 GameObject:
   m_ObjectHideFlags: 0
@@ -9958,8 +9901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1248045960}
+  _receiver: {fileID: 1248045960}
   LODData:
     UnitIndex: 59
     CurrentLod: 0
@@ -9969,6 +9911,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1251211045
 GameObject:
   m_ObjectHideFlags: 0
@@ -10036,8 +9979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1251211047}
+  _receiver: {fileID: 1251211047}
   LODData:
     UnitIndex: 60
     CurrentLod: 1
@@ -10047,6 +9989,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1255729611
 GameObject:
   m_ObjectHideFlags: 0
@@ -10198,8 +10141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1256871716}
+  _receiver: {fileID: 1256871716}
   LODData:
     UnitIndex: 61
     CurrentLod: 0
@@ -10209,6 +10151,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1266065978
 GameObject:
   m_ObjectHideFlags: 0
@@ -10276,8 +10219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1266065980}
+  _receiver: {fileID: 1266065980}
   LODData:
     UnitIndex: 62
     CurrentLod: 1
@@ -10287,6 +10229,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1274186561
 GameObject:
   m_ObjectHideFlags: 0
@@ -10354,8 +10297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1274186563}
+  _receiver: {fileID: 1274186563}
   LODData:
     UnitIndex: 63
     CurrentLod: 0
@@ -10365,6 +10307,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1286579003
 GameObject:
   m_ObjectHideFlags: 0
@@ -10488,9 +10431,9 @@ MonoBehaviour:
   FontSize: 0.0206
   FontColor: {r: 0, g: 0, b: 0, a: 1}
   LogicEnabled: 1
-  Message: 'Job time: 0,083ms
+  Message: 'Job time: 0,0596ms
 
-    Total 100; 0,1051ms; changed 0'
+    Total 100; 0,0811ms; changed 0'
 --- !u!4 &1317126925
 Transform:
   m_ObjectHideFlags: 0
@@ -10955,8 +10898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1391866448}
+  _receiver: {fileID: 1391866448}
   LODData:
     UnitIndex: 64
     CurrentLod: 1
@@ -10966,6 +10908,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1402503254
 GameObject:
   m_ObjectHideFlags: 0
@@ -11033,8 +10976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1402503256}
+  _receiver: {fileID: 1402503256}
   LODData:
     UnitIndex: 65
     CurrentLod: 1
@@ -11044,6 +10986,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1412297277
 GameObject:
   m_ObjectHideFlags: 0
@@ -11111,8 +11054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1412297279}
+  _receiver: {fileID: 1412297279}
   LODData:
     UnitIndex: 66
     CurrentLod: 0
@@ -11122,6 +11064,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1415276972
 GameObject:
   m_ObjectHideFlags: 0
@@ -11273,8 +11216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1416912839}
+  _receiver: {fileID: 1416912839}
   LODData:
     UnitIndex: 67
     CurrentLod: 0
@@ -11284,6 +11226,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1417535077
 GameObject:
   m_ObjectHideFlags: 0
@@ -11435,8 +11378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1428373530}
+  _receiver: {fileID: 1428373530}
   LODData:
     UnitIndex: 68
     CurrentLod: 0
@@ -11446,6 +11388,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1431914416
 GameObject:
   m_ObjectHideFlags: 0
@@ -11597,8 +11540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1459361170}
+  _receiver: {fileID: 1459361170}
   LODData:
     UnitIndex: 69
     CurrentLod: 0
@@ -11608,6 +11550,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1479274492
 GameObject:
   m_ObjectHideFlags: 0
@@ -11675,8 +11618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1479274494}
+  _receiver: {fileID: 1479274494}
   LODData:
     UnitIndex: 70
     CurrentLod: 0
@@ -11686,6 +11628,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1483333087
 GameObject:
   m_ObjectHideFlags: 0
@@ -11753,8 +11696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1483333089}
+  _receiver: {fileID: 1483333089}
   LODData:
     UnitIndex: 71
     CurrentLod: 1
@@ -11764,6 +11706,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1496768284
 GameObject:
   m_ObjectHideFlags: 0
@@ -12222,8 +12165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1556485508}
+  _receiver: {fileID: 1556485508}
   LODData:
     UnitIndex: 72
     CurrentLod: 0
@@ -12233,6 +12175,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1573967071
 GameObject:
   m_ObjectHideFlags: 0
@@ -12605,8 +12548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1595988891}
+  _receiver: {fileID: 1595988891}
   LODData:
     UnitIndex: 73
     CurrentLod: 0
@@ -12616,6 +12558,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1596584132
 GameObject:
   m_ObjectHideFlags: 0
@@ -12767,8 +12710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1605025489}
+  _receiver: {fileID: 1605025489}
   LODData:
     UnitIndex: 74
     CurrentLod: 0
@@ -12778,6 +12720,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1608919496
 GameObject:
   m_ObjectHideFlags: 0
@@ -12812,7 +12755,6 @@ MonoBehaviour:
   ShowSLogs: 0
   _controllers:
   - {fileID: 30304766}
-  - {fileID: 1200020235}
   - {fileID: 1317126924}
   - {fileID: 1547872388}
 --- !u!4 &1608919498
@@ -12831,7 +12773,6 @@ Transform:
   - {fileID: 30304765}
   - {fileID: 1547872389}
   - {fileID: 1317126925}
-  - {fileID: 1200020236}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1614635637
@@ -12985,8 +12926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1621300528}
+  _receiver: {fileID: 1621300528}
   LODData:
     UnitIndex: 75
     CurrentLod: 0
@@ -12996,6 +12936,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1641542996
 GameObject:
   m_ObjectHideFlags: 0
@@ -13063,8 +13004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1641542998}
+  _receiver: {fileID: 1641542998}
   LODData:
     UnitIndex: 76
     CurrentLod: 0
@@ -13074,6 +13014,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1684004187
 GameObject:
   m_ObjectHideFlags: 0
@@ -13141,8 +13082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1684004189}
+  _receiver: {fileID: 1684004189}
   LODData:
     UnitIndex: 77
     CurrentLod: 0
@@ -13152,6 +13092,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1700260135
 GameObject:
   m_ObjectHideFlags: 0
@@ -13219,8 +13160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1700260137}
+  _receiver: {fileID: 1700260137}
   LODData:
     UnitIndex: 78
     CurrentLod: 0
@@ -13230,6 +13170,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1704486660
 GameObject:
   m_ObjectHideFlags: 0
@@ -13549,8 +13490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1715642626}
+  _receiver: {fileID: 1715642626}
   LODData:
     UnitIndex: 79
     CurrentLod: 0
@@ -13560,6 +13500,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1733389755
 GameObject:
   m_ObjectHideFlags: 0
@@ -13627,8 +13568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1733389757}
+  _receiver: {fileID: 1733389757}
   LODData:
     UnitIndex: 80
     CurrentLod: 0
@@ -13638,6 +13578,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1743956339
 GameObject:
   m_ObjectHideFlags: 0
@@ -13705,8 +13646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1743956341}
+  _receiver: {fileID: 1743956341}
   LODData:
     UnitIndex: 81
     CurrentLod: 1
@@ -13716,6 +13656,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1751363700
 GameObject:
   m_ObjectHideFlags: 0
@@ -13783,8 +13724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1751363702}
+  _receiver: {fileID: 1751363702}
   LODData:
     UnitIndex: 82
     CurrentLod: 0
@@ -13794,6 +13734,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1753201459
 GameObject:
   m_ObjectHideFlags: 0
@@ -14197,8 +14138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1787598900}
+  _receiver: {fileID: 1787598900}
   LODData:
     UnitIndex: 83
     CurrentLod: 0
@@ -14208,6 +14148,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1790789895
 GameObject:
   m_ObjectHideFlags: 0
@@ -14275,8 +14216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1790789897}
+  _receiver: {fileID: 1790789897}
   LODData:
     UnitIndex: 84
     CurrentLod: 0
@@ -14286,6 +14226,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1799526588
 GameObject:
   m_ObjectHideFlags: 0
@@ -14353,8 +14294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1799526590}
+  _receiver: {fileID: 1799526590}
   LODData:
     UnitIndex: 85
     CurrentLod: 0
@@ -14364,6 +14304,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1800223788
 GameObject:
   m_ObjectHideFlags: 0
@@ -14515,8 +14456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1818555523}
+  _receiver: {fileID: 1818555523}
   LODData:
     UnitIndex: 86
     CurrentLod: 0
@@ -14526,6 +14466,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1836344700
 GameObject:
   m_ObjectHideFlags: 0
@@ -15097,8 +15038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1893775758}
+  _receiver: {fileID: 1893775758}
   LODData:
     UnitIndex: 87
     CurrentLod: 1
@@ -15108,6 +15048,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1898218303
 GameObject:
   m_ObjectHideFlags: 0
@@ -15259,8 +15200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1902280989}
+  _receiver: {fileID: 1902280989}
   LODData:
     UnitIndex: 88
     CurrentLod: 0
@@ -15270,6 +15210,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1904264801
 GameObject:
   m_ObjectHideFlags: 0
@@ -15421,8 +15362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1910313961}
+  _receiver: {fileID: 1910313961}
   LODData:
     UnitIndex: 89
     CurrentLod: 0
@@ -15432,6 +15372,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1924449419
 GameObject:
   m_ObjectHideFlags: 0
@@ -15667,8 +15608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1936315774}
+  _receiver: {fileID: 1936315774}
   LODData:
     UnitIndex: 90
     CurrentLod: 0
@@ -15678,6 +15618,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1937133308
 GameObject:
   m_ObjectHideFlags: 0
@@ -15829,8 +15770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1959878641}
+  _receiver: {fileID: 1959878641}
   LODData:
     UnitIndex: 91
     CurrentLod: 0
@@ -15840,6 +15780,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1975483575
 GameObject:
   m_ObjectHideFlags: 0
@@ -15907,8 +15848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1975483577}
+  _receiver: {fileID: 1975483577}
   LODData:
     UnitIndex: 92
     CurrentLod: 0
@@ -15918,6 +15858,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &1996398147
 GameObject:
   m_ObjectHideFlags: 0
@@ -15985,8 +15926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 1996398149}
+  _receiver: {fileID: 1996398149}
   LODData:
     UnitIndex: 93
     CurrentLod: 1
@@ -15996,6 +15936,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &2024510295
 GameObject:
   m_ObjectHideFlags: 0
@@ -16063,8 +16004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 2024510297}
+  _receiver: {fileID: 2024510297}
   LODData:
     UnitIndex: 94
     CurrentLod: 1
@@ -16074,6 +16014,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &2030950286
 GameObject:
   m_ObjectHideFlags: 0
@@ -16141,8 +16082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 2030950288}
+  _receiver: {fileID: 2030950288}
   LODData:
     UnitIndex: 95
     CurrentLod: 0
@@ -16152,6 +16092,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &2035146467
 GameObject:
   m_ObjectHideFlags: 0
@@ -16387,8 +16328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 2059890498}
+  _receiver: {fileID: 2059890498}
   LODData:
     UnitIndex: 96
     CurrentLod: 0
@@ -16398,6 +16338,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &2061705349
 GameObject:
   m_ObjectHideFlags: 0
@@ -16549,8 +16490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 2065550976}
+  _receiver: {fileID: 2065550976}
   LODData:
     UnitIndex: 97
     CurrentLod: 1
@@ -16560,6 +16500,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &2086148371
 GameObject:
   m_ObjectHideFlags: 0
@@ -16795,8 +16736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 2118141912}
+  _receiver: {fileID: 2118141912}
   LODData:
     UnitIndex: 98
     CurrentLod: 0
@@ -16806,6 +16746,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &2122683064
 GameObject:
   m_ObjectHideFlags: 0
@@ -16873,8 +16814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac889cc1df776044bbdaadd3c02af5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receivers:
-  - {fileID: 2122683066}
+  _receiver: {fileID: 2122683066}
   LODData:
     UnitIndex: 99
     CurrentLod: 0
@@ -16884,6 +16824,7 @@ MonoBehaviour:
       Lod2: 15
       Lod3: 20
       Lod4: 25
+  DrawGizmo: 0000000000
 --- !u!1 &2123666059
 GameObject:
   m_ObjectHideFlags: 0

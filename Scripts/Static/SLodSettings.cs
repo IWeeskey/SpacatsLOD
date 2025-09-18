@@ -6,6 +6,9 @@ namespace Spacats.LOD
     [Serializable]
     public class SLodSettings
     {
+        public readonly string JobMeasureID = "DLOD JOB";
+        public readonly string TotalMeasureID = "DLOD TOTAL";
+
         public Transform Target;
 
         public bool PerformLogic = false;
@@ -19,7 +22,6 @@ namespace Spacats.LOD
         [SerializeField]
         private int _maxUnitCount = 1_000_000;
         public int MaxUnitCount => _maxUnitCount;
-        public readonly string JobMeasureID = "DLOD JOB";
-        public readonly string TotalMeasureID = "DLOD TOTAL";
+
     }
 }

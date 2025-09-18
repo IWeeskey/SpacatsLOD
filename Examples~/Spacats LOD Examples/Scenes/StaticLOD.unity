@@ -193,7 +193,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 8859311}
   LODData:
-    UnitIndex: 20
+    UnitIndex: 0
     Position: {x: -2.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -466,63 +466,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &30304764
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 30304765}
-  - component: {fileID: 30304766}
-  m_Layer: 0
-  m_Name: '[SpaCats] DynamicLODController '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &30304765
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30304764}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1608919498}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &30304766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30304764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82ed975911037f344b4fc1edae2e59e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UniqueTag: 
-  ExecuteInEditor: 1
-  ShowLogs: 0
-  ShowCLogs: 0
-  PersistsAtScenes: []
-  LodSettings:
-    Target: {fileID: 1388757880}
-    PerformLogic: 1
-    UseEditorCamera: 1
-    AsyncLogic: 0
-    PerformMeasurements: 1
-    UpdateRateMS: 0
-    _maxUnitCount: 1000000
 --- !u!1 &38372463
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,7 +537,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 38372465}
   LODData:
-    UnitIndex: 68
+    UnitIndex: 1
     Position: {x: 1.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -774,7 +717,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -939,7 +882,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 71028003}
   LODData:
-    UnitIndex: 29
+    UnitIndex: 2
     Position: {x: -2.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -1032,7 +975,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 71917131}
   LODData:
-    UnitIndex: 23
+    UnitIndex: 3
     Position: {x: -2.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -1125,7 +1068,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 73767533}
   LODData:
-    UnitIndex: 38
+    UnitIndex: 4
     Position: {x: -1.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -1218,7 +1161,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 79456514}
   LODData:
-    UnitIndex: 49
+    UnitIndex: 5
     Position: {x: -0.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -1311,7 +1254,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 81590095}
   LODData:
-    UnitIndex: 63
+    UnitIndex: 6
     Position: {x: 1.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -1404,7 +1347,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 104016566}
   LODData:
-    UnitIndex: 50
+    UnitIndex: 7
     Position: {x: 0.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -1413,7 +1356,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 0
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -1497,7 +1440,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 111991645}
   LODData:
-    UnitIndex: 58
+    UnitIndex: 8
     Position: {x: 0.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -1674,7 +1617,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 120358559}
   LODData:
-    UnitIndex: 90
+    UnitIndex: 9
     Position: {x: 4.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -1851,7 +1794,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 125470667}
   LODData:
-    UnitIndex: 52
+    UnitIndex: 10
     Position: {x: 0.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -2112,7 +2055,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 152244174}
   LODData:
-    UnitIndex: 0
+    UnitIndex: 11
     Position: {x: -4.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -2385,7 +2328,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2634,7 +2577,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 181059343}
   LODData:
-    UnitIndex: 5
+    UnitIndex: 13
     Position: {x: -4.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -2643,7 +2586,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -2730,7 +2673,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2895,7 +2838,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 211174417}
   LODData:
-    UnitIndex: 6
+    UnitIndex: 14
     Position: {x: -4.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -2991,7 +2934,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3240,7 +3183,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 246563857}
   LODData:
-    UnitIndex: 83
+    UnitIndex: 15
     Position: {x: 3.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -3417,7 +3360,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 262963573}
   LODData:
-    UnitIndex: 97
+    UnitIndex: 16
     Position: {x: 4.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -3510,7 +3453,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 287087660}
   LODData:
-    UnitIndex: 57
+    UnitIndex: 17
     Position: {x: 0.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -3606,7 +3549,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3687,7 +3630,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 291636011}
   LODData:
-    UnitIndex: 45
+    UnitIndex: 18
     Position: {x: -0.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -3696,7 +3639,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -3780,7 +3723,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 312329449}
   LODData:
-    UnitIndex: 56
+    UnitIndex: 19
     Position: {x: 0.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -3789,7 +3732,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -3957,7 +3900,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 318250380}
   LODData:
-    UnitIndex: 75
+    UnitIndex: 20
     Position: {x: 2.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -3966,7 +3909,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -4302,7 +4245,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 364459258}
   LODData:
-    UnitIndex: 42
+    UnitIndex: 21
     Position: {x: -0.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -4395,7 +4338,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 374021820}
   LODData:
-    UnitIndex: 85
+    UnitIndex: 22
     Position: {x: 3.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -4404,7 +4347,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -4572,7 +4515,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 411987107}
   LODData:
-    UnitIndex: 1
+    UnitIndex: 23
     Position: {x: -4.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -4665,7 +4608,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 415417766}
   LODData:
-    UnitIndex: 9
+    UnitIndex: 24
     Position: {x: -4.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -4674,7 +4617,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 2
+    CurrentLod: 3
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -4761,7 +4704,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4842,7 +4785,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 419262132}
   LODData:
-    UnitIndex: 74
+    UnitIndex: 25
     Position: {x: 2.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -5019,7 +4962,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 440039135}
   LODData:
-    UnitIndex: 70
+    UnitIndex: 26
     Position: {x: 2.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -5115,7 +5058,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5196,7 +5139,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 455446442}
   LODData:
-    UnitIndex: 87
+    UnitIndex: 27
     Position: {x: 3.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -5373,7 +5316,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 468101234}
   LODData:
-    UnitIndex: 95
+    UnitIndex: 28
     Position: {x: 4.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -5382,7 +5325,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -5550,7 +5493,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 492121036}
   LODData:
-    UnitIndex: 37
+    UnitIndex: 29
     Position: {x: -1.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -5780,7 +5723,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 496251667}
   LODData:
-    UnitIndex: 14
+    UnitIndex: 30
     Position: {x: -3.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -5789,7 +5732,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -5957,7 +5900,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 560246951}
   LODData:
-    UnitIndex: 81
+    UnitIndex: 31
     Position: {x: 3.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -6137,7 +6080,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6302,7 +6245,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 595542570}
   LODData:
-    UnitIndex: 86
+    UnitIndex: 32
     Position: {x: 3.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -6479,7 +6422,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 603921763}
   LODData:
-    UnitIndex: 94
+    UnitIndex: 33
     Position: {x: 4.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -6488,7 +6431,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -6656,7 +6599,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 617017278}
   LODData:
-    UnitIndex: 91
+    UnitIndex: 34
     Position: {x: 4.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -6749,7 +6692,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 620019977}
   LODData:
-    UnitIndex: 24
+    UnitIndex: 35
     Position: {x: -2.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -6758,7 +6701,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -6842,7 +6785,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 623962917}
   LODData:
-    UnitIndex: 69
+    UnitIndex: 36
     Position: {x: 1.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -7019,7 +6962,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 649701672}
   LODData:
-    UnitIndex: 17
+    UnitIndex: 37
     Position: {x: -3.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -7196,7 +7139,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 686871016}
   LODData:
-    UnitIndex: 2
+    UnitIndex: 38
     Position: {x: -4.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -7205,7 +7148,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7289,7 +7232,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 714576931}
   LODData:
-    UnitIndex: 65
+    UnitIndex: 39
     Position: {x: 1.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -7298,7 +7241,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7385,7 +7328,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7466,7 +7409,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 767467233}
   LODData:
-    UnitIndex: 93
+    UnitIndex: 40
     Position: {x: 4.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -7559,7 +7502,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 770799458}
   LODData:
-    UnitIndex: 13
+    UnitIndex: 41
     Position: {x: -3.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -7568,7 +7511,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7652,7 +7595,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 775325871}
   LODData:
-    UnitIndex: 55
+    UnitIndex: 42
     Position: {x: 0.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -7661,7 +7604,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7832,7 +7775,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7997,7 +7940,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 805194756}
   LODData:
-    UnitIndex: 26
+    UnitIndex: 43
     Position: {x: -2.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -8090,7 +8033,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 806210728}
   LODData:
-    UnitIndex: 79
+    UnitIndex: 44
     Position: {x: 2.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -8267,7 +8210,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 827958170}
   LODData:
-    UnitIndex: 25
+    UnitIndex: 45
     Position: {x: -2.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -8276,7 +8219,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -8612,7 +8555,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 855304869}
   LODData:
-    UnitIndex: 71
+    UnitIndex: 46
     Position: {x: 2.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -8705,7 +8648,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 884435237}
   LODData:
-    UnitIndex: 60
+    UnitIndex: 47
     Position: {x: 1.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -8882,7 +8825,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 891212729}
   LODData:
-    UnitIndex: 67
+    UnitIndex: 48
     Position: {x: 1.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -9059,7 +9002,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 901113965}
   LODData:
-    UnitIndex: 99
+    UnitIndex: 49
     Position: {x: 4.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -9152,7 +9095,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 958857937}
   LODData:
-    UnitIndex: 36
+    UnitIndex: 50
     Position: {x: -1.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -9161,7 +9104,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -9245,7 +9188,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 973119534}
   LODData:
-    UnitIndex: 47
+    UnitIndex: 51
     Position: {x: -0.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -9677,7 +9620,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9758,7 +9701,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1043470598}
   LODData:
-    UnitIndex: 43
+    UnitIndex: 52
     Position: {x: -0.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -10003,7 +9946,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1053954898}
   LODData:
-    UnitIndex: 34
+    UnitIndex: 53
     Position: {x: -1.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -10012,7 +9955,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -10183,7 +10126,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10432,7 +10375,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1089984449}
   LODData:
-    UnitIndex: 64
+    UnitIndex: 54
     Position: {x: 1.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -10609,7 +10552,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1106401696}
   LODData:
-    UnitIndex: 73
+    UnitIndex: 55
     Position: {x: 2.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -10702,7 +10645,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1122677113}
   LODData:
-    UnitIndex: 16
+    UnitIndex: 56
     Position: {x: -3.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -11223,7 +11166,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1160712902}
   LODData:
-    UnitIndex: 41
+    UnitIndex: 57
     Position: {x: -0.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -11400,7 +11343,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1166850816}
   LODData:
-    UnitIndex: 84
+    UnitIndex: 58
     Position: {x: 3.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -11577,7 +11520,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1193436064}
   LODData:
-    UnitIndex: 22
+    UnitIndex: 59
     Position: {x: -2.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -11670,7 +11613,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1200174156}
   LODData:
-    UnitIndex: 40
+    UnitIndex: 60
     Position: {x: -0.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -11763,7 +11706,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1237519137}
   LODData:
-    UnitIndex: 53
+    UnitIndex: 61
     Position: {x: 0.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -11859,7 +11802,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12108,7 +12051,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1281745468}
   LODData:
-    UnitIndex: 77
+    UnitIndex: 62
     Position: {x: 2.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -12204,7 +12147,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12285,7 +12228,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1304080226}
   LODData:
-    UnitIndex: 88
+    UnitIndex: 63
     Position: {x: 3.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -12378,7 +12321,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1316027983}
   LODData:
-    UnitIndex: 4
+    UnitIndex: 64
     Position: {x: -4.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -12387,7 +12330,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -12439,9 +12382,9 @@ MonoBehaviour:
   FontSize: 0.0236
   FontColor: {r: 0, g: 0, b: 0, a: 1}
   LogicEnabled: 1
-  Message: 'Job time: 0,0242ms
+  Message: 'Job time: 0,05ms
 
-    Total 100; 0,032ms; changed 0'
+    Total 100; 0,0758ms; changed 0'
 --- !u!4 &1317126925
 Transform:
   m_ObjectHideFlags: 0
@@ -12528,7 +12471,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1328011893}
   LODData:
-    UnitIndex: 39
+    UnitIndex: 65
     Position: {x: -1.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -12621,7 +12564,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1359806177}
   LODData:
-    UnitIndex: 51
+    UnitIndex: 66
     Position: {x: 0.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -12717,7 +12660,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12798,7 +12741,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1375843365}
   LODData:
-    UnitIndex: 72
+    UnitIndex: 67
     Position: {x: 2.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -12891,7 +12834,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1386416847}
   LODData:
-    UnitIndex: 3
+    UnitIndex: 68
     Position: {x: -4.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -12900,7 +12843,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -13198,7 +13141,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1415790951}
   LODData:
-    UnitIndex: 66
+    UnitIndex: 69
     Position: {x: 1.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -13207,7 +13150,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -13375,7 +13318,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1425620594}
   LODData:
-    UnitIndex: 27
+    UnitIndex: 70
     Position: {x: -2.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -13471,7 +13414,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13552,7 +13495,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1448502689}
   LODData:
-    UnitIndex: 92
+    UnitIndex: 71
     Position: {x: 4.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -13645,7 +13588,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1466252893}
   LODData:
-    UnitIndex: 89
+    UnitIndex: 72
     Position: {x: 3.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -13795,7 +13738,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1495685834}
   LODData:
-    UnitIndex: 80
+    UnitIndex: 73
     Position: {x: 3.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -13891,7 +13834,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14363,7 +14306,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1598103580}
   LODData:
-    UnitIndex: 10
+    UnitIndex: 74
     Position: {x: -3.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -14418,7 +14361,6 @@ MonoBehaviour:
   ShowLogs: 0
   ShowSLogs: 0
   _controllers:
-  - {fileID: 30304766}
   - {fileID: 1317126924}
   - {fileID: 1476254216}
   - {fileID: 1547872388}
@@ -14435,7 +14377,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 30304765}
   - {fileID: 1547872389}
   - {fileID: 1317126925}
   - {fileID: 1476254217}
@@ -14599,7 +14540,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14680,7 +14621,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1645259448}
   LODData:
-    UnitIndex: 18
+    UnitIndex: 75
     Position: {x: -3.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -14857,7 +14798,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1666300338}
   LODData:
-    UnitIndex: 96
+    UnitIndex: 76
     Position: {x: 4.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -14950,7 +14891,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1674009604}
   LODData:
-    UnitIndex: 19
+    UnitIndex: 77
     Position: {x: -3.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -15220,7 +15161,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1696834706}
   LODData:
-    UnitIndex: 35
+    UnitIndex: 79
     Position: {x: -1.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -15229,7 +15170,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -15397,7 +15338,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1723907464}
   LODData:
-    UnitIndex: 11
+    UnitIndex: 80
     Position: {x: -3.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -15490,7 +15431,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1732932980}
   LODData:
-    UnitIndex: 7
+    UnitIndex: 81
     Position: {x: -4.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
@@ -15583,7 +15524,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1755035322}
   LODData:
-    UnitIndex: 15
+    UnitIndex: 82
     Position: {x: -3.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
@@ -15592,7 +15533,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -15763,7 +15704,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15844,7 +15785,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1777776244}
   LODData:
-    UnitIndex: 61
+    UnitIndex: 83
     Position: {x: 1.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -15937,7 +15878,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1790734370}
   LODData:
-    UnitIndex: 46
+    UnitIndex: 84
     Position: {x: -0.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -15946,7 +15887,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -16030,7 +15971,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1806817520}
   LODData:
-    UnitIndex: 30
+    UnitIndex: 85
     Position: {x: -1.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
@@ -16123,7 +16064,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1808362532}
   LODData:
-    UnitIndex: 48
+    UnitIndex: 86
     Position: {x: -0.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -16300,7 +16241,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1822036353}
   LODData:
-    UnitIndex: 82
+    UnitIndex: 87
     Position: {x: 3.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -16477,7 +16418,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1847184729}
   LODData:
-    UnitIndex: 98
+    UnitIndex: 88
     Position: {x: 4.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -16573,7 +16514,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16657,7 +16598,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16741,7 +16682,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16822,7 +16763,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1911948357}
   LODData:
-    UnitIndex: 33
+    UnitIndex: 89
     Position: {x: -1.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
@@ -16999,7 +16940,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1915180842}
   LODData:
-    UnitIndex: 32
+    UnitIndex: 90
     Position: {x: -1.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -17092,7 +17033,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1918962590}
   LODData:
-    UnitIndex: 21
+    UnitIndex: 91
     Position: {x: -2.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -17188,7 +17129,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17269,7 +17210,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 1942830650}
   LODData:
-    UnitIndex: 31
+    UnitIndex: 92
     Position: {x: -1.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
@@ -17446,7 +17387,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 2011489228}
   LODData:
-    UnitIndex: 44
+    UnitIndex: 93
     Position: {x: -0.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -17455,7 +17396,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -17623,7 +17564,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 2021353439}
   LODData:
-    UnitIndex: 28
+    UnitIndex: 94
     Position: {x: -2.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -17716,7 +17657,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 2023005221}
   LODData:
-    UnitIndex: 76
+    UnitIndex: 95
     Position: {x: 2.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
@@ -17725,7 +17666,7 @@ MonoBehaviour:
         y: -0
         z: -0
         w: 1
-    CurrentLod: 1
+    CurrentLod: 2
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -17809,7 +17750,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 2025497255}
   LODData:
-    UnitIndex: 59
+    UnitIndex: 96
     Position: {x: 0.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
@@ -17905,7 +17846,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17986,7 +17927,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 2045293952}
   LODData:
-    UnitIndex: 8
+    UnitIndex: 97
     Position: {x: -4.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
@@ -18079,7 +18020,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 2055370552}
   LODData:
-    UnitIndex: 62
+    UnitIndex: 98
     Position: {x: 1.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
@@ -18175,7 +18116,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18256,7 +18197,7 @@ MonoBehaviour:
   RegisterOnEnable: 1
   _receiver: {fileID: 2099998846}
   LODData:
-    UnitIndex: 54
+    UnitIndex: 99
     Position: {x: 0.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
@@ -18436,7 +18377,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

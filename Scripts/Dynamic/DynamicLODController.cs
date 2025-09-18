@@ -74,7 +74,6 @@ namespace Spacats.LOD
             _isCreated = false;
         }
 
-
         private void Create()
         {
             if (_isCreated) return;
@@ -160,7 +159,6 @@ namespace Spacats.LOD
             }
         }
 
-
         private void ProcessAddRequest(DLodUnit unit)
         {
             if (_disposeData.Units.Count >= LodSettings.MaxUnitCount) return;
@@ -173,7 +171,6 @@ namespace Spacats.LOD
             _disposeData.UnitsTransform.Add(unit.transform);
             _disposeData.UnitsData[unit.LODData.UnitIndex] = unit.LODData;
         }
-
 
         private void ProcessRemoveRequest(DLodUnit unit)
         {
@@ -195,10 +192,6 @@ namespace Spacats.LOD
             unit.MarkAsUnRegistered();
 
         }
-
-
-
-
 
         private void ProcessSingleUnit(DLodUnit unit)
         {
@@ -289,7 +282,5 @@ namespace Spacats.LOD
             if (LodSettings.PerformMeasurements) TimeTracker.Start(LodSettings.TotalMeasureID);
             _disposeData.ScheduleJob(_runtimeData);
         }
-
-
     }
 }

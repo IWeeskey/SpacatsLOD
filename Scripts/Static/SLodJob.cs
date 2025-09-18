@@ -18,18 +18,10 @@ namespace Spacats.LOD
             SLodUnitData unit = UnitsData[index];
             float distance = 0;
 
-            if (unit.CuboidCalculations)
-            {
-                distance = LodUtils.DistanceToOBB(TargetPosition, unit.Position, unit.CuboidData, unit.Rotation);
-            }
-            else
-            {
-                distance = math.distance(TargetPosition, unit.Position);
-            }
+            if (unit.CuboidCalculations) distance = LodUtils.DistanceToOBB(TargetPosition, unit.Position, unit.CuboidData, unit.Rotation);
+            else distance = math.distance(TargetPosition, unit.Position);
            
             int lod = LodUtils.LevelForDistance(distance, in unit.Distances, 1f);
-
-            //Debug.Log(distance + " " + lod);
 
             if (lod != unit.CurrentLod)
             {

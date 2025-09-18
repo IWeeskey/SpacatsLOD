@@ -9,14 +9,15 @@ namespace Spacats.LOD
     public class DLodUnit : MonoBehaviour
     {
         [SerializeField]
-        private List<LodUnitReciever> _receivers = new();
+        private LodUnitReciever _receiver;
         private bool _isQuitting = false;
         private bool _isRegistered = false;
 
-        public int RecieversCount => _receivers.Count;
         public Action<int> OnLodChanged;
         public DLodUnitData LODData;
 
+        public List<bool> DrawGizmo = new List<bool>();
+        public bool IsRegistered => _isRegistered;
 
         private void OnApplicationQuit()
         {
@@ -26,6 +27,8 @@ namespace Spacats.LOD
         private void OnEnable()
         {
             MarkAsUnRegistered();
+            if (_receiver == null && gameObject.GetComponent<LodUnitReciever>() != null) _receiver = gameObject.GetComponent<LodUnitReciever>();
+
             ResetValues();
             RequestAdd();
         }
@@ -33,6 +36,21 @@ namespace Spacats.LOD
         private void OnDisable()
         {
             RequestRemove();
+        }
+
+        private void OnValidate()
+        {
+            FixGizmo();
+        }
+
+        private void FixGizmo()
+        {
+            if (DrawGizmo == null) DrawGizmo = new List<bool>();
+            if (DrawGizmo.Count < 5)
+            {
+                while (DrawGizmo.Count < 5)
+                    DrawGizmo.Add(false);
+            }
         }
 
         private void ResetValues()
@@ -70,7 +88,7 @@ namespace Spacats.LOD
             OnLodChanged?.Invoke(value);
             LODData.CurrentLod = value;
 
-            foreach (var receiver in _receivers) receiver.OnLodChanged(LODData.CurrentLod);
+            _receiver?.OnLodChanged(LODData.CurrentLod);
         }
     }
 }

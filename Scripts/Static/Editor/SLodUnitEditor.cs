@@ -169,7 +169,6 @@ namespace Spacats.LOD
                 targetScript.Refresh();
             }
         }
-
     }
 }
 #endif

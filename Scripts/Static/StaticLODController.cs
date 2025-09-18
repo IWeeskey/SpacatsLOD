@@ -158,7 +158,6 @@ namespace Spacats.LOD
             }
         }
 
-
         private void ProcessAddRequest(SLodUnit unit)
         {
             if (_disposeData.Units.Count >= LodSettings.MaxUnitCount) return;
@@ -169,7 +168,6 @@ namespace Spacats.LOD
             _disposeData.Units.Add(unit);
             _disposeData.UnitsData[unit.LODData.UnitIndex] = unit.LODData;
         }
-
 
         private void ProcessRemoveRequest(SLodUnit unit)
         {
@@ -281,7 +279,5 @@ namespace Spacats.LOD
             if (LodSettings.PerformMeasurements) TimeTracker.Start(LodSettings.TotalMeasureID);
             _disposeData.ScheduleJob(_runtimeData);
         }
-
-
     }
 }
