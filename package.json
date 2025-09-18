@@ -1,9 +1,9 @@
 {
   "name": "com.spacats.lod",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "displayName": "Spacats LOD",
-  "description": "Spacats LOD ",
-  "unity": "2019.1",
+  "description": "Spacats LOD is a custom Level of Detail system designed to determine LOD levels based on the distance to a target Camera. Unlike Unity’s built-in LODGroup, it gives you direct access to the current LOD index, optimized with Jobs + Burst, and supports both static and dynamic use cases.",
+  "unity": "2022",
   "dependencies": {
  },
  "keywords": [
@@ -20,5 +20,10 @@
 	"description": "Examples",
 	"path": "Examples~/Spacats LOD Examples"
 	}
-  ]
+  ],
+  "dependencies": {
+    "com.unity.burst": "1.8.24",
+    "com.unity.mathematics": "1.3.2",
+    "com.unity.collections": "2.5.7"
+  }
 }
