@@ -25,13 +25,17 @@ Spacats LOD solves this by handling LOD logic entirely in Jobs, only passing cha
 2) Main thread step – the main thread only applies changes to affected GameObjects.
 
 📊 PERFORMANCE
+
 Test Environment (PC):
 * Laptop: MSI GP76 Leopard, Windows 10
 * Unity version: 2022.3.39f (final build, not editor)
-	** Note: Unity 2023 editor introduces noticeable overhead, but this issue is not present in 2022.3.39f.
+	- Note: Unity 2023 editor introduces noticeable overhead, but this issue is not present in 2022.3.39f.
 * CPU: Intel i7-11800H (11th Gen, 2.3 GHz)
 * Turbo Boost disabled via BIOS
 * Test scale: 250,000 objects
+* What happens when LOD level changes:
+	- The SpriteRenderer.color is updated.
+	- If an object’s LOD level falls outside the valid range, the corresponding LOD unit is disabled.
 
 Dynamic Case (all 250k objects constantly moving)
 * Job execution: 1.5 ms – 1.9 ms (can be fully offloaded asynchronously)
