@@ -130,14 +130,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a524d9f502d335499c6d734dea85bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegisterOnEnable: 1
   _receiver: {fileID: 0}
   LODData:
-    CurrentLod: 0
-    CuboidCalculations: 0
     UnitIndex: 0
     Position: {x: 0, y: 0, z: 0}
     Scale: 0
+    Rotation:
+      value:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+    GroupIndex: 0
+    CurrentLod: 0
+    CuboidCalculations: 0
     Distances:
       Lod0: 5
       Lod1: 10
@@ -149,6 +155,8 @@ MonoBehaviour:
         x: 0
         y: 0
         z: 0
+  DrawGizmo: 0000000000
+  RegisterOnEnable: 1
 --- !u!114 &8419731066115054661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,4 +177,4 @@ MonoBehaviour:
   - {r: 1, g: 0.070933886, b: 0, a: 1}
   - {r: 1, g: 0, b: 0.7267132, a: 1}
   MaxLODLevel: 5
-  DisableOnMaxLOD: 0
+  DisableOnMaxLOD: 1

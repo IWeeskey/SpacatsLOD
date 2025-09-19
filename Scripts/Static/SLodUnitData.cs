@@ -11,6 +11,7 @@ namespace Spacats.LOD
         [HideInInspector] public Vector3 Position;
         [HideInInspector] public float Scale;
         [HideInInspector] public quaternion Rotation;
+        [HideInInspector] public int GroupIndex;
 
         public int CurrentLod;
         public bool CuboidCalculations;

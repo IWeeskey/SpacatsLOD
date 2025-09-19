@@ -90,6 +90,11 @@ namespace Spacats.LOD
             {
                 targetScript.ProcessInstant();
             }
+
+            if (GUILayout.Button("Refresh Group Multipliers"))
+            {
+                targetScript.RefreshGroupMultipliers();
+            }
         }
     }
 }

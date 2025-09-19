@@ -14,9 +14,9 @@ namespace Spacats.LOD
         public Dictionary<SLodUnit, RequestTypes> RequestsDict;
         public List<SLodUnit> Units;
 
-        //public TransformAccessArray UnitsTransform;
         public NativeArray<SLodUnitData> UnitsData;
         public NativeList<int2> ChangedLods;
+        public NativeList<float> GroupMultipliers;
 
         public SLodJob LodJob;
         public JobHandle LodJobHandle;
@@ -28,6 +28,9 @@ namespace Spacats.LOD
 
             UnitsData = new NativeArray<SLodUnitData>(lodSettings.MaxUnitCount, Allocator.Persistent);
             ChangedLods = new NativeList<int2>(lodSettings.MaxUnitCount, Allocator.Persistent);
+            GroupMultipliers = new NativeList<float>(100, Allocator.Persistent);
+
+            RefreshGroupMultipliers(lodSettings);
 
             _isCreated = true;
         }
@@ -38,8 +41,18 @@ namespace Spacats.LOD
             RequestsDict?.Clear();
             if (UnitsData.IsCreated) UnitsData.Dispose();
             if (ChangedLods.IsCreated) ChangedLods.Dispose();
+            if (GroupMultipliers.IsCreated) GroupMultipliers.Dispose();
 
             _isCreated = false;
+        }
+
+        public void RefreshGroupMultipliers(SLodSettings lodSettings)
+        {
+            GroupMultipliers.Clear();
+            for (int i = 0; i < lodSettings.GroupMultipliers.Count; i++)
+            {
+                GroupMultipliers.Add(lodSettings.GroupMultipliers[i]);
+            }
         }
 
         public void ScheduleJob(SLodRuntimeData runtimeData)
@@ -69,6 +82,7 @@ namespace Spacats.LOD
             LodJob.TargetPosition = runtimeData.TargetPosition;
             LodJob.UnitsData = UnitsData;
             LodJob.ChangedLodsWriter = changedLodsWriter;
+            LodJob.GroupMultipliers = GroupMultipliers;
         }
 
     }

@@ -3,6 +3,7 @@ using Spacats.Utils;
 using Unity.Mathematics;
 using System.Globalization;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -196,8 +197,9 @@ namespace Spacats.LOD
         private void ProcessSingleUnit(DLodUnit unit)
         {
             float distance = math.distance(_runtimeData.TargetPosition, unit.transform.position);
+            float mult = LodUtils.GetMultiplierFromList(unit.LODData.GroupIndex, ref _disposeData.GroupMultipliers);
 
-            int lodLevel = LodUtils.LevelForDistance(distance, in unit.LODData.Distances, transform.localScale.x);
+            int lodLevel = LodUtils.LevelForDistance(distance, in unit.LODData.Distances, unit.transform.localScale.x, mult);
             unit.ChangeLOD(lodLevel);
         }
 
@@ -245,6 +247,17 @@ namespace Spacats.LOD
 
             _runtimeData.TargetPosition = Vector3.zero;
             TryToShowLog("Not found target for lods", LogType.Log);
+        }
+
+        public void SetGroupMultipliers(List<float> values)
+        {
+            LodSettings.GroupMultipliers = values != null ? new List<float>(values) : new List<float>();
+            RefreshGroupMultipliers();
+        }
+
+        public void RefreshGroupMultipliers()
+        {
+            _disposeData.RefreshGroupMultipliers(LodSettings);
         }
 
         public void ProcessInstant()

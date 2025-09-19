@@ -47,13 +47,16 @@ namespace Spacats.LOD
 
         private void DrawLodDistances()
         {
-            EditorGUILayout.Space();
-            EditorGUILayout.LabelField("LOD Distances", EditorStyles.boldLabel);
-
             SerializedProperty sLodUnitData = serializedObject.FindProperty("LODData");
             SerializedProperty gizmoList = serializedObject.FindProperty("DrawGizmo");
 
             SerializedProperty lodDistances = sLodUnitData.FindPropertyRelative("Distances");
+            SerializedProperty groupIndex = sLodUnitData.FindPropertyRelative("GroupIndex");
+
+            EditorGUILayout.PropertyField(groupIndex, new GUIContent("GroupIndex"));
+
+            EditorGUILayout.Space();
+            EditorGUILayout.LabelField("LOD Distances", EditorStyles.boldLabel);
 
             for (int i = 0; i < 5; i++)
             {

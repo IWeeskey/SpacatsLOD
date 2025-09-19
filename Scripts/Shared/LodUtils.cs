@@ -1,4 +1,5 @@
 using Unity.Burst;
+using Unity.Collections;
 using Unity.Mathematics;
 using static Unity.Mathematics.math;
 
@@ -18,14 +19,29 @@ namespace Spacats.LOD
             return length(delta);
         }
 
-        public static int LevelForDistance(float distance, in LodDistances distances, float mult)
+        public static int LevelForDistance(float distance, in LodDistances distances, float scale, float mult)
         {
-            if (distance <= distances.Lod0 * mult) return 0;
-            else if (distance <= distances.Lod1 * mult) return 1;
-            else if (distance <= distances.Lod2 * mult) return 2;
-            else if (distance <= distances.Lod3 * mult) return 3;
-            else if (distance <= distances.Lod4 * mult) return 4;
+            float totalMult = scale * mult;
+            if (distance <= distances.Lod0 * totalMult) return 0;
+            else if (distance <= distances.Lod1 * totalMult) return 1;
+            else if (distance <= distances.Lod2 * totalMult) return 2;
+            else if (distance <= distances.Lod3 * totalMult) return 3;
+            else if (distance <= distances.Lod4 * totalMult) return 4;
             else return 5;
+        }
+
+        public static float GetMultiplierFromList(int index, ref NativeList<float> list)
+        {
+            float mult = 1f;
+
+            if (index >= 0 && index < list.Length)
+            {
+                mult = list[index];
+            }
+
+            if (mult <= 0f) mult = 1f;
+
+            return mult;
         }
     }
 }

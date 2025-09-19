@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Spacats.LOD
@@ -22,5 +23,7 @@ namespace Spacats.LOD
         [SerializeField]
         private int _maxUnitCount = 1_000_000;
         public int MaxUnitCount =>_maxUnitCount;
+
+        public List<float> GroupMultipliers;
     }
 }

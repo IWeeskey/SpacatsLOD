@@ -11,13 +11,16 @@ namespace Spacats.LOD
         public float3 TargetPosition;
         public NativeArray<DLodUnitData> UnitsData;
         public NativeList<int2>.ParallelWriter ChangedLodsWriter;
+        [ReadOnly] public NativeList<float> GroupMultipliers;
+
         public void Execute(int index, TransformAccess transform)
         {
             DLodUnitData unit = UnitsData[index];
 
             float distance = math.distance(TargetPosition, transform.position);
+            float mult = LodUtils.GetMultiplierFromList(unit.GroupIndex, ref GroupMultipliers);
 
-            int lod = LodUtils.LevelForDistance(distance, in unit.Distances, transform.localScale.x);
+            int lod = LodUtils.LevelForDistance(distance, in unit.Distances, transform.localScale.x, mult);
 
             if (lod != unit.CurrentLod)
             {
