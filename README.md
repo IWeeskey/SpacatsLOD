@@ -82,6 +82,10 @@ https://github.com/IWeeskey/SpacatsLOD.git
 6) Click "Add" and wait for Unity to download and install the package.
 7) Once installed, you can find the scripts and assets inside your Packages folder in Unity. Also you can check out the examples.
 
+DOCS:
+- [LOD Overview EN](Docs/EN/LOD%20Overview.md)
+- [LOD Overview RU](Docs/RU/LOD%20Overview.md)
+
 Tested on Unity Versions:
 2022.3.39f1
 2023.2.20f1
