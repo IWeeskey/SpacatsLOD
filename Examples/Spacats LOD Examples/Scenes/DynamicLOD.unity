@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -171,6 +168,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -192,11 +194,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -256,6 +259,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -277,6 +285,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -397,6 +406,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -418,11 +432,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -503,7 +518,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 0
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -582,7 +597,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 1
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -639,6 +654,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -660,11 +680,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -723,6 +744,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -744,11 +770,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -807,6 +834,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -828,11 +860,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -891,6 +924,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -912,11 +950,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -975,6 +1014,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -996,11 +1040,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1081,7 +1126,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 2
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -1160,7 +1205,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 3
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -1239,7 +1284,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 4
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -1296,6 +1341,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1317,11 +1367,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1402,7 +1453,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 5
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -1459,6 +1510,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1480,11 +1536,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1565,7 +1622,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 6
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -1622,6 +1679,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1643,11 +1705,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1706,6 +1769,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1727,11 +1795,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1790,6 +1859,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1811,11 +1885,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1874,6 +1949,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1895,11 +1975,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1980,7 +2061,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 7
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -2037,6 +2118,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2058,6 +2144,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -2121,6 +2208,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2142,11 +2234,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2227,7 +2320,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 8
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -2306,7 +2399,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 9
     GroupIndex: 0
-    CurrentLod: 0
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -2363,6 +2456,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2384,11 +2482,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2447,6 +2546,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2468,11 +2572,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2531,6 +2636,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2552,11 +2662,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2637,7 +2748,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 10
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -2716,7 +2827,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 11
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -2795,7 +2906,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 12
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -2852,6 +2963,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2873,11 +2989,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2936,6 +3053,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2957,11 +3079,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3042,7 +3165,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 13
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -3121,7 +3244,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 14
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -3178,6 +3301,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3199,11 +3327,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3262,6 +3391,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3283,11 +3417,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3368,7 +3503,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 15
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -3425,6 +3560,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3446,11 +3586,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3509,6 +3650,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3530,11 +3676,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3593,6 +3740,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3614,11 +3766,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3699,7 +3852,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 16
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -3756,6 +3909,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3777,11 +3935,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3862,7 +4021,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 17
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -3919,6 +4078,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3940,11 +4104,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4025,7 +4190,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 18
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4104,7 +4269,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 19
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4183,7 +4348,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 20
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4262,7 +4427,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 21
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4341,7 +4506,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 22
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4420,7 +4585,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 23
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4477,6 +4642,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4498,11 +4668,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4561,6 +4732,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4582,11 +4758,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4667,7 +4844,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 24
     GroupIndex: 0
-    CurrentLod: 0
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4746,7 +4923,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 25
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4825,7 +5002,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 26
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 5
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4904,7 +5081,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 27
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4983,7 +5160,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 28
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -5040,6 +5217,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5061,11 +5243,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5146,7 +5329,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 29
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -5225,7 +5408,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 30
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -5282,6 +5465,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5303,11 +5491,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5388,7 +5577,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 31
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -5445,6 +5634,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5466,11 +5660,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5529,6 +5724,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5550,11 +5750,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5613,6 +5814,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5634,11 +5840,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5697,6 +5904,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5718,11 +5930,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5781,6 +5994,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5802,11 +6020,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5865,6 +6084,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5886,11 +6110,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5949,6 +6174,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5970,11 +6200,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6033,6 +6264,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6054,11 +6290,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6117,6 +6354,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6138,11 +6380,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6201,6 +6444,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6222,11 +6470,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6307,7 +6556,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 32
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -6386,7 +6635,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 33
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -6465,7 +6714,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 34
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -6544,7 +6793,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 35
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -6601,6 +6850,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6622,11 +6876,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6707,7 +6962,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 36
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -6764,6 +7019,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6785,11 +7045,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6870,7 +7131,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 37
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -6927,6 +7188,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6948,11 +7214,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7033,7 +7300,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 38
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -7112,7 +7379,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 39
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -7169,6 +7436,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7190,11 +7462,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7275,7 +7548,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 40
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -7354,7 +7627,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 41
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -7433,7 +7706,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 42
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -7490,6 +7763,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7511,11 +7789,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7596,7 +7875,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 43
     GroupIndex: 0
-    CurrentLod: 0
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -7675,7 +7954,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 44
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -7732,6 +8011,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7753,11 +8037,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7798,7 +8083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImmediateSize: 10
-  PlaymodeSize: 500
+  PlaymodeSize: 100
   Gap: 1
   MinEulers: {x: 0, y: 0, z: 0}
   MaxEulers: {x: 0, y: 0, z: 0}
@@ -7922,7 +8207,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1051836215
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7936,6 +8221,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -7990,6 +8276,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8011,11 +8302,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8096,7 +8388,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 45
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -8175,7 +8467,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 46
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -8232,6 +8524,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8253,11 +8550,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8338,7 +8636,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 47
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -8395,6 +8693,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8416,11 +8719,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8479,6 +8783,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8500,11 +8809,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8563,6 +8873,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8584,11 +8899,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8647,6 +8963,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8668,11 +8989,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8823,6 +9145,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8844,11 +9171,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8907,6 +9235,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8928,11 +9261,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9013,7 +9347,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 48
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -9070,6 +9404,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9091,11 +9430,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9154,6 +9494,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9175,11 +9520,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9260,7 +9606,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 49
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -9339,7 +9685,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 50
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -9418,7 +9764,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 51
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -9497,7 +9843,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 52
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -9576,7 +9922,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 53
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -9655,7 +10001,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 54
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -9712,6 +10058,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9733,11 +10084,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9818,7 +10170,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 55
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -9875,6 +10227,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9896,11 +10253,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9981,7 +10339,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 56
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -10038,6 +10396,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10059,11 +10422,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10122,6 +10486,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10143,11 +10512,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10228,7 +10598,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 57
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -10285,6 +10655,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10306,11 +10681,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10391,7 +10767,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 58
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -10438,9 +10814,9 @@ MonoBehaviour:
   FontSize: 0.0206
   FontColor: {r: 0, g: 0, b: 0, a: 1}
   LogicEnabled: 1
-  Message: 'Job time: 0,0612ms
+  Message: 'Job time: 0,0353ms
 
-    Total 100; 0,093ms; changed 0'
+    Total 100; 0,1137ms; changed 0'
 --- !u!4 &1317126925
 Transform:
   m_ObjectHideFlags: 0
@@ -10505,6 +10881,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10526,11 +10907,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10579,7 +10961,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322071272}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10589,6 +10971,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10610,11 +10997,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10673,6 +11061,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10694,11 +11087,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10779,7 +11173,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 59
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -10836,6 +11230,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10857,11 +11256,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10920,6 +11320,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10941,11 +11346,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11050,6 +11456,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11071,11 +11482,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11156,7 +11568,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 60
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -11213,6 +11625,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11234,11 +11651,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11297,6 +11715,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11318,11 +11741,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11403,7 +11827,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 61
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -11482,7 +11906,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 62
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -11539,6 +11963,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11560,11 +11989,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11623,6 +12053,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11644,11 +12079,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11729,7 +12165,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 63
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -11808,7 +12244,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 64
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -11887,7 +12323,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 65
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -11966,7 +12402,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 66
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -12023,6 +12459,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12044,11 +12485,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12184,7 +12626,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 67
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -12263,7 +12705,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 68
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -12373,6 +12815,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12394,11 +12841,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12447,7 +12895,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603254989}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -12457,6 +12905,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12478,11 +12931,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12595,6 +13049,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12616,11 +13075,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12669,7 +13129,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631757876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -12679,6 +13139,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12700,11 +13165,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12785,7 +13251,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 69
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -12864,7 +13330,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 70
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -12943,7 +13409,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 71
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 5
     Distances:
       Lod0: 5
       Lod1: 10
@@ -13000,6 +13466,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13021,11 +13492,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13106,7 +13578,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 72
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -13185,7 +13657,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 73
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -13242,6 +13714,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13263,11 +13740,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13348,7 +13826,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 74
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -13405,6 +13883,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13426,11 +13909,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13489,6 +13973,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13510,11 +13999,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13595,7 +14085,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 75
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -13652,6 +14142,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13673,11 +14168,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13758,7 +14254,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 76
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -13815,6 +14311,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13836,11 +14337,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13899,6 +14401,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13920,11 +14427,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13983,6 +14491,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14004,11 +14517,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14067,6 +14581,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14088,11 +14607,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14151,6 +14671,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14172,11 +14697,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14257,7 +14783,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 77
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -14314,6 +14840,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14335,11 +14866,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14398,6 +14930,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14419,11 +14956,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14504,7 +15042,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 78
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -14583,7 +15121,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 79
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -14662,7 +15200,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 80
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -14719,6 +15257,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14740,11 +15283,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14803,6 +15347,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14824,11 +15373,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14887,6 +15437,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14908,11 +15463,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14993,7 +15549,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 81
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15072,7 +15628,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 82
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15129,6 +15685,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15150,11 +15711,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15235,7 +15797,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 83
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15314,7 +15876,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 84
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15371,6 +15933,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15392,11 +15959,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15477,7 +16045,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 85
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15556,7 +16124,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 86
     GroupIndex: 0
-    CurrentLod: 0
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15635,7 +16203,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 87
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15714,7 +16282,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 88
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15771,6 +16339,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15792,11 +16365,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15855,6 +16429,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15876,11 +16455,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15961,7 +16541,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 89
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 5
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16040,7 +16620,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 90
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16119,7 +16699,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 91
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16198,7 +16778,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 92
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16356,7 +16936,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 94
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16413,6 +16993,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16434,11 +17019,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16519,7 +17105,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 95
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16598,7 +17184,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 96
     GroupIndex: 0
-    CurrentLod: 2
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16677,7 +17263,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 97
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16756,7 +17342,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 98
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 3
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16835,7 +17421,7 @@ MonoBehaviour:
   LODData:
     UnitIndex: 99
     GroupIndex: 0
-    CurrentLod: 1
+    CurrentLod: 4
     Distances:
       Lod0: 5
       Lod1: 10
@@ -16892,6 +17478,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16913,11 +17504,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0.59076196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16976,6 +17568,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16997,11 +17594,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17060,6 +17658,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17081,11 +17684,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.070933886, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
