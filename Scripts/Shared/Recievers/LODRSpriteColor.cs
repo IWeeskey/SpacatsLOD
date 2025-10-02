@@ -13,7 +13,6 @@ namespace Spacats.LOD
         {
             if (TargetRenderer == null) return;
             if (LODColors == null) return;
-
             if (newLevel >= MaxLODLevel)
             {
                 TargetRenderer.color = LODColors[LODColors.Count-1];

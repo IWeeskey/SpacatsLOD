@@ -17,6 +17,7 @@ namespace Spacats.LOD
         public NativeArray<DLodUnitData> UnitsData;
         public NativeList<int2> ChangedLods;
         public NativeList<float> GroupMultipliers;
+        public NativeParallelMultiHashMap<int3, int> Cells;
 
         public DLodJob LodJob;
         public JobHandle LodJobHandle;
@@ -30,6 +31,7 @@ namespace Spacats.LOD
             UnitsData = new NativeArray<DLodUnitData>(lodSettings.MaxUnitCount, Allocator.Persistent);
             ChangedLods = new NativeList<int2>(lodSettings.MaxUnitCount, Allocator.Persistent);
             GroupMultipliers = new NativeList<float>(100, Allocator.Persistent);
+            Cells = new NativeParallelMultiHashMap<int3, int>(lodSettings.MaxUnitCount, Allocator.Persistent);
 
             RefreshGroupMultipliers(lodSettings);
 
@@ -38,12 +40,15 @@ namespace Spacats.LOD
 
         public void Dispose()
         {
+            if (!_isCreated) return;
+            
             Units?.Clear();
             RequestsDict?.Clear();
             if (UnitsTransform.isCreated) UnitsTransform.Dispose();
             if (UnitsData.IsCreated) UnitsData.Dispose();
             if (ChangedLods.IsCreated) ChangedLods.Dispose();
             if (GroupMultipliers.IsCreated) GroupMultipliers.Dispose();
+            if (Cells.IsCreated) Cells.Dispose();
 
             _isCreated = false;
         }
@@ -78,13 +83,18 @@ namespace Spacats.LOD
 
         private void CreateJob(DLodRuntimeData runtimeData)
         {
+            Cells.Clear();
             NativeList<int2>.ParallelWriter changedLodsWriter = ChangedLods.AsParallelWriter();
-
+            NativeParallelMultiHashMap<int3, int>.ParallelWriter cellsWriter = Cells.AsParallelWriter();
+            
             LodJob = new DLodJob();
             LodJob.TargetPosition = runtimeData.TargetPosition;
             LodJob.UnitsData = UnitsData;
             LodJob.ChangedLodsWriter = changedLodsWriter;
             LodJob.GroupMultipliers = GroupMultipliers;
+            LodJob.CellsWriter = cellsWriter;
+            LodJob.CellSize = runtimeData.CellSize;
+            LodJob.PerformCellCalculations = runtimeData.PerformCellCalculations;
         }
     }
 }

@@ -1,6 +1,7 @@
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Mathematics;
+using UnityEngine;
 using static Unity.Mathematics.math;
 
 namespace Spacats.LOD
@@ -42,6 +43,17 @@ namespace Spacats.LOD
             if (mult <= 0f) mult = 1f;
 
             return mult;
+        }
+
+        public static int3 GetCellKey(float3 position, float cellSize)
+        {
+            int3 cellKey = new int3(0);
+
+            cellKey.x = Mathf.RoundToInt(position.x / cellSize);
+            cellKey.y = Mathf.RoundToInt(position.y / cellSize);
+            cellKey.z = Mathf.RoundToInt(position.z / cellSize);
+            
+            return cellKey;
         }
     }
 }

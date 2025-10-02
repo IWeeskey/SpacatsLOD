@@ -10,9 +10,12 @@ namespace Spacats.LOD
     [BurstCompile]
     public struct SLodJob : IJobParallelFor
     {
+        public bool PerformCellCalculations;
+        public float CellSize;
         public float3 TargetPosition;
         public NativeArray<SLodUnitData> UnitsData;
         public NativeList<int2>.ParallelWriter ChangedLodsWriter;
+        public NativeParallelMultiHashMap<int3, int>.ParallelWriter CellsWriter;
         [ReadOnly] public NativeList<float> GroupMultipliers;
 
         public void Execute(int index)
@@ -25,6 +28,12 @@ namespace Spacats.LOD
             else distance = math.distance(TargetPosition, unit.Position);
 
             int lod = LodUtils.LevelForDistance(distance, in unit.Distances, unit.Scale, mult);
+           
+            if (PerformCellCalculations)
+            {
+                int3 cellKey = LodUtils.GetCellKey(unit.Position, CellSize);
+                CellsWriter.Add(cellKey, index);
+            }
 
             if (lod != unit.CurrentLod)
             {

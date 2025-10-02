@@ -68,6 +68,7 @@ namespace Spacats.LOD
                 GUILayout.TextArea("Units: " + targetScript.LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
                 GUILayout.TextArea("Position: " + targetScript.TargetPosition.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
                 GUILayout.TextArea("Changed: " + targetScript.ChangedLodsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
+                GUILayout.TextArea("Cells: " + targetScript.GetCellsCount().ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " "));
                 GUILayout.TextArea(targetScript.JobTimeResult.Item2);
                 GUILayout.TextArea(targetScript.TotalTimeResult.Item2);
             }
@@ -88,11 +89,6 @@ namespace Spacats.LOD
             if (GUILayout.Button("Process Instant"))
             {
                 targetScript.ProcessInstant();
-            }
-
-            if (GUILayout.Button("Refresh Group Multipliers"))
-            {
-                targetScript.RefreshGroupMultipliers();
             }
         }
     }

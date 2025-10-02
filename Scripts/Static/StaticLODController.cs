@@ -37,6 +37,8 @@ namespace Spacats.LOD
         {
             base.COnRegister();
             _instance = this;
+            _runtimeData.InSceneLoading = false;
+            RefreshTargetPosition();
             Clear();
         }
 
@@ -50,6 +52,19 @@ namespace Spacats.LOD
         {
             base.COnDisable();
             Dispose();
+        }
+        
+        public override void COnSceneUnloading(Scene scene)
+        {
+            base.COnSceneUnloading(scene);
+            _runtimeData.InSceneLoading = true;
+            TryCompleteJob(true);
+        }
+
+        public override void COnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            base.COnSceneLoaded(scene, mode);
+            _runtimeData.InSceneLoading = false;
         }
 
         public void Clear()
@@ -67,7 +82,7 @@ namespace Spacats.LOD
         {
             if (!_isCreated) return;
 
-            TryCompleteJob();
+            TryCompleteJob(true);
             _disposeData.Dispose();
             _runtimeData.JobScheduled = false;
             _runtimeData.ChangedLodsCount = 0;
@@ -82,23 +97,24 @@ namespace Spacats.LOD
             _isCreated = true;
         }
 
-        private void TryCompleteJob()
+
+        private void TryCompleteJob(bool force = false)
         {
             if (!_runtimeData.JobScheduled) return;
-            if (!_disposeData.LodJobHandle.IsCompleted) return;
+            if (!_disposeData.LodJobHandle.IsCompleted && !force) return;
 
             _runtimeData.JobScheduled = false;
+    
             _disposeData.LodJobHandle.Complete();
             _runtimeData.LastUpdateTime = Time.realtimeSinceStartup;
 
             HandleJobResult();
-            ProcessRequests();
 
             if (LodSettings.PerformMeasurements)
             {
                 _runtimeData.TotalResult = TimeTracker.Finish(LodSettings.TotalMeasureID, false);
-                if (GUIPermanentMessage.Instance != null) GUIPermanentMessage.Instance.Message =
-                        "Total " + LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " ") + "; " +
+                if (GUIPermanentMessage.Instance != null && !DynamicLODController.HasInstance) GUIPermanentMessage.Instance.Message =
+                        "S Total " + LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " ") + "; " +
                         _runtimeData.TotalResult.Item1.ToString() + "ms; changed " + ChangedLodsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " ");
             }
         }
@@ -114,6 +130,8 @@ namespace Spacats.LOD
 
             _runtimeData.ChangedLodsCount = _disposeData.ChangedLods.Length;
             _disposeData.ChangedLods.Clear();
+            
+            _runtimeData.LastCellsCount = _disposeData.Cells.Count();
         }
 
         private void ProcessRequests()
@@ -139,13 +157,13 @@ namespace Spacats.LOD
         {
             if (LodSettings.AsyncLogic)
             {
+                if (request == RequestTypes.Add) ProcessSingleUnit(unit);
                 if (_disposeData.RequestsDict.ContainsKey(unit))
                 {
                     _disposeData.RequestsDict[unit] = request;
                     return;
                 }
-
-                if (request == RequestTypes.Add) ProcessSingleUnit(unit);
+                
                 _disposeData.RequestsDict.Add(unit, request);
                 return;
             }
@@ -161,6 +179,8 @@ namespace Spacats.LOD
 
         private void ProcessAddRequest(SLodUnit unit)
         {
+            if (unit ==null) return;
+            if (unit.transform==null) return;
             if (_disposeData.Units.Count >= LodSettings.MaxUnitCount) return;
             if (unit.LODData.UnitIndex < _disposeData.Units.Count && _disposeData.Units[unit.LODData.UnitIndex] == unit) return;
 
@@ -199,13 +219,15 @@ namespace Spacats.LOD
             unit.ChangeLOD(lodLevel);
         }
 
+        
         public override void CSharedUpdate()
         {
             base.CSharedUpdate();
-
             if (!LodSettings.PerformLogic) return;
             if (!_isCreated) return;
-
+            if (_runtimeData.InSceneLoading) return;
+            
+            
             TryCompleteJob();
 
             if (Time.realtimeSinceStartup - _runtimeData.LastUpdateTime >= LodSettings.UpdateRateMS / 1000f)
@@ -248,18 +270,14 @@ namespace Spacats.LOD
         public void SetGroupMultipliers(List<float> values)
         {
             LodSettings.GroupMultipliers = values != null ? new List<float>(values) : new List<float>();
-            RefreshGroupMultipliers();
-        }
-
-        public void RefreshGroupMultipliers()
-        {
-            _disposeData.RefreshGroupMultipliers(LodSettings);
         }
 
         public void ProcessInstant()
         {
             TryCompleteJob();
-
+            ProcessRequests();
+            ApplySettings();
+            
             if (LodSettings.PerformMeasurements)
             {
                 TimeTracker.Start(LodSettings.TotalMeasureID);
@@ -272,7 +290,7 @@ namespace Spacats.LOD
             if (LodSettings.PerformMeasurements)
             {
                 _runtimeData.JobTimeResult = TimeTracker.Finish(LodSettings.JobMeasureID, false);
-                if (GUIPermanentMessage.Instance != null) GUIPermanentMessage.Instance.Message = "Job time: " + _runtimeData.JobTimeResult.Item1.ToString() + "ms";
+                if (GUIPermanentMessage.Instance != null && !DynamicLODController.HasInstance) GUIPermanentMessage.Instance.Message = "S Job time: " + _runtimeData.JobTimeResult.Item1.ToString() + "ms";
             }
 
             HandleJobResult();
@@ -280,16 +298,30 @@ namespace Spacats.LOD
             if (LodSettings.PerformMeasurements)
             {
                 _runtimeData.TotalResult = TimeTracker.Finish(LodSettings.TotalMeasureID, false);
-                if (GUIPermanentMessage.Instance != null) GUIPermanentMessage.Instance.Message += "\n" +
-                        "Total " + LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " ") + "; " +
+                if (GUIPermanentMessage.Instance != null && !DynamicLODController.HasInstance) GUIPermanentMessage.Instance.Message += "\n" +
+                        "S Total " + LodUnitsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " ") + "; " +
                         _runtimeData.TotalResult.Item1.ToString() + "ms; changed " + ChangedLodsCount.ToString("#,0", CultureInfo.InvariantCulture).Replace(",", " ");
             }
         }
 
         private void ProcessAsync()
         {
+            ProcessRequests();
+            ApplySettings();
             if (LodSettings.PerformMeasurements) TimeTracker.Start(LodSettings.TotalMeasureID);
             _disposeData.ScheduleJob(_runtimeData);
+        }
+
+        private void ApplySettings()
+        {
+            _runtimeData.CellSize = LodSettings.CellSize;
+            _runtimeData.PerformCellCalculations = LodSettings.PerformCellCalculations;
+            _disposeData.RefreshGroupMultipliers(LodSettings);
+        }
+
+        public int GetCellsCount()
+        {
+            return _runtimeData.LastCellsCount;
         }
     }
 }

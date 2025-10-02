@@ -9,9 +9,15 @@ namespace Spacats.LOD
         private void Awake()
         {
             Application.targetFrameRate = 60;
+            RefreshPosition();
         }
 
         void Update()
+        {
+            RefreshPosition();
+        }
+
+        private void RefreshPosition()
         {
             if (_camera == null) _camera = Camera.main;
 
@@ -24,6 +30,7 @@ namespace Spacats.LOD
             pos.z = worldPos.z;
 
             transform.position = pos;
+            
         }
     }
 }

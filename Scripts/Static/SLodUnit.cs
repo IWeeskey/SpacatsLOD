@@ -47,12 +47,12 @@ namespace Spacats.LOD
             MarkAsUnRegistered();
             if (_receiver == null && gameObject.GetComponent<LodUnitReciever>() != null) _receiver = gameObject.GetComponent<LodUnitReciever>();
 
-            if (RegisterOnEnable) RequestAddLOD();
+            if (RegisterOnEnable) RequestAdd();
         }
 
         private void OnDisable()
         {
-            RequestRemoveLOD();
+            RequestRemove();
         }
 
         private void ResetValues()
@@ -70,11 +70,11 @@ namespace Spacats.LOD
 
         public void Refresh()
         {
-            RequestRemoveLOD();
-            RequestAddLOD();
+            RequestRemove();
+            RequestAdd();
         }
 
-        public void RequestAddLOD()
+        public void RequestAdd()
         {
             if (_isRegistered) return;
 
@@ -83,7 +83,7 @@ namespace Spacats.LOD
             if (StaticLODController.HasInstance) StaticLODController.Instance.AddRequest(this, RequestTypes.Add);
         }
 
-        public void RequestRemoveLOD()
+        public void RequestRemove()
         {
             if (_isQuitting) return;
             if (!_isRegistered) return;
@@ -108,5 +108,6 @@ namespace Spacats.LOD
             LODData.CurrentLod = value;
             _receiver?.OnLodChanged(LODData.CurrentLod);
         }
+        
     }
 }
