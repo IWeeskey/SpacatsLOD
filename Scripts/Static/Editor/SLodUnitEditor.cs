@@ -21,7 +21,7 @@ namespace Spacats.LOD
         
         void OnEnable()
         {
-            _aoiDataProp = serializedObject.FindProperty("_aotData");
+            _aoiDataProp = serializedObject.FindProperty("_aoiData");
             _aoiAutoUpdateProp = _aoiDataProp.FindPropertyRelative("AutoUpdate");
             _oldAOIValue = _aoiAutoUpdateProp.boolValue;
         }
@@ -32,7 +32,7 @@ namespace Spacats.LOD
 
             CheckAOTAutoUpdate();
             DrawLodSettings();
-            DrawAOTSettings();
+            DrawAOISettings();
             DrawLodDistances();
             DrawCuboidSettings();
             DrawButtons();
@@ -70,11 +70,11 @@ namespace Spacats.LOD
             EditorGUILayout.PropertyField(receiver, new GUIContent("Reciever"));
         }
         
-        private void DrawAOTSettings()
+        private void DrawAOISettings()
         {
             EditorGUILayout.Space();
-            SerializedProperty aotData = serializedObject.FindProperty("_aotData");
-            EditorGUILayout.PropertyField(aotData, new GUIContent("AOT"));
+            SerializedProperty aoiData = serializedObject.FindProperty("_aoiData");
+            EditorGUILayout.PropertyField(aoiData, new GUIContent("AOI"));
         }
 
         private void DrawLodDistances()

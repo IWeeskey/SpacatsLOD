@@ -20,6 +20,7 @@ namespace Spacats.LOD
         private void Awake()
         {
             _subscribed = false;
+            
             GetSelf();
         }
         
@@ -27,6 +28,8 @@ namespace Spacats.LOD
         {
             if (GetComponent<DLodUnit>()!=null) _selfDLodUnit = GetComponent<DLodUnit>();
             if (GetComponent<SLodUnit>()!=null) _selfSLodUnit = GetComponent<SLodUnit>();
+
+            ClearLineRenderers();
         }
 
         private void OnEnable()
@@ -99,6 +102,12 @@ namespace Spacats.LOD
                 SLineRenderer.SetPosition(index++, origin);
                 SLineRenderer.SetPosition(index++, target);
             }
+        }
+        
+        private void ClearLineRenderers()
+        {
+            if (DLineRenderer != null) DLineRenderer.positionCount = 0;
+            if (SLineRenderer != null) SLineRenderer.positionCount = 0;
         }
     }
 }

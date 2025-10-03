@@ -288,8 +288,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 82
-    Position: {x: -13.5, y: 0, z: 2.5}
+    UnitIndex: 4
+    Position: {x: -3.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -298,7 +298,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -393,7 +393,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
     Target: {fileID: 1388757880}
     PerformLogic: 1
     UseEditorCamera: 1
-    AsyncLogic: 0
+    AsyncLogic: 1
     PerformMeasurements: 0
     UpdateRateMS: 1
     CellSize: 5
@@ -543,7 +543,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -633,8 +633,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 98
-    Position: {x: -14.5, y: 0, z: -3.5}
+    UnitIndex: 63
+    Position: {x: -4.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -643,7 +643,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -738,7 +738,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -829,12 +829,14 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 22.5, y: 0, z: 2.5}
-  - {x: 17.5, y: 0, z: -2.5}
-  - {x: 22.5, y: 0, z: 2.5}
-  - {x: 17.5, y: 0, z: 2.5}
-  - {x: 22.5, y: 0, z: 2.5}
-  - {x: 22.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.8, y: 4, z: -4}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -974,8 +976,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 49
-    Position: {x: -9.5, y: 0, z: -4.5}
+    UnitIndex: 99
+    Position: {x: 0.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -984,7 +986,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -1079,8 +1081,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 19
-    Position: {x: -6.5, y: 0, z: -4.5}
+    UnitIndex: 94
+    Position: {x: 3.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -1089,7 +1091,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -1129,7 +1131,7 @@ Transform:
   m_GameObject: {fileID: 74179138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1315,7 +1317,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1363,7 +1365,7 @@ MonoBehaviour:
     Target: {fileID: 1388757880}
     PerformLogic: 1
     UseEditorCamera: 1
-    AsyncLogic: 0
+    AsyncLogic: 1
     PerformMeasurements: 0
     UpdateRateMS: 0
     CellSize: 5
@@ -1464,7 +1466,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1554,8 +1556,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 87
-    Position: {x: -13.5, y: 0, z: -2.5}
+    UnitIndex: 1
+    Position: {x: -3.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -1564,7 +1566,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -1659,7 +1661,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1749,8 +1751,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 97
-    Position: {x: -14.5, y: 0, z: -2.5}
+    UnitIndex: 24
+    Position: {x: -4.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -1759,7 +1761,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -1854,8 +1856,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 45
-    Position: {x: -9.5, y: 0, z: -0.5}
+    UnitIndex: 18
+    Position: {x: 0.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -1864,7 +1866,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -1959,8 +1961,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 23
-    Position: {x: -7.5, y: 0, z: 1.5}
+    UnitIndex: 9
+    Position: {x: 2.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -1969,7 +1971,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -2009,7 +2011,7 @@ Transform:
   m_GameObject: {fileID: 183479245}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2099,7 +2101,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2189,7 +2191,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2279,8 +2281,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 53
-    Position: {x: -10.5, y: 0, z: 1.5}
+    UnitIndex: 89
+    Position: {x: -0.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -2289,7 +2291,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -2384,7 +2386,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2474,8 +2476,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 70
-    Position: {x: -12.5, y: 0, z: 4.5}
+    UnitIndex: 12
+    Position: {x: -2.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -2484,7 +2486,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -2579,8 +2581,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 96
-    Position: {x: -14.5, y: 0, z: -1.5}
+    UnitIndex: 5
+    Position: {x: -4.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -2589,7 +2591,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -2684,8 +2686,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 32
-    Position: {x: -8.5, y: 0, z: 2.5}
+    UnitIndex: 98
+    Position: {x: 1.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -2694,7 +2696,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -2789,8 +2791,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 58
-    Position: {x: -10.5, y: 0, z: -3.5}
+    UnitIndex: 93
+    Position: {x: -0.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -2799,7 +2801,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -2894,7 +2896,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2984,8 +2986,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 26
-    Position: {x: -7.5, y: 0, z: -1.5}
+    UnitIndex: 14
+    Position: {x: 2.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -2994,7 +2996,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -3089,8 +3091,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 14
-    Position: {x: -6.5, y: 0, z: 0.5}
+    UnitIndex: 7
+    Position: {x: 3.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -3099,7 +3101,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -3194,8 +3196,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 30
-    Position: {x: -8.5, y: 0, z: 4.5}
+    UnitIndex: 0
+    Position: {x: 1.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -3204,7 +3206,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -3299,8 +3301,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 35
-    Position: {x: -8.5, y: 0, z: -0.5}
+    UnitIndex: 95
+    Position: {x: 1.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -3309,7 +3311,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -3404,7 +3406,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3494,7 +3496,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3584,7 +3586,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3674,7 +3676,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3764,7 +3766,207 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 4.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -3904,7 +4106,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3994,8 +4196,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 77
-    Position: {x: -12.5, y: 0, z: -2.5}
+    UnitIndex: 27
+    Position: {x: -2.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -4004,7 +4206,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -4106,23 +4308,124 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _receiver: {fileID: 338778673}
   _aoiData:
-    UnitIndex: 0
+    UnitIndex: 4
     Radius: 2
     AutoUpdate: 1
     DynamicNeighbours:
+    - {fileID: 1388757882}
     - {fileID: 1390232516}
     - {fileID: 1329156374}
     - {fileID: 1603837381}
-    StaticNeighbours: []
+    StaticNeighbours:
+    - {fileID: 40032928}
+    - {fileID: 1481615153}
+    - {fileID: 1573757834}
+    - {fileID: 1816315529}
+    - {fileID: 877845223}
+    - {fileID: 881210286}
+    - {fileID: 1087950733}
+    - {fileID: 1632373530}
+    - {fileID: 1089632503}
+    - {fileID: 1718284637}
+    - {fileID: 1106126547}
+    - {fileID: 332323064}
+    - {fileID: 921473847}
+    - {fileID: 239454287}
+    - {fileID: 147648337}
+    - {fileID: 2033893597}
+    - {fileID: 1122019749}
+    - {fileID: 1751704450}
+    - {fileID: 2142515171}
+    - {fileID: 1255898854}
+    - {fileID: 2144241304}
+    - {fileID: 217962220}
+    - {fileID: 672940501}
+    - {fileID: 1402558944}
+    - {fileID: 102835441}
+    - {fileID: 1840420216}
+    - {fileID: 739245489}
+    - {fileID: 1313212653}
+    - {fileID: 742772730}
+    - {fileID: 624347307}
+    - {fileID: 1283284603}
+    - {fileID: 1284103140}
+    - {fileID: 565642656}
+    - {fileID: 1748437464}
+    - {fileID: 1916023312}
+    - {fileID: 756779561}
+    - {fileID: 206324053}
+    - {fileID: 543197151}
+    - {fileID: 770028504}
+    - {fileID: 1985518991}
+    - {fileID: 1762312073}
+    - {fileID: 1895171088}
+    - {fileID: 217089965}
+    - {fileID: 414635944}
+    - {fileID: 1390226298}
+    - {fileID: 662936987}
+    - {fileID: 26249955}
+    - {fileID: 561544068}
+    - {fileID: 1887094941}
+    - {fileID: 1475302986}
+    - {fileID: 1483298729}
+    - {fileID: 1570642648}
+    - {fileID: 653245058}
+    - {fileID: 1957125071}
+    - {fileID: 2126678232}
+    - {fileID: 1334569402}
+    - {fileID: 1973623695}
+    - {fileID: 65680620}
+    - {fileID: 1907955974}
+    - {fileID: 279957362}
+    - {fileID: 74128419}
+    - {fileID: 1197070649}
+    - {fileID: 1980047936}
+    - {fileID: 422838796}
+    - {fileID: 578274221}
+    - {fileID: 1521832990}
+    - {fileID: 1919368351}
+    - {fileID: 180676335}
+    - {fileID: 550231962}
+    - {fileID: 661577562}
+    - {fileID: 261378754}
+    - {fileID: 344284033}
+    - {fileID: 1648167418}
+    - {fileID: 1597903285}
+    - {fileID: 724375141}
+    - {fileID: 1213345706}
+    - {fileID: 522042740}
+    - {fileID: 1800992575}
+    - {fileID: 1822775943}
+    - {fileID: 1013035512}
+    - {fileID: 1831057297}
+    - {fileID: 2107447002}
+    - {fileID: 1145005703}
+    - {fileID: 1651968114}
+    - {fileID: 1183154172}
+    - {fileID: 228515230}
+    - {fileID: 1239163093}
+    - {fileID: 473597665}
+    - {fileID: 709882637}
+    - {fileID: 800169209}
+    - {fileID: 182025189}
+    - {fileID: 715039762}
+    - {fileID: 262202978}
+    - {fileID: 1443956143}
+    - {fileID: 450021795}
+    - {fileID: 488733648}
+    - {fileID: 1397943631}
+    - {fileID: 411673151}
+    - {fileID: 1583436126}
+    - {fileID: 274655334}
     _isRegistered: 1
     CellKey:
-      x: 4
+      x: 0
       y: 0
       z: 0
   LODData:
-    UnitIndex: 0
+    UnitIndex: 4
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     Distances:
       Lod0: 5
       Lod1: 10
@@ -4210,8 +4513,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 5
-    Position: {x: -5.5, y: 0, z: -0.5}
+    UnitIndex: 77
+    Position: {x: 4.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -4220,7 +4523,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -4301,12 +4604,14 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 17.5, y: 0, z: -2.5}
-  - {x: 17.5, y: 0, z: 2.5}
-  - {x: 17.5, y: 0, z: -2.5}
-  - {x: 22.5, y: 0, z: -2.5}
-  - {x: 17.5, y: 0, z: -2.5}
-  - {x: 22.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.8, y: 4, z: -4}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -4463,205 +4768,205 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: -4.5}
+  - {x: -4.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: -3.5}
+  - {x: -0.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: -0.5}
+  - {x: -1.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: -4.5}
+  - {x: -4.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: -1.5}
+  - {x: -1.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: -0.5}
+  - {x: -1.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: -4.5}
+  - {x: -1.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: -4.5}
+  - {x: -0.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: -3.5}
+  - {x: -4.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: -1.5}
+  - {x: -4.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: -0.5}
+  - {x: -0.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: -0.5}
+  - {x: -3.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: -4.5}
+  - {x: -1.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: -3.5}
+  - {x: -4.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: -1.5}
+  - {x: -3.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: -0.5}
+  - {x: -3.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: 0.5}
+  - {x: -1.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: 1.5}
+  - {x: -4.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: 3.5}
+  - {x: -0.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -14.5, y: 0, z: 4.5}
+  - {x: -0.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: 0.5}
+  - {x: -0.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: 1.5}
+  - {x: -1.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -13.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: 1.5}
+  - {x: -3.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: 3.5}
+  - {x: -4.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: 4.5}
+  - {x: -3.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: 0.5}
+  - {x: -3.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: 0.5}
+  - {x: -4.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: 1.5}
+  - {x: -1.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: 1.5}
+  - {x: -1.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -12.5, y: 0, z: 4.5}
+  - {x: -3.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: 3.5}
+  - {x: -1.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -10.5, y: 0, z: 4.5}
+  - {x: -3.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -11.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: -3.5}
+  - {x: 0.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: -1.5}
+  - {x: 1.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: -0.5}
+  - {x: 3.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: -4.5}
+  - {x: 4.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: -1.5}
+  - {x: 3.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: -0.5}
+  - {x: 1.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: -4.5}
+  - {x: 3.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: -3.5}
+  - {x: 4.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: -1.5}
+  - {x: 3.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: -0.5}
+  - {x: 3.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: -4.5}
+  - {x: 4.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: -3.5}
+  - {x: 0.5, y: 0, z: -2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: -1.5}
+  - {x: 1.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: -3.5}
+  - {x: 4.5, y: 0, z: -0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: -1.5}
+  - {x: 1.5, y: 0, z: -4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: -0.5}
+  - {x: 0.5, y: 0, z: -1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: 0.5}
+  - {x: 3.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: 1.5}
+  - {x: 0.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: 3.5}
+  - {x: 3.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -9.5, y: 0, z: 4.5}
+  - {x: 4.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: 0.5}
+  - {x: 1.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -8.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: 0.5}
+  - {x: 1.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: 1.5}
+  - {x: 3.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: 3.5}
+  - {x: 3.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -7.5, y: 0, z: 4.5}
+  - {x: 4.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: 1.5}
+  - {x: 1.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: 4.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -6.5, y: 0, z: 4.5}
+  - {x: 1.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: 0.5}
+  - {x: 0.5, y: 0, z: 1.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: 1.5}
+  - {x: 0.5, y: 0, z: 2.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 3.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: 3.5}
+  - {x: 0.5, y: 0, z: 0.5}
   - {x: -2.8, y: 4, z: -4}
-  - {x: -5.5, y: 0, z: 4.5}
+  - {x: 1.5, y: 0, z: 4.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -4801,7 +5106,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4891,7 +5196,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4981,8 +5286,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 1
-    Position: {x: -5.5, y: 0, z: 3.5}
+    UnitIndex: 65
+    Position: {x: 4.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -4991,7 +5296,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -5086,7 +5391,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5176,8 +5481,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 63
-    Position: {x: -11.5, y: 0, z: 1.5}
+    UnitIndex: 76
+    Position: {x: -1.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -5186,7 +5491,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -5281,7 +5586,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5371,7 +5676,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5461,8 +5766,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 16
-    Position: {x: -6.5, y: 0, z: -1.5}
+    UnitIndex: 22
+    Position: {x: 3.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -5471,7 +5776,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -5566,7 +5871,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5656,7 +5961,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5746,7 +6051,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5836,8 +6141,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 34
-    Position: {x: -8.5, y: 0, z: 0.5}
+    UnitIndex: 72
+    Position: {x: 1.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -5846,7 +6151,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -5941,7 +6246,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6031,7 +6336,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6121,8 +6426,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 0
-    Position: {x: -5.5, y: 0, z: 4.5}
+    UnitIndex: 19
+    Position: {x: 4.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -6131,7 +6436,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -6226,7 +6531,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6316,7 +6621,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6406,7 +6711,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6496,8 +6801,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 43
-    Position: {x: -9.5, y: 0, z: 1.5}
+    UnitIndex: 70
+    Position: {x: 0.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -6506,7 +6811,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -6601,7 +6906,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6691,7 +6996,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6781,7 +7086,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6871,7 +7176,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6961,8 +7266,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 41
-    Position: {x: -9.5, y: 0, z: 3.5}
+    UnitIndex: 59
+    Position: {x: 0.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -6971,7 +7276,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7066,7 +7371,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7156,7 +7461,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7246,8 +7551,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 92
-    Position: {x: -14.5, y: 0, z: 2.5}
+    UnitIndex: 85
+    Position: {x: -4.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -7256,7 +7561,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7351,8 +7656,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 36
-    Position: {x: -8.5, y: 0, z: -1.5}
+    UnitIndex: 82
+    Position: {x: 1.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -7361,7 +7666,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7456,7 +7761,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7546,8 +7851,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 60
-    Position: {x: -11.5, y: 0, z: 4.5}
+    UnitIndex: 3
+    Position: {x: -1.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -7556,7 +7861,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7651,8 +7956,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 94
-    Position: {x: -14.5, y: 0, z: 0.5}
+    UnitIndex: 96
+    Position: {x: -4.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -7661,7 +7966,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7756,8 +8061,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 17
-    Position: {x: -6.5, y: 0, z: -2.5}
+    UnitIndex: 87
+    Position: {x: 3.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -7766,7 +8071,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -7861,7 +8166,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7951,7 +8256,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8041,8 +8346,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 51
-    Position: {x: -10.5, y: 0, z: 3.5}
+    UnitIndex: 42
+    Position: {x: -0.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -8051,7 +8356,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -8146,7 +8451,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8236,8 +8541,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 28
-    Position: {x: -7.5, y: 0, z: -3.5}
+    UnitIndex: 55
+    Position: {x: 2.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -8246,7 +8551,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -8327,12 +8632,14 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 17.5, y: 0, z: 2.5}
-  - {x: 17.5, y: 0, z: -2.5}
-  - {x: 17.5, y: 0, z: 2.5}
-  - {x: 22.5, y: 0, z: -2.5}
-  - {x: 17.5, y: 0, z: 2.5}
-  - {x: 22.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.8, y: 4, z: -4}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -8487,7 +8794,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8577,8 +8884,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 25
-    Position: {x: -7.5, y: 0, z: -0.5}
+    UnitIndex: 80
+    Position: {x: 2.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -8587,7 +8894,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -8682,8 +8989,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 52
-    Position: {x: -10.5, y: 0, z: 2.5}
+    UnitIndex: 74
+    Position: {x: -0.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -8692,7 +8999,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -8787,8 +9094,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 88
-    Position: {x: -13.5, y: 0, z: -3.5}
+    UnitIndex: 71
+    Position: {x: -3.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -8797,7 +9104,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -8892,7 +9199,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8982,7 +9289,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9072,8 +9379,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 10
-    Position: {x: -6.5, y: 0, z: 4.5}
+    UnitIndex: 16
+    Position: {x: 3.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -9082,7 +9389,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -9177,8 +9484,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 33
-    Position: {x: -8.5, y: 0, z: 1.5}
+    UnitIndex: 8
+    Position: {x: 1.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -9187,7 +9494,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -9282,8 +9589,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 46
-    Position: {x: -9.5, y: 0, z: -1.5}
+    UnitIndex: 2
+    Position: {x: 0.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -9292,7 +9599,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -9373,12 +9680,14 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 22.5, y: 0, z: -2.5}
-  - {x: 17.5, y: 0, z: -2.5}
-  - {x: 22.5, y: 0, z: -2.5}
-  - {x: 17.5, y: 0, z: 2.5}
-  - {x: 22.5, y: 0, z: -2.5}
-  - {x: 22.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.8, y: 4, z: -4}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -9533,7 +9842,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9623,8 +9932,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 91
-    Position: {x: -14.5, y: 0, z: 3.5}
+    UnitIndex: 51
+    Position: {x: -4.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -9633,7 +9942,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -9728,8 +10037,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 50
-    Position: {x: -10.5, y: 0, z: 4.5}
+    UnitIndex: 47
+    Position: {x: -0.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -9738,7 +10047,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -9833,7 +10142,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9923,7 +10232,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10013,7 +10322,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10103,8 +10412,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 84
-    Position: {x: -13.5, y: 0, z: 0.5}
+    UnitIndex: 91
+    Position: {x: -3.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -10113,7 +10422,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -10209,7 +10518,7 @@ MonoBehaviour:
       z: 0
   LODData:
     UnitIndex: 83
-    Position: {x: -13.5, y: 0, z: 1.5}
+    Position: {x: -3.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -10218,7 +10527,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -10313,8 +10622,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 4
-    Position: {x: -5.5, y: 0, z: 0.5}
+    UnitIndex: 79
+    Position: {x: 4.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -10323,7 +10632,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -10418,7 +10727,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10508,7 +10817,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10598,7 +10907,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10688,8 +10997,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 65
-    Position: {x: -11.5, y: 0, z: -0.5}
+    UnitIndex: 52
+    Position: {x: -1.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -10698,7 +11007,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -10793,8 +11102,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 99
-    Position: {x: -14.5, y: 0, z: -4.5}
+    UnitIndex: 49
+    Position: {x: -4.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -10803,7 +11112,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -10898,7 +11207,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10973,7 +11282,207 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 4.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 1.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 3.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 4.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -11128,7 +11637,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11218,7 +11727,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11308,8 +11817,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 59
-    Position: {x: -10.5, y: 0, z: -4.5}
+    UnitIndex: 26
+    Position: {x: -0.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -11318,7 +11827,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -11413,7 +11922,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11503,8 +12012,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 2
-    Position: {x: -5.5, y: 0, z: 2.5}
+    UnitIndex: 46
+    Position: {x: 4.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -11513,7 +12022,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -11608,7 +12117,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11698,7 +12207,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11788,7 +12297,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11867,8 +12376,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: spacatslod::Spacats.LOD.DLODObjectCreator
   ImmediateSize: 2
-  PlaymodeSize: 2
-  Gap: 5
+  PlaymodeSize: 20
+  Gap: 1
   MinEulers: {x: 0, y: 0, z: 0}
   MaxEulers: {x: 0, y: 0, z: 0}
   Prefab: {fileID: 1831546045444336154, guid: 3988148a7dd9c03488067465da4f8130, type: 3}
@@ -11954,7 +12463,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12044,7 +12553,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12134,8 +12643,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 76
-    Position: {x: -12.5, y: 0, z: -1.5}
+    UnitIndex: 44
+    Position: {x: -2.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -12144,7 +12653,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -12239,8 +12748,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 67
-    Position: {x: -11.5, y: 0, z: -2.5}
+    UnitIndex: 38
+    Position: {x: -1.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -12249,7 +12758,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -12344,8 +12853,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 66
-    Position: {x: -11.5, y: 0, z: -1.5}
+    UnitIndex: 30
+    Position: {x: -1.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -12354,7 +12863,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -12449,8 +12958,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 56
-    Position: {x: -10.5, y: 0, z: -1.5}
+    UnitIndex: 21
+    Position: {x: -0.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -12459,7 +12968,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -12554,7 +13063,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12736,8 +13245,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 3
-    Position: {x: -5.5, y: 0, z: 1.5}
+    UnitIndex: 41
+    Position: {x: 4.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -12746,7 +13255,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -12841,8 +13350,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 24
-    Position: {x: -7.5, y: 0, z: 0.5}
+    UnitIndex: 33
+    Position: {x: 2.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -12851,7 +13360,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -12946,8 +13455,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 7
-    Position: {x: -5.5, y: 0, z: -2.5}
+    UnitIndex: 25
+    Position: {x: 4.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -12956,7 +13465,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -13051,7 +13560,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13141,7 +13650,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13231,8 +13740,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 12
-    Position: {x: -6.5, y: 0, z: 2.5}
+    UnitIndex: 61
+    Position: {x: 3.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -13241,7 +13750,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -13321,7 +13830,207 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -4.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -0.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -1.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -3.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 3.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 2.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 4.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: 1.5, y: 0, z: 4.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -13476,7 +14185,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13566,8 +14275,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 13
-    Position: {x: -6.5, y: 0, z: 1.5}
+    UnitIndex: 90
+    Position: {x: 3.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -13576,7 +14285,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -13671,7 +14380,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13761,8 +14470,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 85
-    Position: {x: -13.5, y: 0, z: -0.5}
+    UnitIndex: 13
+    Position: {x: -3.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -13771,7 +14480,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -13866,7 +14575,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13956,8 +14665,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 54
-    Position: {x: -10.5, y: 0, z: 0.5}
+    UnitIndex: 37
+    Position: {x: -0.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -13966,7 +14675,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -14061,8 +14770,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 64
-    Position: {x: -11.5, y: 0, z: 0.5}
+    UnitIndex: 29
+    Position: {x: -1.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -14071,7 +14780,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -14166,7 +14875,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14256,8 +14965,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 93
-    Position: {x: -14.5, y: 0, z: 1.5}
+    UnitIndex: 48
+    Position: {x: -4.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -14266,7 +14975,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -14322,7 +15031,7 @@ MonoBehaviour:
   LogicEnabled: 1
   Message: '
 
-    D Total 5; 0,1013ms;'
+    D Total 5; 0,1385ms;'
 --- !u!4 &1317126925
 Transform:
   m_ObjectHideFlags: 0
@@ -14371,23 +15080,124 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _receiver: {fileID: 1329156375}
   _aoiData:
-    UnitIndex: 2
+    UnitIndex: 0
     Radius: 2
     AutoUpdate: 1
     DynamicNeighbours:
+    - {fileID: 1388757882}
     - {fileID: 1390232516}
     - {fileID: 1603837381}
     - {fileID: 338778674}
-    StaticNeighbours: []
+    StaticNeighbours:
+    - {fileID: 40032928}
+    - {fileID: 1481615153}
+    - {fileID: 1573757834}
+    - {fileID: 1816315529}
+    - {fileID: 877845223}
+    - {fileID: 881210286}
+    - {fileID: 1087950733}
+    - {fileID: 1632373530}
+    - {fileID: 1089632503}
+    - {fileID: 1718284637}
+    - {fileID: 1106126547}
+    - {fileID: 332323064}
+    - {fileID: 921473847}
+    - {fileID: 239454287}
+    - {fileID: 147648337}
+    - {fileID: 2033893597}
+    - {fileID: 1122019749}
+    - {fileID: 1751704450}
+    - {fileID: 2142515171}
+    - {fileID: 1255898854}
+    - {fileID: 2144241304}
+    - {fileID: 217962220}
+    - {fileID: 672940501}
+    - {fileID: 1402558944}
+    - {fileID: 102835441}
+    - {fileID: 1840420216}
+    - {fileID: 739245489}
+    - {fileID: 1313212653}
+    - {fileID: 742772730}
+    - {fileID: 624347307}
+    - {fileID: 1283284603}
+    - {fileID: 1284103140}
+    - {fileID: 565642656}
+    - {fileID: 1748437464}
+    - {fileID: 1916023312}
+    - {fileID: 756779561}
+    - {fileID: 206324053}
+    - {fileID: 543197151}
+    - {fileID: 770028504}
+    - {fileID: 1985518991}
+    - {fileID: 1762312073}
+    - {fileID: 1895171088}
+    - {fileID: 217089965}
+    - {fileID: 414635944}
+    - {fileID: 1390226298}
+    - {fileID: 662936987}
+    - {fileID: 26249955}
+    - {fileID: 561544068}
+    - {fileID: 1887094941}
+    - {fileID: 1475302986}
+    - {fileID: 1483298729}
+    - {fileID: 1570642648}
+    - {fileID: 653245058}
+    - {fileID: 1957125071}
+    - {fileID: 2126678232}
+    - {fileID: 1334569402}
+    - {fileID: 1973623695}
+    - {fileID: 65680620}
+    - {fileID: 1907955974}
+    - {fileID: 279957362}
+    - {fileID: 74128419}
+    - {fileID: 1197070649}
+    - {fileID: 1980047936}
+    - {fileID: 422838796}
+    - {fileID: 578274221}
+    - {fileID: 1521832990}
+    - {fileID: 1919368351}
+    - {fileID: 180676335}
+    - {fileID: 550231962}
+    - {fileID: 661577562}
+    - {fileID: 261378754}
+    - {fileID: 344284033}
+    - {fileID: 1648167418}
+    - {fileID: 1597903285}
+    - {fileID: 724375141}
+    - {fileID: 1213345706}
+    - {fileID: 522042740}
+    - {fileID: 1800992575}
+    - {fileID: 1822775943}
+    - {fileID: 1013035512}
+    - {fileID: 1831057297}
+    - {fileID: 2107447002}
+    - {fileID: 1145005703}
+    - {fileID: 1651968114}
+    - {fileID: 1183154172}
+    - {fileID: 228515230}
+    - {fileID: 1239163093}
+    - {fileID: 473597665}
+    - {fileID: 709882637}
+    - {fileID: 800169209}
+    - {fileID: 182025189}
+    - {fileID: 715039762}
+    - {fileID: 262202978}
+    - {fileID: 1443956143}
+    - {fileID: 450021795}
+    - {fileID: 488733648}
+    - {fileID: 1397943631}
+    - {fileID: 411673151}
+    - {fileID: 1583436126}
+    - {fileID: 274655334}
     _isRegistered: 1
     CellKey:
-      x: 3
+      x: -1
       y: 0
       z: 0
   LODData:
-    UnitIndex: 2
+    UnitIndex: 0
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     Distances:
       Lod0: 5
       Lod1: 10
@@ -14529,8 +15339,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 8
-    Position: {x: -5.5, y: 0, z: -3.5}
+    UnitIndex: 32
+    Position: {x: 4.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -14539,7 +15349,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -14634,7 +15444,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14708,118 +15518,122 @@ MonoBehaviour:
   m_EditorClassIdentifier: spacatslod::Spacats.LOD.DLodUnit
   _receiver: {fileID: 0}
   _aoiData:
-    UnitIndex: 4
+    UnitIndex: 1
     Radius: 3
     AutoUpdate: 1
-    DynamicNeighbours: []
+    DynamicNeighbours:
+    - {fileID: 1390232516}
+    - {fileID: 1329156374}
+    - {fileID: 1603837381}
+    - {fileID: 338778674}
     StaticNeighbours:
-    - {fileID: 881210286}
     - {fileID: 40032928}
-    - {fileID: 147648337}
-    - {fileID: 217962220}
-    - {fileID: 2033893597}
-    - {fileID: 1402558944}
-    - {fileID: 672940501}
-    - {fileID: 102835441}
+    - {fileID: 1481615153}
     - {fileID: 1573757834}
-    - {fileID: 1255898854}
+    - {fileID: 1816315529}
+    - {fileID: 877845223}
+    - {fileID: 881210286}
+    - {fileID: 1087950733}
     - {fileID: 1632373530}
-    - {fileID: 2142515171}
+    - {fileID: 1089632503}
+    - {fileID: 1718284637}
+    - {fileID: 1106126547}
     - {fileID: 332323064}
     - {fileID: 921473847}
     - {fileID: 239454287}
-    - {fileID: 1087950733}
-    - {fileID: 1751704450}
-    - {fileID: 1816315529}
+    - {fileID: 147648337}
+    - {fileID: 2033893597}
     - {fileID: 1122019749}
-    - {fileID: 1481615153}
+    - {fileID: 1751704450}
+    - {fileID: 2142515171}
+    - {fileID: 1255898854}
     - {fileID: 2144241304}
-    - {fileID: 1718284637}
-    - {fileID: 1089632503}
-    - {fileID: 1106126547}
-    - {fileID: 877845223}
-    - {fileID: 565642656}
-    - {fileID: 1313212653}
-    - {fileID: 543197151}
-    - {fileID: 739245489}
-    - {fileID: 1762312073}
-    - {fileID: 756779561}
-    - {fileID: 770028504}
-    - {fileID: 26249955}
-    - {fileID: 1887094941}
-    - {fileID: 1985518991}
-    - {fileID: 414635944}
-    - {fileID: 1895171088}
+    - {fileID: 217962220}
+    - {fileID: 672940501}
+    - {fileID: 1402558944}
+    - {fileID: 102835441}
     - {fileID: 1840420216}
-    - {fileID: 561544068}
-    - {fileID: 1916023312}
-    - {fileID: 1283284603}
-    - {fileID: 1390226298}
-    - {fileID: 1475302986}
-    - {fileID: 206324053}
-    - {fileID: 1748437464}
-    - {fileID: 662936987}
-    - {fileID: 217089965}
-    - {fileID: 624347307}
+    - {fileID: 739245489}
+    - {fileID: 1313212653}
     - {fileID: 742772730}
+    - {fileID: 624347307}
+    - {fileID: 1283284603}
     - {fileID: 1284103140}
-    - {fileID: 65680620}
-    - {fileID: 1570642648}
-    - {fileID: 1919368351}
-    - {fileID: 724375141}
-    - {fileID: 180676335}
-    - {fileID: 1597903285}
-    - {fileID: 1648167418}
-    - {fileID: 1957125071}
-    - {fileID: 550231962}
-    - {fileID: 279957362}
+    - {fileID: 565642656}
+    - {fileID: 1748437464}
+    - {fileID: 1916023312}
+    - {fileID: 756779561}
+    - {fileID: 206324053}
+    - {fileID: 543197151}
+    - {fileID: 770028504}
+    - {fileID: 1985518991}
+    - {fileID: 1762312073}
+    - {fileID: 1895171088}
+    - {fileID: 217089965}
+    - {fileID: 414635944}
+    - {fileID: 1390226298}
+    - {fileID: 662936987}
+    - {fileID: 26249955}
+    - {fileID: 561544068}
+    - {fileID: 1887094941}
+    - {fileID: 1475302986}
     - {fileID: 1483298729}
+    - {fileID: 1570642648}
     - {fileID: 653245058}
-    - {fileID: 1973623695}
-    - {fileID: 261378754}
-    - {fileID: 661577562}
-    - {fileID: 74128419}
+    - {fileID: 1957125071}
     - {fileID: 2126678232}
-    - {fileID: 578274221}
-    - {fileID: 422838796}
-    - {fileID: 1907955974}
-    - {fileID: 1980047936}
     - {fileID: 1334569402}
+    - {fileID: 1973623695}
+    - {fileID: 65680620}
+    - {fileID: 1907955974}
+    - {fileID: 279957362}
+    - {fileID: 74128419}
     - {fileID: 1197070649}
+    - {fileID: 1980047936}
+    - {fileID: 422838796}
+    - {fileID: 578274221}
     - {fileID: 1521832990}
+    - {fileID: 1919368351}
+    - {fileID: 180676335}
+    - {fileID: 550231962}
+    - {fileID: 661577562}
+    - {fileID: 261378754}
     - {fileID: 344284033}
-    - {fileID: 1583436126}
-    - {fileID: 488733648}
-    - {fileID: 1397943631}
+    - {fileID: 1648167418}
+    - {fileID: 1597903285}
+    - {fileID: 724375141}
+    - {fileID: 1213345706}
     - {fileID: 522042740}
     - {fileID: 1800992575}
-    - {fileID: 450021795}
-    - {fileID: 715039762}
-    - {fileID: 228515230}
-    - {fileID: 1831057297}
-    - {fileID: 274655334}
-    - {fileID: 1183154172}
-    - {fileID: 182025189}
-    - {fileID: 1651968114}
-    - {fileID: 2107447002}
-    - {fileID: 1443956143}
-    - {fileID: 262202978}
-    - {fileID: 1239163093}
-    - {fileID: 1213345706}
     - {fileID: 1822775943}
+    - {fileID: 1013035512}
+    - {fileID: 1831057297}
+    - {fileID: 2107447002}
+    - {fileID: 1145005703}
+    - {fileID: 1651968114}
+    - {fileID: 1183154172}
+    - {fileID: 228515230}
+    - {fileID: 1239163093}
+    - {fileID: 473597665}
     - {fileID: 709882637}
     - {fileID: 800169209}
-    - {fileID: 1145005703}
-    - {fileID: 1013035512}
+    - {fileID: 182025189}
+    - {fileID: 715039762}
+    - {fileID: 262202978}
+    - {fileID: 1443956143}
+    - {fileID: 450021795}
+    - {fileID: 488733648}
+    - {fileID: 1397943631}
     - {fileID: 411673151}
-    - {fileID: 473597665}
+    - {fileID: 1583436126}
+    - {fileID: 274655334}
     _isRegistered: 1
     CellKey:
       x: -1
       y: 0
       z: -1
   LODData:
-    UnitIndex: 4
+    UnitIndex: 1
     GroupIndex: 0
     CurrentLod: 5
     Distances:
@@ -14924,8 +15738,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 73
-    Position: {x: -12.5, y: 0, z: 1.5}
+    UnitIndex: 11
+    Position: {x: -2.5, y: 0, z: 1.5}
     Scale: 1
     Rotation:
       value:
@@ -14934,7 +15748,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -14986,19 +15800,120 @@ MonoBehaviour:
     Radius: 2
     AutoUpdate: 1
     DynamicNeighbours:
+    - {fileID: 1388757882}
     - {fileID: 1329156374}
     - {fileID: 1603837381}
     - {fileID: 338778674}
-    StaticNeighbours: []
+    StaticNeighbours:
+    - {fileID: 40032928}
+    - {fileID: 1481615153}
+    - {fileID: 1573757834}
+    - {fileID: 1816315529}
+    - {fileID: 877845223}
+    - {fileID: 881210286}
+    - {fileID: 1087950733}
+    - {fileID: 1632373530}
+    - {fileID: 1089632503}
+    - {fileID: 1718284637}
+    - {fileID: 1106126547}
+    - {fileID: 332323064}
+    - {fileID: 921473847}
+    - {fileID: 239454287}
+    - {fileID: 147648337}
+    - {fileID: 2033893597}
+    - {fileID: 1122019749}
+    - {fileID: 1751704450}
+    - {fileID: 2142515171}
+    - {fileID: 1255898854}
+    - {fileID: 2144241304}
+    - {fileID: 217962220}
+    - {fileID: 672940501}
+    - {fileID: 1402558944}
+    - {fileID: 102835441}
+    - {fileID: 1840420216}
+    - {fileID: 739245489}
+    - {fileID: 1313212653}
+    - {fileID: 742772730}
+    - {fileID: 624347307}
+    - {fileID: 1283284603}
+    - {fileID: 1284103140}
+    - {fileID: 565642656}
+    - {fileID: 1748437464}
+    - {fileID: 1916023312}
+    - {fileID: 756779561}
+    - {fileID: 206324053}
+    - {fileID: 543197151}
+    - {fileID: 770028504}
+    - {fileID: 1985518991}
+    - {fileID: 1762312073}
+    - {fileID: 1895171088}
+    - {fileID: 217089965}
+    - {fileID: 414635944}
+    - {fileID: 1390226298}
+    - {fileID: 662936987}
+    - {fileID: 26249955}
+    - {fileID: 561544068}
+    - {fileID: 1887094941}
+    - {fileID: 1475302986}
+    - {fileID: 1483298729}
+    - {fileID: 1570642648}
+    - {fileID: 653245058}
+    - {fileID: 1957125071}
+    - {fileID: 2126678232}
+    - {fileID: 1334569402}
+    - {fileID: 1973623695}
+    - {fileID: 65680620}
+    - {fileID: 1907955974}
+    - {fileID: 279957362}
+    - {fileID: 74128419}
+    - {fileID: 1197070649}
+    - {fileID: 1980047936}
+    - {fileID: 422838796}
+    - {fileID: 578274221}
+    - {fileID: 1521832990}
+    - {fileID: 1919368351}
+    - {fileID: 180676335}
+    - {fileID: 550231962}
+    - {fileID: 661577562}
+    - {fileID: 261378754}
+    - {fileID: 344284033}
+    - {fileID: 1648167418}
+    - {fileID: 1597903285}
+    - {fileID: 724375141}
+    - {fileID: 1213345706}
+    - {fileID: 522042740}
+    - {fileID: 1800992575}
+    - {fileID: 1822775943}
+    - {fileID: 1013035512}
+    - {fileID: 1831057297}
+    - {fileID: 2107447002}
+    - {fileID: 1145005703}
+    - {fileID: 1651968114}
+    - {fileID: 1183154172}
+    - {fileID: 228515230}
+    - {fileID: 1239163093}
+    - {fileID: 473597665}
+    - {fileID: 709882637}
+    - {fileID: 800169209}
+    - {fileID: 182025189}
+    - {fileID: 715039762}
+    - {fileID: 262202978}
+    - {fileID: 1443956143}
+    - {fileID: 450021795}
+    - {fileID: 488733648}
+    - {fileID: 1397943631}
+    - {fileID: 411673151}
+    - {fileID: 1583436126}
+    - {fileID: 274655334}
     _isRegistered: 1
     CellKey:
-      x: 3
+      x: -1
       y: 0
       z: -1
   LODData:
     UnitIndex: 3
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     Distances:
       Lod0: 5
       Lod1: 10
@@ -15140,8 +16055,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 42
-    Position: {x: -9.5, y: 0, z: 2.5}
+    UnitIndex: 69
+    Position: {x: 0.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -15150,7 +16065,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -15245,8 +16160,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 89
-    Position: {x: -13.5, y: 0, z: -4.5}
+    UnitIndex: 68
+    Position: {x: -3.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -15255,7 +16170,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -15335,7 +16250,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15440,7 +16355,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15530,8 +16445,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 20
-    Position: {x: -7.5, y: 0, z: 4.5}
+    UnitIndex: 6
+    Position: {x: 2.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -15540,7 +16455,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -15635,7 +16550,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15710,7 +16625,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15815,7 +16730,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15905,8 +16820,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 72
-    Position: {x: -12.5, y: 0, z: 2.5}
+    UnitIndex: 66
+    Position: {x: -2.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -15915,7 +16830,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -16010,8 +16925,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 55
-    Position: {x: -10.5, y: 0, z: -0.5}
+    UnitIndex: 62
+    Position: {x: -0.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -16020,7 +16935,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -16115,8 +17030,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 29
-    Position: {x: -7.5, y: 0, z: -4.5}
+    UnitIndex: 60
+    Position: {x: 2.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -16125,7 +17040,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -16220,7 +17135,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16310,7 +17225,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16400,8 +17315,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 6
-    Position: {x: -5.5, y: 0, z: -1.5}
+    UnitIndex: 86
+    Position: {x: 4.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -16410,7 +17325,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -16505,7 +17420,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16595,7 +17510,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16740,8 +17655,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 48
-    Position: {x: -9.5, y: 0, z: -3.5}
+    UnitIndex: 58
+    Position: {x: 0.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -16750,7 +17665,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -16845,8 +17760,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 86
-    Position: {x: -13.5, y: 0, z: -1.5}
+    UnitIndex: 54
+    Position: {x: -3.5, y: 0, z: -1.5}
     Scale: 1
     Rotation:
       value:
@@ -16855,7 +17770,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -16950,7 +17865,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17040,8 +17955,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 44
-    Position: {x: -9.5, y: 0, z: 0.5}
+    UnitIndex: 64
+    Position: {x: 0.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -17050,7 +17965,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -17145,7 +18060,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17235,8 +18150,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 39
-    Position: {x: -8.5, y: 0, z: -4.5}
+    UnitIndex: 73
+    Position: {x: 1.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -17245,7 +18160,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -17340,7 +18255,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17383,23 +18298,124 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _receiver: {fileID: 1603837382}
   _aoiData:
-    UnitIndex: 1
+    UnitIndex: 2
     Radius: 2
     AutoUpdate: 1
     DynamicNeighbours:
+    - {fileID: 1388757882}
     - {fileID: 1390232516}
     - {fileID: 1329156374}
     - {fileID: 338778674}
-    StaticNeighbours: []
+    StaticNeighbours:
+    - {fileID: 40032928}
+    - {fileID: 1481615153}
+    - {fileID: 1573757834}
+    - {fileID: 1816315529}
+    - {fileID: 877845223}
+    - {fileID: 881210286}
+    - {fileID: 1087950733}
+    - {fileID: 1632373530}
+    - {fileID: 1089632503}
+    - {fileID: 1718284637}
+    - {fileID: 1106126547}
+    - {fileID: 332323064}
+    - {fileID: 921473847}
+    - {fileID: 239454287}
+    - {fileID: 147648337}
+    - {fileID: 2033893597}
+    - {fileID: 1122019749}
+    - {fileID: 1751704450}
+    - {fileID: 2142515171}
+    - {fileID: 1255898854}
+    - {fileID: 2144241304}
+    - {fileID: 217962220}
+    - {fileID: 672940501}
+    - {fileID: 1402558944}
+    - {fileID: 102835441}
+    - {fileID: 1840420216}
+    - {fileID: 739245489}
+    - {fileID: 1313212653}
+    - {fileID: 742772730}
+    - {fileID: 624347307}
+    - {fileID: 1283284603}
+    - {fileID: 1284103140}
+    - {fileID: 565642656}
+    - {fileID: 1748437464}
+    - {fileID: 1916023312}
+    - {fileID: 756779561}
+    - {fileID: 206324053}
+    - {fileID: 543197151}
+    - {fileID: 770028504}
+    - {fileID: 1985518991}
+    - {fileID: 1762312073}
+    - {fileID: 1895171088}
+    - {fileID: 217089965}
+    - {fileID: 414635944}
+    - {fileID: 1390226298}
+    - {fileID: 662936987}
+    - {fileID: 26249955}
+    - {fileID: 561544068}
+    - {fileID: 1887094941}
+    - {fileID: 1475302986}
+    - {fileID: 1483298729}
+    - {fileID: 1570642648}
+    - {fileID: 653245058}
+    - {fileID: 1957125071}
+    - {fileID: 2126678232}
+    - {fileID: 1334569402}
+    - {fileID: 1973623695}
+    - {fileID: 65680620}
+    - {fileID: 1907955974}
+    - {fileID: 279957362}
+    - {fileID: 74128419}
+    - {fileID: 1197070649}
+    - {fileID: 1980047936}
+    - {fileID: 422838796}
+    - {fileID: 578274221}
+    - {fileID: 1521832990}
+    - {fileID: 1919368351}
+    - {fileID: 180676335}
+    - {fileID: 550231962}
+    - {fileID: 661577562}
+    - {fileID: 261378754}
+    - {fileID: 344284033}
+    - {fileID: 1648167418}
+    - {fileID: 1597903285}
+    - {fileID: 724375141}
+    - {fileID: 1213345706}
+    - {fileID: 522042740}
+    - {fileID: 1800992575}
+    - {fileID: 1822775943}
+    - {fileID: 1013035512}
+    - {fileID: 1831057297}
+    - {fileID: 2107447002}
+    - {fileID: 1145005703}
+    - {fileID: 1651968114}
+    - {fileID: 1183154172}
+    - {fileID: 228515230}
+    - {fileID: 1239163093}
+    - {fileID: 473597665}
+    - {fileID: 709882637}
+    - {fileID: 800169209}
+    - {fileID: 182025189}
+    - {fileID: 715039762}
+    - {fileID: 262202978}
+    - {fileID: 1443956143}
+    - {fileID: 450021795}
+    - {fileID: 488733648}
+    - {fileID: 1397943631}
+    - {fileID: 411673151}
+    - {fileID: 1583436126}
+    - {fileID: 274655334}
     _isRegistered: 1
     CellKey:
-      x: 4
+      x: 0
       y: 0
       z: -1
   LODData:
-    UnitIndex: 1
+    UnitIndex: 2
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     Distances:
       Lod0: 5
       Lod1: 10
@@ -17541,7 +18557,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17584,11 +18600,11 @@ MonoBehaviour:
   ShowLogs: 0
   ShowSLogs: 0
   _controllers:
-  - {fileID: 30304766}
   - {fileID: 88221707}
-  - {fileID: 1317126924}
-  - {fileID: 1547872388}
+  - {fileID: 30304766}
   - {fileID: 1837600499}
+  - {fileID: 1547872388}
+  - {fileID: 1317126924}
 --- !u!4 &1608919498
 Transform:
   m_ObjectHideFlags: 0
@@ -17689,7 +18705,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17779,8 +18795,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 79
-    Position: {x: -12.5, y: 0, z: -4.5}
+    UnitIndex: 40
+    Position: {x: -2.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -17789,7 +18805,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -17884,7 +18900,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17974,7 +18990,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18064,7 +19080,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18154,7 +19170,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18244,8 +19260,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 38
-    Position: {x: -8.5, y: 0, z: -3.5}
+    UnitIndex: 10
+    Position: {x: 1.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -18254,7 +19270,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -18349,7 +19365,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18439,8 +19455,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 22
-    Position: {x: -7.5, y: 0, z: 2.5}
+    UnitIndex: 34
+    Position: {x: 2.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -18449,7 +19465,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -18544,7 +19560,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18634,7 +19650,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18724,7 +19740,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18799,7 +19815,207 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -4.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -0.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -1.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -3.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: -0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: -4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: -1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 3.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 2.5, y: 0, z: 4.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 1.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 2.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 4.5, y: 0, z: 3.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: 1.5, y: 0, z: 4.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -18954,7 +20170,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19044,8 +20260,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 68
-    Position: {x: -11.5, y: 0, z: -3.5}
+    UnitIndex: 36
+    Position: {x: -1.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -19054,7 +20270,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -19149,8 +20365,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 71
-    Position: {x: -12.5, y: 0, z: 3.5}
+    UnitIndex: 28
+    Position: {x: -2.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -19159,7 +20375,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -19254,8 +20470,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 57
-    Position: {x: -10.5, y: 0, z: -2.5}
+    UnitIndex: 20
+    Position: {x: -0.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -19264,7 +20480,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -19359,8 +20575,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 90
-    Position: {x: -14.5, y: 0, z: 4.5}
+    UnitIndex: 15
+    Position: {x: -4.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -19369,7 +20585,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -19464,7 +20680,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19554,7 +20770,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19644,8 +20860,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 40
-    Position: {x: -9.5, y: 0, z: 4.5}
+    UnitIndex: 56
+    Position: {x: 0.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -19654,7 +20870,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -19749,8 +20965,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 75
-    Position: {x: -12.5, y: 0, z: -0.5}
+    UnitIndex: 53
+    Position: {x: -2.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -19759,7 +20975,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -19854,8 +21070,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 11
-    Position: {x: -6.5, y: 0, z: 3.5}
+    UnitIndex: 50
+    Position: {x: 3.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -19864,7 +21080,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -19959,8 +21175,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 31
-    Position: {x: -8.5, y: 0, z: 3.5}
+    UnitIndex: 45
+    Position: {x: 1.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -19969,7 +21185,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -20115,8 +21331,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 61
-    Position: {x: -11.5, y: 0, z: 3.5}
+    UnitIndex: 57
+    Position: {x: -1.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -20125,7 +21341,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -20220,7 +21436,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20310,8 +21526,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 81
-    Position: {x: -13.5, y: 0, z: 3.5}
+    UnitIndex: 67
+    Position: {x: -3.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -20320,7 +21536,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -20415,7 +21631,15 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: -2.8, y: 4, z: -4}
+  - {x: -2.5, y: 0, z: -2.5}
+  - {x: -2.8, y: 4, z: -4}
+  - {x: -2.5, y: 0, z: 2.5}
+  - {x: -2.8, y: 4, z: -4}
+  - {x: 2.5, y: 0, z: -2.5}
+  - {x: -2.8, y: 4, z: -4}
+  - {x: 2.5, y: 0, z: 2.5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -20555,8 +21779,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 62
-    Position: {x: -11.5, y: 0, z: 2.5}
+    UnitIndex: 78
+    Position: {x: -1.5, y: 0, z: 2.5}
     Scale: 1
     Rotation:
       value:
@@ -20565,7 +21789,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -20660,7 +21884,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20750,8 +21974,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 15
-    Position: {x: -6.5, y: 0, z: -0.5}
+    UnitIndex: 97
+    Position: {x: 3.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -20760,7 +21984,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -20855,8 +22079,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 74
-    Position: {x: -12.5, y: 0, z: 0.5}
+    UnitIndex: 92
+    Position: {x: -2.5, y: 0, z: 0.5}
     Scale: 1
     Rotation:
       value:
@@ -20865,7 +22089,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -20960,8 +22184,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 47
-    Position: {x: -9.5, y: 0, z: -2.5}
+    UnitIndex: 84
+    Position: {x: 0.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -20970,7 +22194,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -21050,7 +22274,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21155,7 +22379,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21245,8 +22469,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 37
-    Position: {x: -8.5, y: 0, z: -2.5}
+    UnitIndex: 39
+    Position: {x: 1.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -21255,7 +22479,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -21350,8 +22574,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 27
-    Position: {x: -7.5, y: 0, z: -2.5}
+    UnitIndex: 31
+    Position: {x: 2.5, y: 0, z: -2.5}
     Scale: 1
     Rotation:
       value:
@@ -21360,7 +22584,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -21455,8 +22679,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 9
-    Position: {x: -5.5, y: 0, z: -4.5}
+    UnitIndex: 23
+    Position: {x: 4.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -21465,7 +22689,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -21560,8 +22784,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 80
-    Position: {x: -13.5, y: 0, z: 4.5}
+    UnitIndex: 17
+    Position: {x: -3.5, y: 0, z: 4.5}
     Scale: 1
     Rotation:
       value:
@@ -21570,7 +22794,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 1
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -21665,7 +22889,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21755,7 +22979,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21845,7 +23069,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21935,7 +23159,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22025,8 +23249,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 95
-    Position: {x: -14.5, y: 0, z: -0.5}
+    UnitIndex: 88
+    Position: {x: -4.5, y: 0, z: -0.5}
     Scale: 1
     Rotation:
       value:
@@ -22035,7 +23259,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -22130,7 +23354,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22220,7 +23444,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22310,8 +23534,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 21
-    Position: {x: -7.5, y: 0, z: 3.5}
+    UnitIndex: 43
+    Position: {x: 2.5, y: 0, z: 3.5}
     Scale: 1
     Rotation:
       value:
@@ -22320,7 +23544,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -22415,8 +23639,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 18
-    Position: {x: -6.5, y: 0, z: -3.5}
+    UnitIndex: 35
+    Position: {x: 3.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -22425,7 +23649,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -22520,7 +23744,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22610,7 +23834,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.99178314, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22700,7 +23924,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22790,8 +24014,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 78
-    Position: {x: -12.5, y: 0, z: -3.5}
+    UnitIndex: 81
+    Position: {x: -2.5, y: 0, z: -3.5}
     Scale: 1
     Rotation:
       value:
@@ -22800,7 +24024,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -22895,8 +24119,8 @@ MonoBehaviour:
       y: 0
       z: 0
   LODData:
-    UnitIndex: 69
-    Position: {x: -11.5, y: 0, z: -4.5}
+    UnitIndex: 75
+    Position: {x: -1.5, y: 0, z: -4.5}
     Scale: 1
     Rotation:
       value:
@@ -22905,7 +24129,7 @@ MonoBehaviour:
         z: -0
         w: 1
     GroupIndex: 0
-    CurrentLod: 5
+    CurrentLod: 0
     CuboidCalculations: 0
     Distances:
       Lod0: 5
@@ -23000,7 +24224,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a405e4b9b6998241a48cc697d9c822d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7267132, a: 1}
+  m_Color: {r: 0.39488173, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -23056,7 +24280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImmediateSize: 10
-  PlaymodeSize: 10
+  PlaymodeSize: 50
   Gap: 1
   MinEulers: {x: 0, y: 0, z: 0}
   MaxEulers: {x: 0, y: 0, z: 0}
