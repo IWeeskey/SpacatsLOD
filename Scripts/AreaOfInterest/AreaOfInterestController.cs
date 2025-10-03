@@ -5,6 +5,7 @@ using System.Globalization;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using Unity.Collections;
+using Unity.Jobs;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -77,10 +78,8 @@ namespace Spacats.LOD
             
         }
 
-        public void ProcessDynamic(ref NativeParallelMultiHashMap<int3, int> dCells, float cellSize)
+        public void ProcessDynamic(NativeParallelMultiHashMap<int3, int> dCells, float cellSize)
         {
-            if (_dUnits==null || _dUnits.Count==0) return;
-            
             if (AOISettings.PerformMeasurements)
             {
                 TimeTracker.Start(AOISettings.DynamicMeasureID);
@@ -91,9 +90,16 @@ namespace Spacats.LOD
             {
                 LodUnitAOI aoiUnit = _dUnits[i].AOIData;
                 aoiUnit.CellKey = LodUtils.GetCellKey(_dUnits[i].transform.position, cellSize);
-                ProcessSingleUnit(aoiUnit, ref dCells, true);
+                ProcessSingleUnit(aoiUnit, dCells, true);
             }
 
+            int _sUnitsCount = _sUnits.Count;
+            for (int i = 0; i < _sUnitsCount; i++)
+            {
+                LodUnitAOI aoiUnit = _sUnits[i].AOIData;
+                aoiUnit.CellKey = LodUtils.GetCellKey(_sUnits[i].transform.position, cellSize);
+                ProcessSingleUnit(aoiUnit, dCells, false);
+            }
 
 
             if (AOISettings.PerformMeasurements)
@@ -111,10 +117,8 @@ namespace Spacats.LOD
             }
         }
         
-        public void ProcessStatic(ref NativeParallelMultiHashMap<int3, int> sCells, float cellSize)
+        public void ProcessStatic(NativeParallelMultiHashMap<int3, int> sCells, float cellSize)
         {
-            if (_sUnits==null || _sUnits.Count==0) return;
-            
             if (AOISettings.PerformMeasurements)
             {
                 TimeTracker.Start(AOISettings.StaticMeasureID);
@@ -125,7 +129,15 @@ namespace Spacats.LOD
             {
                 LodUnitAOI aoiUnit = _sUnits[i].AOIData;
                 aoiUnit.CellKey = LodUtils.GetCellKey(_sUnits[i].transform.position, cellSize);
-                ProcessSingleUnit(aoiUnit, ref sCells, false);
+                ProcessSingleUnit(aoiUnit, sCells, false);
+            }
+            
+            int _dUnitsCount = _dUnits.Count;
+            for (int i = 0; i < _dUnitsCount; i++)
+            {
+                LodUnitAOI aoiUnit = _dUnits[i].AOIData;
+                aoiUnit.CellKey = LodUtils.GetCellKey(_dUnits[i].transform.position, cellSize);
+                ProcessSingleUnit(aoiUnit, sCells, false);
             }
             
             
@@ -136,32 +148,63 @@ namespace Spacats.LOD
             }
         }
 
-        private void ProcessSingleUnit(LodUnitAOI aoiUnit, ref NativeParallelMultiHashMap<int3, int> cells, bool isDynamic)
+        private void ProcessSingleUnit(LodUnitAOI aoiUnit, NativeParallelMultiHashMap<int3, int> cells, bool isDynamic)
         {
-            int radius = aoiUnit.Radius;
-            int3 cellKey = aoiUnit.CellKey;
+            // int radius = aoiUnit.Radius;
+            // int3 cellKey = aoiUnit.CellKey;
             
             if (isDynamic) aoiUnit.DynamicNeighbours.Clear();
             else aoiUnit.StaticNeighbours.Clear();
             
-            
-            for (int x = -radius; x <= radius; x++)
+            NativeList<int> tempNeighbours = new NativeList<int>(Allocator.Persistent);
+
+            int lodUnitIndex = 0;
+
+            if (aoiUnit.IsDynamic) lodUnitIndex = aoiUnit.DUnitIndex;
+            else lodUnitIndex = aoiUnit.SUnitIndex;
+
+            AOIUnitJob job = new AOIUnitJob();
+
+            job.Cells = cells;
+            job.Neighbours = tempNeighbours;
+            job.CenterCell = aoiUnit.CellKey;
+            job.Radius = aoiUnit.Radius;
+            job.IsWholeDynamic = isDynamic;
+            job.IsSelfDynamic = aoiUnit.IsDynamic;
+            job.LodUnitIndex = lodUnitIndex;
+            job.Schedule().Complete();
+
+            for (int i = 0; i < tempNeighbours.Length; i++)
             {
-                for (int y = -radius; y <= radius; y++)
-                {
-                    for (int z = -radius; z <= radius; z++)
-                    {
-                        int3 offset = new int3(x, y, z);
-                        if (math.lengthsq(offset) > radius * radius) continue;
-                        
-                        int3 checkCell = cellKey + offset;
-                        ProcessCell(checkCell, aoiUnit, ref cells, isDynamic);
-                    }
-                }
+                int index = tempNeighbours[i];
+                
+                if (isDynamic) aoiUnit.DynamicNeighbours.Add(DynamicLODController.Instance.GetUnitByIndex(index));
+                else  aoiUnit.StaticNeighbours.Add(StaticLODController.Instance.GetUnitByIndex(index));
             }
+            //JobHandle jobHandle = job.che
+            
+            
+            //AOIBurstUtils.FillNeighboursList(cells, tempNeighbours, aoiUnit.CellKey, aoiUnit.Radius, isDynamic, aoiUnit.IsDynamic, lodUnitIndex);
+            
+            // for (int x = -radius; x <= radius; x++)
+            // {
+            //     for (int y = -radius; y <= radius; y++)
+            //     {
+            //         for (int z = -radius; z <= radius; z++)
+            //         {
+            //             int3 offset = new int3(x, y, z);
+            //             if (math.lengthsq(offset) > radius * radius) continue;
+            //             
+            //             int3 checkCell = cellKey + offset;
+            //             ProcessCell(checkCell, aoiUnit, ref cells, isDynamic);
+            //         }
+            //     }
+            // }
             
             if (isDynamic) aoiUnit.RaiseOnDynamicNeighboursChanged();
             else aoiUnit.RaiseOnStaticNeighboursChanged();
+
+            tempNeighbours.Dispose();
         }
 
         private void ProcessCell(int3 cellKey, LodUnitAOI aoiUnit, ref NativeParallelMultiHashMap<int3, int> cells, bool isDynamic)

@@ -277,7 +277,7 @@ namespace Spacats.LOD
             TryCompleteJob();
             ProcessRequests();
             ApplySettings();
-            if (AreaOfInterestController.HasInstance) AreaOfInterestController.Instance.ProcessStatic(ref _disposeData.Cells, LodSettings.CellSize);
+            if (AreaOfInterestController.HasInstance) AreaOfInterestController.Instance.ProcessStatic(_disposeData.Cells, LodSettings.CellSize);
             
             if (LodSettings.PerformMeasurements)
             {
@@ -309,7 +309,7 @@ namespace Spacats.LOD
         {
             ProcessRequests();
             ApplySettings();
-            if (AreaOfInterestController.HasInstance) AreaOfInterestController.Instance.ProcessStatic(ref _disposeData.Cells, LodSettings.CellSize);
+            if (AreaOfInterestController.HasInstance) AreaOfInterestController.Instance.ProcessStatic(_disposeData.Cells, LodSettings.CellSize);
             
             if (LodSettings.PerformMeasurements) TimeTracker.Start(LodSettings.TotalMeasureID);
             _disposeData.ScheduleJob(_runtimeData);

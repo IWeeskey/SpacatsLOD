@@ -25,6 +25,6 @@ namespace Spacats.LOD
         private int _maxUnitCount = 1_000_000;
         public int MaxUnitCount =>_maxUnitCount;
 
-        public List<float> GroupMultipliers;
+        public List<float> GroupMultipliers = new List<float>();
     }
 }

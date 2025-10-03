@@ -112,7 +112,7 @@ namespace Spacats.LOD
 
         public void TryUnregisterAOI()
         {
-            if (_aoiData.AutoUpdate) return;
+            if (!_aoiData.AutoUpdate) return;
             if (!_aoiData.IsRegistered) return;
             if (!AreaOfInterestController.HasInstance) return;
             AreaOfInterestController.Instance.UnRegisterAOI(this);
