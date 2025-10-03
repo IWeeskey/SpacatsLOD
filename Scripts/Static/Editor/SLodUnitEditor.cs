@@ -14,11 +14,25 @@ namespace Spacats.LOD
     {
         private List<Color> _lodColors = new List<Color>() { Color.green, Color.yellow, new Color(1f,0.5f,0f), Color.red, new Color(1f, 0f, 0.5f) };
 
+        SerializedProperty _aoiDataProp;
+        SerializedProperty _aoiAutoUpdateProp;
+        
+        bool _oldAOIValue = false;
+        
+        void OnEnable()
+        {
+            _aoiDataProp = serializedObject.FindProperty("_aotData");
+            _aoiAutoUpdateProp = _aoiDataProp.FindPropertyRelative("AutoUpdate");
+            _oldAOIValue = _aoiAutoUpdateProp.boolValue;
+        }
+        
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
 
+            CheckAOTAutoUpdate();
             DrawLodSettings();
+            DrawAOTSettings();
             DrawLodDistances();
             DrawCuboidSettings();
             DrawButtons();
@@ -31,6 +45,17 @@ namespace Spacats.LOD
             DrawGizmo();
         }
 
+        private void CheckAOTAutoUpdate()
+        {
+            if (_aoiAutoUpdateProp.boolValue == _oldAOIValue) return;
+            _oldAOIValue = _aoiAutoUpdateProp.boolValue;
+            
+            SLodUnit targetScript = (SLodUnit)target;
+            
+            if (_oldAOIValue) targetScript.TryRegisterAOI();
+            else targetScript.TryUnregisterAOI();
+        }
+        
         private void DrawLodSettings()
         {
             SLodUnit targetScript = (SLodUnit)target;
@@ -44,9 +69,17 @@ namespace Spacats.LOD
             SerializedProperty receiver = serializedObject.FindProperty("_receiver");
             EditorGUILayout.PropertyField(receiver, new GUIContent("Reciever"));
         }
+        
+        private void DrawAOTSettings()
+        {
+            EditorGUILayout.Space();
+            SerializedProperty aotData = serializedObject.FindProperty("_aotData");
+            EditorGUILayout.PropertyField(aotData, new GUIContent("AOT"));
+        }
 
         private void DrawLodDistances()
         {
+            EditorGUILayout.Space();
             SerializedProperty sLodUnitData = serializedObject.FindProperty("LODData");
             SerializedProperty gizmoList = serializedObject.FindProperty("DrawGizmo");
 

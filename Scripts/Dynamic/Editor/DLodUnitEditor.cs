@@ -11,14 +11,39 @@ namespace Spacats.LOD
     {
         private List<Color> _lodColors = new List<Color>() { Color.green, Color.yellow, new Color(1f, 0.5f, 0f), Color.red, new Color(1f, 0f, 0.5f) };
 
+        SerializedProperty _aoiDataProp;
+        SerializedProperty _aoiAutoUpdateProp;
+        
+        bool _oldAOIValue = false;
+        
+        void OnEnable()
+        {
+            _aoiDataProp = serializedObject.FindProperty("_aoiData");
+            _aoiAutoUpdateProp = _aoiDataProp.FindPropertyRelative("AutoUpdate");
+            _oldAOIValue = _aoiAutoUpdateProp.boolValue;
+        }
+        
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
-
+            
+            CheckAOIAutoUpdate();
             DrawLodSettings();
+            DrawAOTSettings();
             DrawLodDistances();
 
             serializedObject.ApplyModifiedProperties();
+        }
+        
+        private void CheckAOIAutoUpdate()
+        {
+            if (_aoiAutoUpdateProp.boolValue == _oldAOIValue) return;
+            _oldAOIValue = _aoiAutoUpdateProp.boolValue;
+            
+            DLodUnit targetScript = (DLodUnit)target;
+            
+            if (_oldAOIValue) targetScript.TryRegisterAOI();
+            else targetScript.TryUnregisterAOI();
         }
 
         private void OnSceneGUI()
@@ -37,8 +62,16 @@ namespace Spacats.LOD
             EditorGUILayout.PropertyField(receiver, new GUIContent("Reciever"));
         }
 
+        private void DrawAOTSettings()
+        {
+            EditorGUILayout.Space();
+            SerializedProperty aoiData = serializedObject.FindProperty("_aoiData");
+            EditorGUILayout.PropertyField(aoiData, new GUIContent("AOI"));
+        }
+
         private void DrawLodDistances()
         {
+            EditorGUILayout.Space();
             SerializedProperty sLodUnitData = serializedObject.FindProperty("LODData");
             SerializedProperty gizmoList = serializedObject.FindProperty("DrawGizmo");
 

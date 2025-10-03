@@ -8,7 +8,7 @@ namespace Spacats.LOD
     {
         public bool InSceneLoading = false;
         public bool JobScheduled = false;
-        public bool PerformCellCalculations = false;
+        public bool AOTCalculations = false;
         
         public int ChangedLodsCount = 0;
         public float LastUpdateTime = 0f;

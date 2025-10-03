@@ -35,6 +35,14 @@ namespace Spacats.LOD
             SetMaterial(newLevel);
         }
 
+        public override void OnDNeighboursChanged(List<DLodUnit> newNeighbours)
+        {
+        }
+
+        public override void OnSNeighboursChanged(List<SLodUnit> newNeighbours)
+        {
+        }
+
         private void SetMaterial(int matIndex)
         {
             if (matIndex > LODMaterials.Count) return;

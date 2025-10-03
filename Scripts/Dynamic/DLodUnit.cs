@@ -8,17 +8,23 @@ namespace Spacats.LOD
     [ExecuteInEditMode, DisallowMultipleComponent]
     public class DLodUnit : MonoBehaviour
     {
-        [SerializeField]
-        private LodUnitReciever _receiver;
+        [SerializeField] private LodUnitReciever _receiver;
+        [SerializeField] private LodUnitAOI _aoiData;
+        public LodUnitAOI AOIData => _aoiData;
+        
         private bool _isQuitting = false;
         private bool _isRegistered = false;
 
         public Action<int> OnLodChanged;
+        public Action<List<DLodUnit>> OnDynamicNeighboursChanged;
+        public Action<List<SLodUnit>> OnStaticNeighboursChanged;
+        
         public DLodUnitData LODData;
 
         public List<bool> DrawGizmo = new List<bool>();
         public bool IsRegistered => _isRegistered;
-
+        public LodUnitReciever Receiver => _receiver;
+        
         private void OnApplicationQuit()
         {
             _isQuitting = true;
@@ -27,15 +33,19 @@ namespace Spacats.LOD
         private void OnEnable()
         {
             MarkAsUnRegistered();
+            _aoiData.MarkAsUnRegistered();
+            _aoiData.SetSelf(this, null);
             if (_receiver == null && gameObject.GetComponent<LodUnitReciever>() != null) _receiver = gameObject.GetComponent<LodUnitReciever>();
 
             ResetValues();
             RequestAdd();
+            TryRegisterAOI();
         }
 
         private void OnDisable()
         {
             RequestRemove();
+            TryUnregisterAOI();
         }
 
         private void OnValidate()
@@ -89,6 +99,35 @@ namespace Spacats.LOD
             LODData.CurrentLod = value;
 
             _receiver?.OnLodChanged(LODData.CurrentLod);
+        }
+
+        public void TryRegisterAOI()
+        {
+            if (!_aoiData.AutoUpdate) return;
+            if (_aoiData.IsRegistered) return;
+            if (!AreaOfInterestController.HasInstance) return;
+            AreaOfInterestController.Instance.RegisterAOI(this);
+        }
+            
+
+        public void TryUnregisterAOI()
+        {
+            if (_aoiData.AutoUpdate) return;
+            if (!_aoiData.IsRegistered) return;
+            if (!AreaOfInterestController.HasInstance) return;
+            AreaOfInterestController.Instance.UnRegisterAOI(this);
+        }
+
+        public void RaiseOnDynamicNeighboursChanged()
+        {
+            OnDynamicNeighboursChanged?.Invoke(_aoiData.DynamicNeighbours);
+            _receiver?.OnDNeighboursChanged(_aoiData.DynamicNeighbours);
+        }
+        
+        public void RaiseOnStaticNeighboursChanged()
+        {
+            OnStaticNeighboursChanged?.Invoke(_aoiData.StaticNeighbours);
+            _receiver?.OnSNeighboursChanged(_aoiData.StaticNeighbours);
         }
     }
 }

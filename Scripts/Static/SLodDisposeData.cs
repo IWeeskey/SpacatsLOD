@@ -93,7 +93,7 @@ namespace Spacats.LOD
             LodJob.GroupMultipliers = GroupMultipliers;
             LodJob.CellsWriter = cellsWriter;
             LodJob.CellSize = runtimeData.CellSize;
-            LodJob.PerformCellCalculations = runtimeData.PerformCellCalculations;
+            LodJob.AOTCalculations = runtimeData.AOTCalculations;
         }
 
     }

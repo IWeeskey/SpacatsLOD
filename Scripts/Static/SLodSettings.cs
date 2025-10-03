@@ -13,7 +13,6 @@ namespace Spacats.LOD
         public Transform Target;
 
         public bool PerformLogic = false;
-        public bool PerformCellCalculations = false;
         
         public bool UseEditorCamera = false;
         public bool AsyncLogic = false;

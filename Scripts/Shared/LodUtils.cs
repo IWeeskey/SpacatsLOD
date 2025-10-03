@@ -49,11 +49,13 @@ namespace Spacats.LOD
         {
             int3 cellKey = new int3(0);
 
-            cellKey.x = Mathf.RoundToInt(position.x / cellSize);
-            cellKey.y = Mathf.RoundToInt(position.y / cellSize);
-            cellKey.z = Mathf.RoundToInt(position.z / cellSize);
+            cellKey.x = Mathf.FloorToInt(position.x / cellSize);
+            cellKey.y = Mathf.FloorToInt(position.y / cellSize);
+            cellKey.z = Mathf.FloorToInt(position.z / cellSize);
             
             return cellKey;
         }
+        
+        
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Spacats.LOD
 {
-    public class LODRSpriteColor : LodUnitReciever
+    public class LODRSpriteColorAOI : LodUnitReciever
     {
         public SpriteRenderer TargetRenderer;
         public List<Color> LODColors;
@@ -26,10 +26,12 @@ namespace Spacats.LOD
 
         public override void OnDNeighboursChanged(List<DLodUnit> newNeighbours)
         {
+            
         }
 
         public override void OnSNeighboursChanged(List<SLodUnit> newNeighbours)
         {
+            
         }
     }
 }

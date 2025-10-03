@@ -54,6 +54,14 @@ namespace Spacats.LOD
             _smoothTween.Start();
         }
 
+        public override void OnDNeighboursChanged(List<DLodUnit> newNeighbours)
+        {
+        }
+
+        public override void OnSNeighboursChanged(List<SLodUnit> newNeighbours)
+        {
+        }
+
         private void LerpColor(float progress)
         {
             TargetRenderer.color = Color.Lerp(_currentColor, _targetColor, progress);

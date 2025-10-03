@@ -278,6 +278,7 @@ namespace Spacats.LOD
             TryCompleteJob();
             ProcessRequests();
             ApplySettings();
+            if (AreaOfInterestController.HasInstance) AreaOfInterestController.Instance.ProcessDynamic(ref _disposeData.Cells, LodSettings.CellSize);
             
             if (LodSettings.PerformMeasurements)
             {
@@ -309,14 +310,17 @@ namespace Spacats.LOD
         {
             ProcessRequests();
             ApplySettings();
+            if (AreaOfInterestController.HasInstance) AreaOfInterestController.Instance.ProcessDynamic(ref _disposeData.Cells, LodSettings.CellSize);
+            
             if (LodSettings.PerformMeasurements) TimeTracker.Start(LodSettings.TotalMeasureID);
             _disposeData.ScheduleJob(_runtimeData);
         }
 
         private void ApplySettings()
         {
+            if (LodSettings.CellSize <= 0) LodSettings.CellSize = 1f;
             _runtimeData.CellSize = LodSettings.CellSize;
-            _runtimeData.PerformCellCalculations = LodSettings.PerformCellCalculations;
+            _runtimeData.AOTCalculations = AreaOfInterestController.HasInstance;
 
             _disposeData.RefreshGroupMultipliers(LodSettings);
         }
@@ -324,6 +328,16 @@ namespace Spacats.LOD
         public int GetCellsCount()
         {
             return _runtimeData.LastCellsCount;
+        }
+
+        public DLodUnit GetUnitByIndex(int index)
+        {
+            if (index < 0) return null;
+            if (_disposeData == null) return null;
+            if (_disposeData.Units == null) return null;
+            if (_disposeData.Units.Count <= index) return null;
+
+            return _disposeData.Units[index];
         }
     }
 }

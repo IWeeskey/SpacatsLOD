@@ -10,7 +10,7 @@ namespace Spacats.LOD
     [BurstCompile]
     public struct SLodJob : IJobParallelFor
     {
-        public bool PerformCellCalculations;
+        public bool AOTCalculations;
         public float CellSize;
         public float3 TargetPosition;
         public NativeArray<SLodUnitData> UnitsData;
@@ -29,7 +29,7 @@ namespace Spacats.LOD
 
             int lod = LodUtils.LevelForDistance(distance, in unit.Distances, unit.Scale, mult);
            
-            if (PerformCellCalculations)
+            if (AOTCalculations)
             {
                 int3 cellKey = LodUtils.GetCellKey(unit.Position, CellSize);
                 CellsWriter.Add(cellKey, index);
