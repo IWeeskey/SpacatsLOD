@@ -160,7 +160,7 @@ MonoBehaviour:
         w: 0
     GroupIndex: 0
     CurrentLod: 0
-    CuboidCalculations: 0
+    CuboidCalculations: 1
     Distances:
       Lod0: 5
       Lod1: 10
@@ -194,4 +194,4 @@ MonoBehaviour:
   - {r: 1, g: 0.070933886, b: 0, a: 1}
   - {r: 1, g: 0, b: 0.7267132, a: 1}
   MaxLODLevel: 5
-  DisableOnMaxLOD: 0
+  DisableOnMaxLOD: 1

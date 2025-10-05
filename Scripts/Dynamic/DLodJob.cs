@@ -16,12 +16,16 @@ namespace Spacats.LOD
         public NativeList<int2>.ParallelWriter ChangedLodsWriter;
         public NativeParallelMultiHashMap<int3, int>.ParallelWriter CellsWriter;
         [ReadOnly] public NativeList<float> GroupMultipliers;
-
+        
+        public NativeArray<int3> UnitsGlobalPositions;
+        public NativeArray<int3> UnitsCellPositions;
+        
         public void Execute(int index, TransformAccess transform)
         {
             DLodUnitData unit = UnitsData[index];
 
             float3 unitPosition = transform.position;
+            int3 roundedUnitPosition = LodUtils.RoundToInt3(unitPosition);
             
             float distance = math.distance(TargetPosition, unitPosition);
             float mult = LodUtils.GetMultiplierFromList(unit.GroupIndex, ref GroupMultipliers);
@@ -32,6 +36,8 @@ namespace Spacats.LOD
             {
                 int3 cellKey = LodUtils.GetCellKey(unitPosition, CellSize);
                 CellsWriter.Add(cellKey, index);
+                UnitsGlobalPositions[index] = roundedUnitPosition;
+                UnitsCellPositions[index] = cellKey;
             }
             
             if (lod != unit.CurrentLod)

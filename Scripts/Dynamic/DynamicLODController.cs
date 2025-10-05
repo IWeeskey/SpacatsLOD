@@ -339,5 +339,15 @@ namespace Spacats.LOD
 
             return _disposeData.Units[index];
         }
+
+        public int3 GetUnitPositionByIndex(int index)
+        {
+            return _disposeData.UnitsGlobalPositions[index];
+        }
+        
+        public int3 GetUnitCellPositionByIndex(int index)
+        {
+            return _disposeData.UnitsCellPositions[index];
+        }
     }
 }

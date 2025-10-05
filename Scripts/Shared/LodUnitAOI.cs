@@ -28,6 +28,9 @@ namespace Spacats.LOD
         public int DUnitIndex=>_selfDLodUnit == null ? -1: _selfDLodUnit.LODData.UnitIndex;
         public int SUnitIndex=>_selfSLodUnit == null ? -1: _selfSLodUnit.LODData.UnitIndex;
         
+        public int DUnitIndexFast=>_selfDLodUnit.LODData.UnitIndex;
+        public int SUnitIndexFast=>_selfSLodUnit.LODData.UnitIndex;
+        
         public bool IsRegistered => _isRegistered;
         
         public void MarkAsUnRegistered()

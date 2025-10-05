@@ -10,18 +10,25 @@ namespace Spacats.LOD
     [BurstCompile]
     public struct AOIUnitJob: IJob
     {
-        public int3 CenterCell;
-        public int Radius;
-        public bool IsWholeDynamic;
-        public bool IsSelfDynamic;
-        public int LodUnitIndex;
-        
-        [ReadOnly]public NativeParallelMultiHashMap<int3, int> Cells;
+        // public int3 CenterCell;
+        // public int Radius;
+        // public bool IsWholeDynamic;
+        // public bool IsSelfDynamic;
+        // public int LodUnitIndex;
+
+        public int MaxUnitsInJob;
+        public NativeArray<AOIJobUnitData> UnitsData;
+        [ReadOnly] public NativeParallelMultiHashMap<int3, int> Cells;
         public NativeList<int> Neighbours;
         
         public void Execute()
         {
-            AOIBurstUtils.FillNeighboursList(Cells, Neighbours, CenterCell, Radius, IsWholeDynamic, IsSelfDynamic, LodUnitIndex);
+            int prevNeighboursCount = 0;
+            for (int i = 0; i < MaxUnitsInJob; i++)
+            {
+                
+            }
+            //AOIBurstUtils.FillNeighboursList(Cells, Neighbours, CenterCell, Radius, IsWholeDynamic, IsSelfDynamic, LodUnitIndex);
         }
     }
 }

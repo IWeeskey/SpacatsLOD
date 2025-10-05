@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 3176372688088226840}
   - component: {fileID: 6260974769896736599}
   m_Layer: 0
-  m_Name: DSpriteLOD_AOT
+  m_Name: DSpriteLOD_AOI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   _aoiData:
     UnitIndex: 5
     Radius: 2
-    AutoUpdate: 1
+    AutoUpdate: 0
     DynamicNeighbours:
     - {fileID: 0}
     StaticNeighbours: []
@@ -183,7 +183,7 @@ MonoBehaviour:
   - {r: 1, g: 0.070933886, b: 0, a: 1}
   - {r: 1, g: 0, b: 0.7267132, a: 1}
   MaxLODLevel: 5
-  DisableOnMaxLOD: 0
+  DisableOnMaxLOD: 1
 --- !u!114 &6260974769896736599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: spacatslod::Spacats.LOD.AOIUnitDebugger
   DLineRenderer: {fileID: 1796207717898958229}
   SLineRenderer: {fileID: 2107541661266381194}
-  PerformLogic: 1
+  PerformLogic: 0
 --- !u!1 &5189697396277544179
 GameObject:
   m_ObjectHideFlags: 0

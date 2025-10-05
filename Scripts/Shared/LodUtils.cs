@@ -56,6 +56,28 @@ namespace Spacats.LOD
             return cellKey;
         }
         
+        public static int3 GetCellKey(int3 position, float cellSize)
+        {
+            int3 cellKey = new int3(0);
+
+            cellKey.x = Mathf.FloorToInt(position.x / cellSize);
+            cellKey.y = Mathf.FloorToInt(position.y / cellSize);
+            cellKey.z = Mathf.FloorToInt(position.z / cellSize);
+            
+            return cellKey;
+        }
+        
+        public static int3 RoundToInt3(float3 position)
+        {
+            int3 result = new int3(0);
+
+            result.x = Mathf.RoundToInt(position.x);
+            result.y = Mathf.RoundToInt(position.y);
+            result.z = Mathf.RoundToInt(position.z );
+            
+            return result;
+        }
+        
         
     }
 }

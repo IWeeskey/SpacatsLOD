@@ -18,6 +18,8 @@ namespace Spacats.LOD
         public NativeList<int2> ChangedLods;
         public NativeList<float> GroupMultipliers;
         public NativeParallelMultiHashMap<int3, int> Cells;
+        public NativeArray<int3> UnitsGlobalPositions;
+        public NativeArray<int3> UnitsCellPositions;
 
         public SLodJob LodJob;
         public JobHandle LodJobHandle;
@@ -31,6 +33,9 @@ namespace Spacats.LOD
             ChangedLods = new NativeList<int2>(lodSettings.MaxUnitCount, Allocator.Persistent);
             GroupMultipliers = new NativeList<float>(100, Allocator.Persistent);
             Cells = new NativeParallelMultiHashMap<int3, int>(lodSettings.MaxUnitCount, Allocator.Persistent);
+            
+            UnitsGlobalPositions = new NativeArray<int3>(lodSettings.MaxUnitCount, Allocator.Persistent);
+            UnitsCellPositions = new NativeArray<int3>(lodSettings.MaxUnitCount, Allocator.Persistent);
             
             RefreshGroupMultipliers(lodSettings);
 
@@ -47,6 +52,9 @@ namespace Spacats.LOD
             if (ChangedLods.IsCreated) ChangedLods.Dispose();
             if (GroupMultipliers.IsCreated) GroupMultipliers.Dispose();
             if (Cells.IsCreated) Cells.Dispose();
+            
+            if (UnitsGlobalPositions.IsCreated) UnitsGlobalPositions.Dispose();
+            if (UnitsCellPositions.IsCreated) UnitsCellPositions.Dispose();
             
             _isCreated = false;
         }
@@ -94,6 +102,9 @@ namespace Spacats.LOD
             LodJob.CellsWriter = cellsWriter;
             LodJob.CellSize = runtimeData.CellSize;
             LodJob.AOTCalculations = runtimeData.AOTCalculations;
+            
+            LodJob.UnitsGlobalPositions = UnitsGlobalPositions;
+            LodJob.UnitsCellPositions = UnitsCellPositions;
         }
 
     }

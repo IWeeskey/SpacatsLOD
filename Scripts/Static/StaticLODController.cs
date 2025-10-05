@@ -106,6 +106,7 @@ namespace Spacats.LOD
             _runtimeData.JobScheduled = false;
     
             _disposeData.LodJobHandle.Complete();
+            if (AreaOfInterestController.HasInstance) AreaOfInterestController.Instance.ProcessStatic(_disposeData.Cells, LodSettings.CellSize);
             _runtimeData.LastUpdateTime = Time.realtimeSinceStartup;
 
             HandleJobResult();
@@ -309,7 +310,7 @@ namespace Spacats.LOD
         {
             ProcessRequests();
             ApplySettings();
-            if (AreaOfInterestController.HasInstance) AreaOfInterestController.Instance.ProcessStatic(_disposeData.Cells, LodSettings.CellSize);
+            
             
             if (LodSettings.PerformMeasurements) TimeTracker.Start(LodSettings.TotalMeasureID);
             _disposeData.ScheduleJob(_runtimeData);
@@ -337,6 +338,16 @@ namespace Spacats.LOD
 
 
             return _disposeData.Units[index];
+        }
+        
+        public int3 GetUnitPositionByIndex(int index)
+        {
+            return _disposeData.UnitsGlobalPositions[index];
+        }
+        
+        public int3 GetUnitCellPositionByIndex(int index)
+        {
+            return _disposeData.UnitsCellPositions[index];
         }
     }
 }

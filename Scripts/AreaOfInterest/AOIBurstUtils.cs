@@ -12,21 +12,28 @@ namespace Spacats.LOD
         public static void FillNeighboursList(NativeParallelMultiHashMap<int3, int> cells, NativeList<int> neighbours, 
             int3 centerCell, int radius, bool isWholeDynamic, bool isSelfDynamic, int lodUnitIndex)
         {
-            int radiussq = radius * radius;
-            for (int x = -radius; x <= radius; x++)
+            // int radiussq = radius * radius;
+            // for (int x = -radius; x <= radius; x++)
+            // {
+            //     for (int y = -radius; y <= radius; y++)
+            //     {
+            //         for (int z = -radius; z <= radius; z++)
+            //         {
+            //             int3 offset = new int3(x, y, z);
+            //             int distSq = offset.x * offset.x + offset.y * offset.y + offset.z * offset.z;
+            //             if (distSq > radiussq) continue;
+            //             lol++;
+            //             int3 checkCell = centerCell + offset;
+            //             ProcessCell(cells, neighbours, checkCell, isWholeDynamic, isSelfDynamic, lodUnitIndex);
+            //         }
+            //     }
+            // }
+            
+
+            foreach (int3 neighbour in CubeNeighbours)
             {
-                for (int y = -radius; y <= radius; y++)
-                {
-                    for (int z = -radius; z <= radius; z++)
-                    {
-                        int3 offset = new int3(x, y, z);
-                        int distSq = offset.x * offset.x + offset.y * offset.y + offset.z * offset.z;
-                        if (distSq > radiussq) continue;
-                        
-                        int3 checkCell = centerCell + offset;
-                        ProcessCell(cells, neighbours, checkCell, isWholeDynamic, isSelfDynamic, lodUnitIndex);
-                    }
-                }
+                int3 checkCell = centerCell + neighbour;
+                //ProcessCell(cells, neighbours, checkCell, isWholeDynamic, isSelfDynamic, lodUnitIndex);
             }
         }
         
@@ -46,5 +53,26 @@ namespace Spacats.LOD
                 while (cells.TryGetNextValue(out value, ref it));
             }
         }
+        
+        private static readonly int3[] CubeNeighbours =
+        {
+            //FaceNeighbours
+            new int3( 0, 0, 0),
+            new int3( 1, 0, 0),
+            new int3(-1, 0, 0),
+            new int3( 0, 1, 0),
+            new int3( 0,-1, 0),
+            new int3( 0, 0, 1),
+            new int3( 0, 0,-1),
+            
+            //EdgeNeighbours 
+            new int3( 1, 1, 0), new int3( 1,-1, 0), new int3(-1, 1, 0), new int3(-1,-1, 0),
+            new int3( 1, 0, 1), new int3( 1, 0,-1), new int3(-1, 0, 1), new int3(-1, 0,-1),
+            new int3( 0, 1, 1), new int3( 0, 1,-1), new int3( 0,-1, 1), new int3( 0,-1,-1),
+            
+            //CornerNeighbours 
+            new int3( 1, 1, 1), new int3( 1, 1,-1), new int3( 1,-1, 1), new int3( 1,-1,-1),
+            new int3(-1, 1, 1), new int3(-1, 1,-1), new int3(-1,-1, 1), new int3(-1,-1,-1),
+        };
     }
 }
